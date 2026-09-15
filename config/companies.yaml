@@ -28,7 +28,7 @@ sources:
   policy_url: https://job.alio.go.kr/right.do
   allowed_hosts:
   - job.alio.go.kr
-  max_pages: 80
+  max_pages: 10
   weekly_max_pages: 80
   selectors: {}
   last_success: null
