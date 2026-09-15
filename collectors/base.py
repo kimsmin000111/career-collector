@@ -26,10 +26,21 @@ class HttpClient:
                 self.check_robots(url)
             time.sleep(max(0,self.interval-(time.monotonic()-self.last.get(host,0))))
             self.last[host]=time.monotonic()
-            try:
-                r=self.session.get(url,headers=headers or {},timeout=(10,30),allow_redirects=False,stream=True)
-            except requests.RequestException as e:
-                raise SourceError(type(e).__name__) from None
+            for attempt in range(3):
+                try:
+                    r=self.session.get(url,headers=headers or {},timeout=(15,45),allow_redirects=False,stream=True)
+                except (requests.ConnectionError,requests.Timeout) as e:
+                    if attempt==2:raise SourceError(type(e).__name__) from None
+                    time.sleep(2**attempt)
+                    continue
+                except requests.RequestException as e:
+                    raise SourceError(type(e).__name__) from None
+                if r.status_code in (429,500,502,503,504) and attempt<2:
+                    retry=r.headers.get('Retry-After','')
+                    r.close()
+                    time.sleep(min(30,int(retry) if retry.isdigit() else 2**attempt))
+                    continue
+                break
             if r.status_code in (301,302,303,307,308):
                 url=urljoin(url,r.headers.get('Location',''))
                 r.close()
