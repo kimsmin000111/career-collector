@@ -1,0 +1,393 @@
+{
+  "checkedAt": "2026-09-15T20:54:31+09:00",
+  "mode": "daily",
+  "attempted": 2,
+  "succeeded": 1,
+  "sources": [
+    {
+      "id": "mobis",
+      "status": "ok",
+      "records": 39
+    },
+    {
+      "id": "jobalio",
+      "status": "error",
+      "records": 0,
+      "reason": "ConnectTimeout"
+    },
+    {
+      "id": "company-2",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-3",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-4",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-5",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-6",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-7",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-8",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-9",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-10",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-11",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-12",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-13",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-14",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-15",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-16",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-17",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-18",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-19",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-20",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-21",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-22",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-23",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-24",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-25",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-26",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-27",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-28",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-29",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-30",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "company-31",
+      "status": "not_configured",
+      "reason": "기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함."
+    },
+    {
+      "id": "candidate-32",
+      "status": "not_configured",
+      "reason": "공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음."
+    },
+    {
+      "id": "candidate-33",
+      "status": "not_configured",
+      "reason": "공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음."
+    },
+    {
+      "id": "candidate-34",
+      "status": "not_configured",
+      "reason": "공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음."
+    },
+    {
+      "id": "candidate-35",
+      "status": "not_configured",
+      "reason": "공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음."
+    },
+    {
+      "id": "candidate-36",
+      "status": "not_configured",
+      "reason": "공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음."
+    },
+    {
+      "id": "candidate-37",
+      "status": "not_configured",
+      "reason": "공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음."
+    },
+    {
+      "id": "candidate-38",
+      "status": "not_configured",
+      "reason": "공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음."
+    },
+    {
+      "id": "candidate-39",
+      "status": "not_configured",
+      "reason": "공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음."
+    },
+    {
+      "id": "candidate-40",
+      "status": "not_configured",
+      "reason": "공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음."
+    },
+    {
+      "id": "candidate-41",
+      "status": "not_configured",
+      "reason": "공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음."
+    },
+    {
+      "id": "candidate-42",
+      "status": "not_configured",
+      "reason": "공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음."
+    },
+    {
+      "id": "candidate-43",
+      "status": "not_configured",
+      "reason": "공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음."
+    },
+    {
+      "id": "candidate-44",
+      "status": "not_configured",
+      "reason": "공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음."
+    },
+    {
+      "id": "candidate-45",
+      "status": "not_configured",
+      "reason": "공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음."
+    },
+    {
+      "id": "candidate-46",
+      "status": "not_configured",
+      "reason": "공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음."
+    },
+    {
+      "id": "candidate-47",
+      "status": "not_configured",
+      "reason": "공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음."
+    },
+    {
+      "id": "candidate-48",
+      "status": "not_configured",
+      "reason": "공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음."
+    },
+    {
+      "id": "candidate-49",
+      "status": "not_configured",
+      "reason": "공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음."
+    },
+    {
+      "id": "candidate-50",
+      "status": "not_configured",
+      "reason": "공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음."
+    },
+    {
+      "id": "candidate-51",
+      "status": "not_configured",
+      "reason": "공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음."
+    },
+    {
+      "id": "candidate-52",
+      "status": "not_configured",
+      "reason": "공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음."
+    },
+    {
+      "id": "candidate-53",
+      "status": "not_configured",
+      "reason": "공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음."
+    },
+    {
+      "id": "candidate-54",
+      "status": "not_configured",
+      "reason": "JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요."
+    },
+    {
+      "id": "candidate-55",
+      "status": "not_configured",
+      "reason": "JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요."
+    },
+    {
+      "id": "candidate-56",
+      "status": "not_configured",
+      "reason": "JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요."
+    },
+    {
+      "id": "candidate-57",
+      "status": "not_configured",
+      "reason": "JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요."
+    },
+    {
+      "id": "candidate-58",
+      "status": "not_configured",
+      "reason": "JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요."
+    },
+    {
+      "id": "candidate-59",
+      "status": "not_configured",
+      "reason": "JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요."
+    },
+    {
+      "id": "candidate-60",
+      "status": "not_configured",
+      "reason": "JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요."
+    },
+    {
+      "id": "candidate-61",
+      "status": "not_configured",
+      "reason": "JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요."
+    },
+    {
+      "id": "candidate-62",
+      "status": "not_configured",
+      "reason": "JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요."
+    },
+    {
+      "id": "candidate-63",
+      "status": "not_configured",
+      "reason": "JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요."
+    },
+    {
+      "id": "candidate-64",
+      "status": "not_configured",
+      "reason": "JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요."
+    },
+    {
+      "id": "candidate-65",
+      "status": "not_configured",
+      "reason": "JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요."
+    },
+    {
+      "id": "candidate-66",
+      "status": "not_configured",
+      "reason": "JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요."
+    },
+    {
+      "id": "candidate-67",
+      "status": "not_configured",
+      "reason": "JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요."
+    },
+    {
+      "id": "candidate-68",
+      "status": "not_configured",
+      "reason": "JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요."
+    },
+    {
+      "id": "candidate-69",
+      "status": "not_configured",
+      "reason": "JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요."
+    },
+    {
+      "id": "candidate-70",
+      "status": "not_configured",
+      "reason": "JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요."
+    },
+    {
+      "id": "candidate-71",
+      "status": "not_configured",
+      "reason": "JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요."
+    },
+    {
+      "id": "candidate-72",
+      "status": "not_configured",
+      "reason": "JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요."
+    },
+    {
+      "id": "candidate-73",
+      "status": "not_configured",
+      "reason": "JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요."
+    },
+    {
+      "id": "candidate-74",
+      "status": "not_configured",
+      "reason": "JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요."
+    }
+  ],
+  "metrics": {
+    "신규 공고 수": 39,
+    "변경 공고 수": 0,
+    "신규 지원 가능 공고 수": 10,
+    "확인 필요 공고 수": 17,
+    "7일 이내 마감 공고 수": 4,
+    "3일 이내 마감 공고 수": 3,
+    "오늘 사이트 업데이트 여부": true
+  }
+}
