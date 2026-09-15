@@ -41,7 +41,6 @@ def main():
         s=dict(original)
         s['run_mode']=args.mode
         if not s.get('enabled'):
-            results.append({'id':s['id'],'status':'not_configured','reason':s.get('note','설정 필요')})
             continue
         if not s.get('terms_reviewed'):
             store.source_result(s['id'],'blocked','이용정책 검토 필요');continue
@@ -89,6 +88,8 @@ def main():
                 if r['status'] in ('partial','error'):f.write(f"- {r['id']}: {r['status']} — {r.get('reason','')}\n")
     print(json.dumps(metrics,ensure_ascii=False))
     store.close()
-    return 2 if any(r['status'] in ('partial','error') for r in results) or not attempted else 0
+    # Preserve and publish healthy-source data when one official site is temporarily unavailable.
+    # A run is failed only when there was nothing to check or every active source failed.
+    return 2 if not attempted or not succeeded else 0
 
 if __name__=='__main__':sys.exit(main())
