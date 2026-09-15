@@ -1,0 +1,61 @@
+# Copy one entry into companies.yaml only after verifying its actual fields/policy.
+# No endpoint below is claimed to be a working API.
+generic_html_example:
+  id: example-company
+  name: 예시기업
+  type: unknown
+  industry: 기계·제조
+  url: https://example.com/careers
+  method: generic_html
+  enabled: false
+  terms_reviewed: false
+  javascript: false
+  api: false
+  allowed_hosts: [example.com]
+  single_role: true
+  selectors:
+    item: .job-item
+    link: self
+    title: .tit
+    next: a.next
+    empty: .no-jobs
+  detail_selectors:
+    title: h1
+    requirements: .requirements
+    preferences: .preferences
+    duties: .duties
+    recruitment: .recruitment-type
+    majors: .majors
+    education: .education
+    employment: .employment
+    location: .location
+    start: .start
+    deadline: .deadline
+public_api_example:
+  id: approved-public-api
+  name: 활용신청 완료한 공공 API
+  type: public_institution
+  record_type: public_institution
+  method: public_api
+  url: https://example.com/api
+  enabled: false
+  terms_reviewed: false
+  api:
+    endpoint: https://example.com/api
+    key_env: PUBLIC_JOBS_API_KEY
+    key_param: serviceKey
+    key_required: true
+    items_path: data
+    page_param: page
+    max_pages: 30
+    single_role: false
+    fields:
+      company: institutionName
+      title: title
+      role: role
+      official_url: officialUrl
+      recruitment: recruitmentType
+      requirements: qualifications
+      duties: duties
+      deadline: closingDate
+  allowed_hosts: [example.com]

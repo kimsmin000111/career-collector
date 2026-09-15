@@ -1,0 +1,1102 @@
+sources:
+- id: mobis
+  name: 현대모비스
+  type: large
+  industry: 로봇·자동화·모빌리티
+  url: https://careers.mobis.com/jobs
+  method: mobis
+  api: false
+  javascript: false
+  enabled: true
+  terms_reviewed: true
+  policy_url: https://careers.mobis.com/robots.txt
+  policy_note: 2026-09-15 robots Allow / 확인. 이메일 수집 금지 준수; 이메일·지원자 데이터 수집하지 않음.
+  allowed_hosts:
+  - careers.mobis.com
+  selectors: {}
+  last_success: null
+- id: jobalio
+  name: JOB-ALIO
+  type: public_institution
+  industry: 공공기관 기술직
+  url: https://job.alio.go.kr/recruit.do
+  method: jobalio
+  api: false
+  javascript: false
+  enabled: true
+  terms_reviewed: true
+  policy_url: https://job.alio.go.kr/right.do
+  allowed_hosts:
+  - job.alio.go.kr
+  max_pages: 80
+  weekly_max_pages: 80
+  selectors: {}
+  last_success: null
+  institution_types:
+    한국토지주택공사: public_enterprise
+    한국전력공사: public_enterprise
+    한국수력원자력: public_enterprise
+    한국가스공사: public_enterprise
+    한국지역난방공사: public_enterprise
+    한국철도공사: public_enterprise
+    한국도로공사: public_enterprise
+    한국공항공사: public_enterprise
+    인천국제공항공사: public_enterprise
+    한국수자원공사: public_enterprise
+    한국중부발전: public_enterprise
+    한국남동발전: public_enterprise
+    한국남부발전: public_enterprise
+    한국동서발전: public_enterprise
+    한국서부발전: public_enterprise
+- id: company-2
+  name: 현대자동차
+  type: large
+  industry: 완성차
+  url: https://talent.hyundai.com/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - talent.hyundai.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-3
+  name: 한화에어로스페이스
+  type: large
+  industry: 항공·방산
+  url: https://www.hanwhain.com/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - www.hanwhain.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-4
+  name: 현대위아
+  type: large
+  industry: 자동차 부품·설비
+  url: https://recruit.hyundai-wia.com
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - recruit.hyundai-wia.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-5
+  name: 현대로템
+  type: large
+  industry: 철도·방산
+  url: https://www.hyundai-rotem.co.kr/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - www.hyundai-rotem.co.kr
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-6
+  name: LS ELECTRIC
+  type: large
+  industry: 전력·자동화
+  url: https://www.ls-electric.com/ko/recruit/intro
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - www.ls-electric.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-7
+  name: 에스엘
+  type: unknown
+  industry: 자동차 부품
+  url: https://slworld.recruiter.co.kr/career/home
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - slworld.recruiter.co.kr
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-8
+  name: SNT모티브
+  type: unknown
+  industry: 자동차 부품·방산
+  url: https://www.sntmotiv.com/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - www.sntmotiv.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-9
+  name: 클린아이 잡플러스
+  type: unknown
+  industry: 지방공기업·출자출연기관 통합 채용
+  url: https://job.cleaneye.go.kr/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - job.cleaneye.go.kr
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-10
+  name: LG전자
+  type: unknown
+  industry: 전자·가전
+  url: https://www.lge-recruit.com/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - www.lge-recruit.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-11
+  name: 포스코
+  type: unknown
+  industry: 철강·소재
+  url: https://www.poscorecruit.com/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - www.poscorecruit.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-12
+  name: 포스코이앤씨
+  type: unknown
+  industry: 건설·플랜트
+  url: https://www.poscorecruit.com/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - www.poscorecruit.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-13
+  name: 포스코인터내셔널
+  type: unknown
+  industry: 에너지·화학
+  url: https://www.poscorecruit.com/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - www.poscorecruit.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-14
+  name: 삼성전자
+  type: unknown
+  industry: 반도체·장비
+  url: https://www.samsungcareers.com/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - www.samsungcareers.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-15
+  name: 삼성디스플레이
+  type: unknown
+  industry: 전자·가전
+  url: https://www.samsungcareers.com/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - www.samsungcareers.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-16
+  name: 삼성SDI
+  type: unknown
+  industry: 배터리
+  url: https://www.samsungcareers.com/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - www.samsungcareers.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-17
+  name: 삼성전기
+  type: unknown
+  industry: 전자·가전
+  url: https://www.samsungcareers.com/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - www.samsungcareers.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-18
+  name: 삼성중공업
+  type: unknown
+  industry: 중공업·조선
+  url: https://www.samsungcareers.com/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - www.samsungcareers.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-19
+  name: 삼성E&A
+  type: unknown
+  industry: 건설·플랜트
+  url: https://www.samsungcareers.com/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - www.samsungcareers.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-20
+  name: 두산그룹
+  type: unknown
+  industry: 중공업·조선
+  url: https://career.doosan.com/m/sa/RecList.jsp
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - career.doosan.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-21
+  name: HD건설기계
+  type: unknown
+  industry: 중공업·조선
+  url: https://hd-recruit2026.com/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - hd-recruit2026.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-22
+  name: HD현대로보틱스
+  type: unknown
+  industry: 로봇·자동화
+  url: https://hd-recruit2026.com/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - hd-recruit2026.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-23
+  name: HD현대사이트솔루션
+  type: unknown
+  industry: 중공업·조선
+  url: https://hd-recruit2026.com/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - hd-recruit2026.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-24
+  name: HD현대중공업
+  type: unknown
+  industry: 중공업·조선
+  url: https://hd-recruit2026.com/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - hd-recruit2026.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-25
+  name: HD현대삼호
+  type: unknown
+  industry: 중공업·조선
+  url: https://hd-recruit2026.com/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - hd-recruit2026.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-26
+  name: HD현대일렉트릭
+  type: unknown
+  industry: 전력·설비
+  url: https://hd-recruit2026.com/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - hd-recruit2026.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-27
+  name: HD현대오일뱅크
+  type: unknown
+  industry: 에너지·화학
+  url: https://hd-recruit2026.com/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - hd-recruit2026.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-28
+  name: GS칼텍스
+  type: unknown
+  industry: 에너지·화학
+  url: https://www.recruit2026-gscaltex.com/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - www.recruit2026-gscaltex.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-29
+  name: SK하이닉스
+  type: unknown
+  industry: 반도체·장비
+  url: https://www.skcareers.com/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - www.skcareers.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-30
+  name: LG화학
+  type: unknown
+  industry: 에너지·화학
+  url: https://careers.lg.com/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - careers.lg.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: company-31
+  name: LG에너지솔루션
+  type: unknown
+  industry: 배터리
+  url: https://careers.lg.com/
+  method: generic_html
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts:
+  - careers.lg.com
+  selectors: {}
+  last_success: null
+  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+- id: candidate-32
+  name: 기아
+  type: unknown
+  industry: 기계 관련 기술직
+  url: ''
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: 공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음.
+- id: candidate-33
+  name: SK이노베이션
+  type: unknown
+  industry: 기계 관련 기술직
+  url: ''
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: 공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음.
+- id: candidate-34
+  name: 두산에너빌리티
+  type: unknown
+  industry: 기계 관련 기술직
+  url: ''
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: 공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음.
+- id: candidate-35
+  name: LS일렉트릭
+  type: unknown
+  industry: 기계 관련 기술직
+  url: ''
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: 공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음.
+- id: candidate-36
+  name: LIG넥스원
+  type: unknown
+  industry: 기계 관련 기술직
+  url: ''
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: 공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음.
+- id: candidate-37
+  name: 한국항공우주산업(KAI)
+  type: unknown
+  industry: 기계 관련 기술직
+  url: ''
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: 공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음.
+- id: candidate-38
+  name: 효성중공업
+  type: unknown
+  industry: 기계 관련 기술직
+  url: ''
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: 공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음.
+- id: candidate-39
+  name: OCI
+  type: unknown
+  industry: 기계 관련 기술직
+  url: ''
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: 공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음.
+- id: candidate-40
+  name: 롯데케미칼
+  type: unknown
+  industry: 기계 관련 기술직
+  url: ''
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: 공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음.
+- id: candidate-41
+  name: 코오롱인더스트리
+  type: unknown
+  industry: 기계 관련 기술직
+  url: ''
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: 공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음.
+- id: candidate-42
+  name: 금호석유화학
+  type: unknown
+  industry: 기계 관련 기술직
+  url: ''
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: 공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음.
+- id: candidate-43
+  name: DN솔루션즈
+  type: unknown
+  industry: 기계 관련 기술직
+  url: ''
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: 공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음.
+- id: candidate-44
+  name: SNT다이내믹스
+  type: unknown
+  industry: 기계 관련 기술직
+  url: ''
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: 공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음.
+- id: candidate-45
+  name: 세아베스틸
+  type: unknown
+  industry: 기계 관련 기술직
+  url: ''
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: 공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음.
+- id: candidate-46
+  name: 동국제강
+  type: unknown
+  industry: 기계 관련 기술직
+  url: ''
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: 공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음.
+- id: candidate-47
+  name: 풍산
+  type: unknown
+  industry: 기계 관련 기술직
+  url: ''
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: 공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음.
+- id: candidate-48
+  name: 현대엘리베이터
+  type: unknown
+  industry: 기계 관련 기술직
+  url: ''
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: 공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음.
+- id: candidate-49
+  name: 한미반도체
+  type: unknown
+  industry: 기계 관련 기술직
+  url: ''
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: 공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음.
+- id: candidate-50
+  name: 원익IPS
+  type: unknown
+  industry: 기계 관련 기술직
+  url: ''
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: 공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음.
+- id: candidate-51
+  name: 주성엔지니어링
+  type: unknown
+  industry: 기계 관련 기술직
+  url: ''
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: 공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음.
+- id: candidate-52
+  name: 유진테크
+  type: unknown
+  industry: 기계 관련 기술직
+  url: ''
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: 공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음.
+- id: candidate-53
+  name: SEMES
+  type: unknown
+  industry: 기계 관련 기술직
+  url: ''
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: 공식 채용 URL·중견 이상 규모 근거·수집 정책 확인 필요. 등록만으로 수집 성공을 뜻하지 않음.
+- id: candidate-54
+  name: 한국전력공사
+  type: public_enterprise
+  industry: 기계 관련 기술직
+  url: https://job.alio.go.kr/recruit.do
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요.
+- id: candidate-55
+  name: 한국수력원자력
+  type: public_enterprise
+  industry: 기계 관련 기술직
+  url: https://job.alio.go.kr/recruit.do
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요.
+- id: candidate-56
+  name: 한국가스공사
+  type: public_enterprise
+  industry: 기계 관련 기술직
+  url: https://job.alio.go.kr/recruit.do
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요.
+- id: candidate-57
+  name: 한국지역난방공사
+  type: public_enterprise
+  industry: 기계 관련 기술직
+  url: https://job.alio.go.kr/recruit.do
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요.
+- id: candidate-58
+  name: 한국중부발전
+  type: public_enterprise
+  industry: 기계 관련 기술직
+  url: https://job.alio.go.kr/recruit.do
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요.
+- id: candidate-59
+  name: 한국남동발전
+  type: public_enterprise
+  industry: 기계 관련 기술직
+  url: https://job.alio.go.kr/recruit.do
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요.
+- id: candidate-60
+  name: 한국남부발전
+  type: public_enterprise
+  industry: 기계 관련 기술직
+  url: https://job.alio.go.kr/recruit.do
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요.
+- id: candidate-61
+  name: 한국동서발전
+  type: public_enterprise
+  industry: 기계 관련 기술직
+  url: https://job.alio.go.kr/recruit.do
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요.
+- id: candidate-62
+  name: 한국서부발전
+  type: public_enterprise
+  industry: 기계 관련 기술직
+  url: https://job.alio.go.kr/recruit.do
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요.
+- id: candidate-63
+  name: 한국철도공사
+  type: public_enterprise
+  industry: 기계 관련 기술직
+  url: https://job.alio.go.kr/recruit.do
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요.
+- id: candidate-64
+  name: 한국도로공사
+  type: public_enterprise
+  industry: 기계 관련 기술직
+  url: https://job.alio.go.kr/recruit.do
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요.
+- id: candidate-65
+  name: 한국공항공사
+  type: public_enterprise
+  industry: 기계 관련 기술직
+  url: https://job.alio.go.kr/recruit.do
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요.
+- id: candidate-66
+  name: 인천국제공항공사
+  type: public_enterprise
+  industry: 기계 관련 기술직
+  url: https://job.alio.go.kr/recruit.do
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요.
+- id: candidate-67
+  name: 한국수자원공사
+  type: public_enterprise
+  industry: 기계 관련 기술직
+  url: https://job.alio.go.kr/recruit.do
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요.
+- id: candidate-68
+  name: 한국토지주택공사
+  type: public_enterprise
+  industry: 기계 관련 기술직
+  url: https://job.alio.go.kr/recruit.do
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요.
+- id: candidate-69
+  name: 한국환경공단
+  type: public_institution
+  industry: 기계 관련 기술직
+  url: https://job.alio.go.kr/recruit.do
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요.
+- id: candidate-70
+  name: 한국산업안전보건공단
+  type: public_institution
+  industry: 기계 관련 기술직
+  url: https://job.alio.go.kr/recruit.do
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요.
+- id: candidate-71
+  name: 한국에너지공단
+  type: public_institution
+  industry: 기계 관련 기술직
+  url: https://job.alio.go.kr/recruit.do
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요.
+- id: candidate-72
+  name: 한국전기안전공사
+  type: public_institution
+  industry: 기계 관련 기술직
+  url: https://job.alio.go.kr/recruit.do
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요.
+- id: candidate-73
+  name: 한국가스안전공사
+  type: public_institution
+  industry: 기계 관련 기술직
+  url: https://job.alio.go.kr/recruit.do
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요.
+- id: candidate-74
+  name: 한국교통안전공단
+  type: public_institution
+  industry: 기계 관련 기술직
+  url: https://job.alio.go.kr/recruit.do
+  method: registry_candidate
+  api: false
+  javascript: null
+  enabled: false
+  terms_reviewed: false
+  allowed_hosts: []
+  selectors: {}
+  last_success: null
+  note: JOB-ALIO 통합 출처에서 기관명으로 발견 가능. 기관별 URL 확인 필요.

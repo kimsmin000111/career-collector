@@ -1,0 +1,92 @@
+name: Collect mechanical graduate jobs
+on:
+  schedule:
+    - cron: '0 0 * * *' # 09:00 Asia/Seoul, scheduler may be delayed
+    - cron: '0 1 * * 0' # Sunday 10:00 KST, expanded registered public source discovery
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Collection scope
+        type: choice
+        options: [daily, weekly]
+        default: daily
+permissions:
+  contents: write
+concurrency:
+  group: career-collector
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - uses: actions/cache@v4
+        with:
+          path: .cache/pages.json
+          key: http-pages-${{ github.run_id }}
+          restore-keys: http-pages-
+      - name: Restore durable collection state
+        shell: bash
+        run: |
+          mkdir -p data output logs
+          if git show-ref --verify --quiet refs/remotes/origin/collector-data; then
+            git archive origin/collector-data | tar -x -C .
+          fi
+          python scripts/http_cache.py restore
+      - name: Collect official sources (no AI)
+        id: collect
+        continue-on-error: true
+        env:
+          PUBLIC_JOBS_API_KEY: ${{ secrets.PUBLIC_JOBS_API_KEY }}
+          COLLECTOR_CONTACT: ${{ vars.COLLECTOR_CONTACT }}
+          MODE: ${{ inputs.mode || (github.event.schedule == '0 1 * * 0' && 'weekly' || 'daily') }}
+        run: python app.py --mode "$MODE"
+      - name: Save state and data only
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f data/jobs.db
+          test -f output/health.json
+          stage_dir=$(mktemp -d)
+          python scripts/http_cache.py save
+          cp -r data output logs "$stage_dir/"
+          # HTML HTTP cache contains official page text; never publish it.
+          python -c "import sqlite3; c=sqlite3.connect('data/jobs.db'); c.execute('DELETE FROM pages'); c.commit(); c.execute('VACUUM'); c.close()"
+          cp data/jobs.db "$stage_dir/data/jobs.db"
+          # HTTP validators and bodies are stored by Actions cache, not in public data.
+          git worktree add --detach "$RUNNER_TEMP/career-state" HEAD
+          cd "$RUNNER_TEMP/career-state"
+          git checkout --orphan collector-next
+          git rm -rf . >/dev/null
+          cp -r "$stage_dir/"* .
+          git config user.name 'career-collector[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data output logs
+          tree=$(git write-tree)
+          if git show-ref --verify --quiet refs/remotes/origin/collector-data; then
+            previous=$(git rev-parse origin/collector-data)
+            commit=$(printf 'Update official job collection data\n' | git commit-tree "$tree" -p "$previous")
+          else
+            commit=$(printf 'Initialize official job collection data\n' | git commit-tree "$tree")
+          fi
+          git push origin "$commit:refs/heads/collector-data"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: collection-report
+          path: |
+            logs/
+            output/health.json
+          retention-days: 30
+      - name: Surface partial / failed sources
+        if: steps.collect.outcome == 'failure'
+        run: exit 1
