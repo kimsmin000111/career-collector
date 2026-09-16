@@ -33,6 +33,10 @@ class Rules(unittest.TestCase):
         self.assertEqual(classify(job(title='재무회계',role='회계',majors='경영학',requirements='회계학 학사'),CFG).mechanical_status,'관련 없음')
     def test_missing_mechanical_keyword_can_be_candidate(self):
         self.assertEqual(classify(job(title='제품개발',role='제품개발',majors='공학',requirements='공학 학사'),CFG).mechanical_status,'확인 필요')
+    def test_incidental_single_keyword_in_duties_is_not_mechanical(self):
+        self.assertEqual(classify(job(title='프론트',role='고객응대',majors='전공무관',duties='사내 스터디에서 로봇 주제를 다룹니다'),CFG).mechanical_status,'관련 없음')
+    def test_two_independent_duty_signals_are_mechanical(self):
+        self.assertEqual(classify(job(title='엔지니어',role='기술지원',majors='공학',duties='자동화 설비의 유지보수를 담당합니다'),CFG).mechanical_status,'관련 있음')
     def test_deadline_timezone(self):
         self.assertEqual(date_value('2026.09.15 15:00',True),'2026-09-15T15:00:00+09:00')
 
