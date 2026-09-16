@@ -37,6 +37,10 @@ class Rules(unittest.TestCase):
         self.assertEqual(classify(job(title='프론트',role='고객응대',majors='전공무관',duties='사내 스터디에서 로봇 주제를 다룹니다'),CFG).mechanical_status,'관련 없음')
     def test_two_independent_duty_signals_are_mechanical(self):
         self.assertEqual(classify(job(title='엔지니어',role='기술지원',majors='공학',duties='자동화 설비의 유지보수를 담당합니다'),CFG).mechanical_status,'관련 있음')
+    def test_single_broad_business_word_is_not_mechanical(self):
+        self.assertEqual(classify(job(title='경영관리',role='재무',majors='상경계열',duties='내부 회계관리제도를 운영 평가합니다'),CFG).mechanical_status,'관련 없음')
+    def test_two_broad_duty_signals_remain_for_review(self):
+        self.assertEqual(classify(job(title='광학',role='광학',majors='이공계',duties='제품 시험과 품질 분석을 담당합니다'),CFG).mechanical_status,'확인 필요')
     def test_deadline_timezone(self):
         self.assertEqual(date_value('2026.09.15 15:00',True),'2026-09-15T15:00:00+09:00')
 

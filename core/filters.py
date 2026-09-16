@@ -42,8 +42,9 @@ def classify(job, cfg):
         job.entry_status = '확인 필요'
         job.reasons.append('중견급 이상 규모 확인 필요')
     duty_direct_hits = {word.casefold() for word in cfg['mechanical_direct'] if word.casefold() in job.duties.casefold()}
+    duty_broad_hits = {word.casefold() for word in cfg['mechanical_broad'] if word.casefold() in job.duties.casefold()}
     direct_mechanical = contains(headline_evidence, cfg['mechanical_direct']) or len(duty_direct_hits) >= 2
-    broad_mechanical = contains(headline_evidence, cfg['mechanical_broad']) or contains(job.duties, cfg['mechanical_broad'])
+    broad_mechanical = contains(headline_evidence, cfg['mechanical_broad']) or len(duty_broad_hits) >= 2
     job.mechanical_status = '관련 있음' if direct_mechanical else '확인 필요' if broad_mechanical or not job.detail_complete else '관련 없음'
     if job.mechanical_status == '확인 필요':
         job.reasons.append('담당업무·전공의 기계공학 관련성 확인 필요')
