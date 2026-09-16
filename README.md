@@ -4,9 +4,10 @@ Python이 공식 채용페이지를 읽고 SQLite와 JSON을 갱신합니다. �
 
 ## 현재 범위와 한계
 
-- 실행 가능한 adapter: 현대모비스 공식 HTML, JOB-ALIO 공식 HTML, 설정형 HTML, 설정형 공공 JSON API.
-- 초기 registry 75개 항목 중 현대모비스·JOB-ALIO 두 통합 출처를 활성화했습니다. 나머지는 수집 완료 기업이 아니라 정책·selector·규모·공식 주소 검토 후보입니다. JOB-ALIO 하나에서 여러 공기업·공공기관을 찾습니다.
-- 삼성·LG·SK·한화·HD현대·포스코·두산 등 나머지 기업은 아직 자동 수집하지 않습니다. JavaScript 페이지를 브라우저 우회로 읽지 않습니다. 확인된 공식 API나 허용된 HTML 구조를 추가해야 합니다.
+- 실행 가능한 adapter: 현대모비스 공식 HTML, JOB-ALIO 공식 HTML, LG Careers 공식 공개 API, 설정형 HTML, 설정형 공공 JSON API.
+- 초기 registry 75개 항목 중 현대모비스·JOB-ALIO·LG Careers 세 통합 출처를 활성화했습니다. 나머지는 수집 완료 기업이 아니라 정책·selector·규모·공식 주소 검토 후보입니다. JOB-ALIO와 LG Careers는 각각 여러 기관·계열사를 한 번에 확인합니다.
+- LG Careers는 목록 제목만 저장하지 않고 신입·신입/경력·인턴 공고의 상세 직무를 분리합니다. 따라서 LG디스플레이의 기구·구조해석, LG전자, LG마그나, 로보스타 등의 기계 관련 세부 직무를 판정할 수 있습니다.
+- 삼성 Careers는 공식 목록·상세 요청 방식을 확인했지만 2026-09-15 모집 종료 후 공개 목록이 0건이었고, robots.txt가 정상 정책 문서 대신 오류 응답을 반환해 자동 수집을 켜지 않았습니다. 포스코 공식 채용 사이트는 robots.txt에서 전체 자동 접근을 금지하므로 수집하지 않습니다. SK·한화·HD현대·두산 등은 확인된 공식 API나 허용된 HTML 구조를 추가해야 합니다.
 - JOB-ALIO 최초/주간 실행은 최근 7일 등록분, 이후 일일 실행은 마지막 정상 확인 전날부터의 신규 등록분과 이미 저장된 접수중 공고를 확인합니다. 최초 실행 이전에 등록된 오래된 공고까지 전수 수집했다는 뜻은 아닙니다. 페이지 상한 도달은 부분 실패로 보고합니다.
 - JOB-ALIO 공고는 여러 직렬·학력·전형이 섞여 있어 기본적으로 `확인 필요`로 보관합니다. GitHub 실행 서버에서 연결이 지연되거나 실패하면 기존 데이터를 보존하고 상태를 오류로 표시합니다. 다른 활성 출처가 정상 갱신되면 그 데이터는 계속 게시합니다. 첨부 PDF/HWP/ZIP을 해석해 직렬별 필수 자격을 분리하는 기능은 아직 없습니다. 따라서 신입 제목만으로 지원 가능을 보증하지 않습니다.
 - `지원 가능`은 신입 모집 근거와 기계 관련성의 규칙 판정입니다. 개인별 어학 점수, 자격증, 병역, 입사일, 고졸/석사 전용 전형 등은 원문에서 최종 확인해야 합니다.
@@ -31,6 +32,7 @@ python app.py --init-only
 python app.py
 python app.py --source mobis
 python app.py --source jobalio --max-pages 1
+python app.py --source lgcareers
 python app.py --mode weekly
 python -m unittest discover -s tests -v
 ```
@@ -43,7 +45,7 @@ python -m unittest discover -s tests -v
 2. `.github/workflows/collect.yml`이 **기본 브랜치 main**에 있어야 합니다.
 3. Actions에서 `Collect mechanical graduate jobs` → `Run workflow`를 한 번 실행합니다.
 4. 저장소 정책에서 Actions가 허용되어 있고 워크플로에 `contents: write` 권한이 있어야 `collector-data` 브랜치를 갱신할 수 있습니다. 조직 정책이 차단하면 관리자의 설정이 필요합니다.
-5. 추가 공공 API 사용 시 Settings → Secrets and variables → Actions → Secrets에 `PUBLIC_JOBS_API_KEY`를 저장합니다. 현재 두 HTML 출처에는 키가 필요 없습니다. 연락처를 User-Agent에 넣으려면 Variables의 `COLLECTOR_CONTACT`를 사용합니다.
+5. 추가 공공 API 사용 시 Settings → Secrets and variables → Actions → Secrets에 `PUBLIC_JOBS_API_KEY`를 저장합니다. 현재 활성 출처에는 키가 필요 없습니다. 연락처를 User-Agent에 넣으려면 Variables의 `COLLECTOR_CONTACT`를 사용합니다.
 6. 실패 알림은 GitHub Actions의 본인 알림 설정을 사용합니다. 이메일·카카오톡을 별도로 발송하지 않습니다.
 
 ## 4. 매일·매주 자동 실행과 비용

@@ -48,6 +48,26 @@ sources:
     한국남부발전: public_enterprise
     한국동서발전: public_enterprise
     한국서부발전: public_enterprise
+- id: lgcareers
+  name: LG그룹
+  type: large
+  industry: 전자·가전·배터리·디스플레이·로봇
+  url: https://careers.lg.com/
+  method: lgcareers
+  api: true
+  javascript: true
+  enabled: true
+  terms_reviewed: true
+  policy_url: https://careers.lg.com/robots.txt
+  policy_note: 2026-09-16 LG Careers robots Allow / 확인. 공개 목록·상세 API의 채용공고 정보만 수집하며 지원자·로그인 정보는 수집하지 않음.
+  allowed_hosts:
+  - careers.lg.com
+  - api.careers.lg.com
+  list_api: https://api.careers.lg.com/rmk/job/retrieveJobNoticesList
+  detail_api: https://api.careers.lg.com/rmk/job/retrieveJobNoticesDetail
+  interval_seconds: 2
+  selectors: {}
+  last_success: null
 - id: company-2
   name: 현대자동차
   type: large
@@ -170,34 +190,35 @@ sources:
   note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
 - id: company-10
   name: LG전자
-  type: unknown
+  type: large
   industry: 전자·가전
-  url: https://www.lge-recruit.com/
-  method: generic_html
-  api: false
-  javascript: null
+  url: https://careers.lg.com/
+  method: lgcareers
+  api: true
+  javascript: true
   enabled: false
   terms_reviewed: false
   allowed_hosts:
-  - www.lge-recruit.com
+  - careers.lg.com
+  - api.careers.lg.com
   selectors: {}
   last_success: null
-  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+  note: lgcareers 통합 출처에서 수집하므로 개별 중복 실행은 비활성.
 - id: company-11
   name: 포스코
-  type: unknown
+  type: large
   industry: 철강·소재
-  url: https://www.poscorecruit.com/
+  url: https://recruit.posco.com/
   method: generic_html
   api: false
   javascript: null
   enabled: false
-  terms_reviewed: false
+  terms_reviewed: true
   allowed_hosts:
-  - www.poscorecruit.com
+  - recruit.posco.com
   selectors: {}
   last_success: null
-  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+  note: 2026-09-15 공식 robots.txt가 User-agent * 전체 경로를 금지하여 자동 수집 비활성. 우회하지 않음.
 - id: company-12
   name: 포스코이앤씨
   type: unknown
@@ -230,19 +251,19 @@ sources:
   note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
 - id: company-14
   name: 삼성전자
-  type: unknown
+  type: large
   industry: 반도체·장비
   url: https://www.samsungcareers.com/
   method: generic_html
   api: false
-  javascript: null
+  javascript: true
   enabled: false
   terms_reviewed: false
   allowed_hosts:
   - www.samsungcareers.com
   selectors: {}
   last_success: null
-  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+  note: 2026-09-15 공식 list.data/detail.data 방식 확인. 당일 모집 종료 후 목록 0건이며 robots.txt가 정상 정책 문서 대신 오류 JSON을 반환해 비활성.
 - id: company-15
   name: 삼성디스플레이
   type: unknown

@@ -5,6 +5,8 @@ from urllib.parse import urlsplit, urljoin
 from urllib.robotparser import RobotFileParser
 from datetime import datetime
 import requests
+import json
+import hashlib
 from core.models import now_iso, KST
 
 class SourceError(RuntimeError):
@@ -17,7 +19,7 @@ class HttpClient:
         self.interval, self.last, self.robots = interval, {}, {}
         self.session=requests.Session()
         self.session.headers['User-Agent']='CareerCollector/1.0 (+public recruitment personal-use; '+os.getenv('COLLECTOR_CONTACT','contact not configured')+')'
-    def request(self, url, headers=None, robots=False):
+    def request(self, url, headers=None, robots=False, method='GET', json_body=None):
         for _ in range(5):
             host=urlsplit(url).hostname
             if urlsplit(url).scheme!='https' or host not in self.hosts:
@@ -28,7 +30,7 @@ class HttpClient:
             self.last[host]=time.monotonic()
             for attempt in range(3):
                 try:
-                    r=self.session.get(url,headers=headers or {},timeout=(15,45),allow_redirects=False,stream=True)
+                    r=self.session.request(method,url,headers=headers or {},json=json_body,timeout=(15,45),allow_redirects=False,stream=True)
                 except (requests.ConnectionError,requests.Timeout) as e:
                     if attempt==2:raise SourceError(type(e).__name__) from None
                     time.sleep(2**attempt)
@@ -63,7 +65,7 @@ class HttpClient:
             parser=RobotFileParser()
             if r.status_code in (404,410):
                 parser.parse(['User-agent: *','Allow: /'])
-            elif r.status_code==200 and '<html' not in r.text.lower():
+            elif r.status_code==200 and '<html' not in r.text.lower() and re.search(r'(?im)^\s*user-agent\s*:',r.text):
                 parser.parse(r.text.splitlines())
             else:
                 raise SourceError('robots.txt 확인 실패: '+str(r.status_code))
@@ -92,6 +94,20 @@ class HttpClient:
         self.store.db.execute('INSERT INTO pages VALUES (?,?,?,?,?) ON CONFLICT(url) DO UPDATE SET etag=excluded.etag,modified=excluded.modified,body=excluded.body,checked_at=excluded.checked_at',(url,r.headers.get('ETag'),r.headers.get('Last-Modified'),body,now_iso()))
         self.store.db.commit()
         return body,not cached or body!=cached['body']
+    def post_json(self,url,payload):
+        encoded=json.dumps(payload,ensure_ascii=False,sort_keys=True,separators=(',',':'))
+        key='POST '+url+' '+hashlib.sha256(encoded.encode()).hexdigest()
+        cached=self.store.db.execute('SELECT * FROM pages WHERE url=?',(key,)).fetchone()
+        r=self.request(url,method='POST',json_body=payload)
+        if r.status_code!=200:
+            raise SourceError('HTTP '+str(r.status_code))
+        try:data=r.json()
+        except requests.JSONDecodeError:
+            raise SourceError('JSON 응답 형식 오류') from None
+        body=json.dumps(data,ensure_ascii=False,sort_keys=True)
+        self.store.db.execute('INSERT INTO pages VALUES (?,?,?,?,?) ON CONFLICT(url) DO UPDATE SET body=excluded.body,checked_at=excluded.checked_at',(key,None,None,body,now_iso()))
+        self.store.db.commit()
+        return data,not cached or body!=cached['body']
 
 def date_value(value, end=False):
     m=re.search(r'(20\d{2})[.\-/](\d{1,2})[.\-/](\d{1,2})(?:\s+(\d{1,2}):(\d{2}))?',str(value))

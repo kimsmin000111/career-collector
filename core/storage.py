@@ -24,7 +24,7 @@ class Storage:
         existing = self.db.execute('SELECT record FROM jobs WHERE id=?', (job.id,)).fetchone()
         if not existing:
             for old in self.jobs():
-                if old.company == job.company and canonical_url(old.official_url) == job.official_url and (old.role == job.role or old.source_id == job.source_id):
+                if old.company == job.company and canonical_url(old.official_url) == job.official_url and old.role == job.role:
                     existing = {'record': json.dumps(old.record())}
                     job.id = old.id
                     break

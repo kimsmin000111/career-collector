@@ -14,9 +14,10 @@ from collectors.generic_html import GenericHTML
 from collectors.public_jobs import PublicAPI
 from collectors.company_specific.mobis import Mobis
 from collectors.company_specific.jobalio import JobAlio
+from collectors.company_specific.lgcareers import LGCareers
 
 ROOT=Path(__file__).resolve().parent
-ADAPTERS={'generic_html':GenericHTML,'public_api':PublicAPI,'mobis':Mobis,'jobalio':JobAlio}
+ADAPTERS={'generic_html':GenericHTML,'public_api':PublicAPI,'mobis':Mobis,'jobalio':JobAlio,'lgcareers':LGCareers}
 
 def main():
     parser=argparse.ArgumentParser()

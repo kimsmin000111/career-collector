@@ -9,6 +9,7 @@ from core.filters import classify
 from core.storage import Storage
 from core.export import export_feed
 from collectors.base import date_value
+from collectors.company_specific.lgcareers import LGCareers
 CFG=yaml.safe_load((Path(__file__).resolve().parents[1]/'config/keywords.yaml').read_text(encoding='utf-8'))
 
 def job(**kw):
@@ -57,5 +58,19 @@ class DurableStorage(unittest.TestCase):
             self.assertFalse(s.jobs()[0].active);self.assertEqual(len(s.jobs()),1)
             path=Path(t)/'jobs.json';self.assertTrue(export_feed(s,path,True));before=path.read_bytes()
             self.assertFalse(export_feed(s,path,False));self.assertEqual(path.read_bytes(),before);s.close()
+
+class LGCareersParsing(unittest.TestCase):
+    def test_splits_one_notice_into_sector_jobs(self):
+        class Http:
+            def post_json(self,url,payload):
+                if 'List' in url:
+                    return {'status':'S','data':{'listCount':1,'jobNoticeList':[{'jobNoticeId':7,'noticeStatus':'POSTING','careerTypeName':'신입','companyName':'LG시험','jobNoticeName':'신입채용'}]}},True
+                return {'status':'S','data':{'jobNoticesDetail':{'jobNoticesDetail':{'jobNoticeId':7,'jobNoticeName':'신입채용','companyName':'LG시험','careerTypeName':'신입','recStartDate':'2026.09.01 09:00','recEndDate':'2099.09.30 17:00','qualForAppInfo':'기졸업자 또는 졸업예정자','workLocation':'서울'},'recList':[{'recSectorId':1,'orgName':'생산','jobGroupName':'기구설계','detailContext':'제품 구조 설계','mainTask':'구조해석','majorCodeName':'기계공학','requiredItem':'학사','preferredItem':'기사 우대','locationName':'창원'},{'recSectorId':2,'orgName':'생산','jobGroupName':'자동화','detailContext':'설비 자동화','mainTask':'시운전','majorCodeName':'기계공학','requiredItem':'학사','preferredItem':'','locationName':'평택'}]}}},True
+        source={'id':'lgcareers','name':'LG그룹','industry':'전자·가전','list_api':'https://api.example/List','detail_api':'https://api.example/Detail'}
+        jobs=list(LGCareers(source,Http()).collect())
+        self.assertEqual(len(jobs),2)
+        self.assertNotEqual(jobs[0].official_url,jobs[1].official_url)
+        self.assertEqual(jobs[0].role,'생산 · 기구설계')
+        self.assertEqual(jobs[0].deadline,'2099-09-30T17:00:00+09:00')
 
 if __name__=='__main__':unittest.main()
