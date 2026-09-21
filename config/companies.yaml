@@ -133,6 +133,9 @@ sources:
   detail_api: https://hwadm.hanwhain.com/new-backend/portal/api/rcRecruit/get-rcrt
   allow_invalid_robots: true
   interval_seconds: 1
+  connect_timeout: 8
+  read_timeout: 20
+  request_retries: 2
   max_pages: 5
   selectors: {}
   last_success: null
