@@ -1,18 +1,18 @@
 {
-  "checkedAt": "2026-09-21T12:53:08+09:00",
+  "checkedAt": "2026-09-21T16:54:10+09:00",
   "mode": "daily",
   "attempted": 5,
-  "succeeded": 4,
+  "succeeded": 5,
   "run": {
-    "startedAt": "2026-09-21T12:24:11+09:00",
-    "finishedAt": "2026-09-21T12:53:08+09:00",
-    "durationSeconds": 1736.4,
-    "status": "partial",
-    "jobsDiscovered": 551,
-    "jobsCreated": 75,
-    "jobsUpdated": 476,
-    "jobsClosed": 0,
-    "sourceFailures": 1,
+    "startedAt": "2026-09-21T16:51:37+09:00",
+    "finishedAt": "2026-09-21T16:54:10+09:00",
+    "durationSeconds": 153.5,
+    "status": "ok",
+    "jobsDiscovered": 354,
+    "jobsCreated": 6,
+    "jobsUpdated": 169,
+    "jobsClosed": 47,
+    "sourceFailures": 0,
     "companiesObserved": 133
   },
   "coverage": {
@@ -25,25 +25,25 @@
       "id": "mobis",
       "status": "ok",
       "records": 36,
-      "previousRecords": 0,
+      "previousRecords": 36,
       "consecutiveFailures": 0,
       "durationSeconds": 74.5
     },
     {
       "id": "jobalio",
       "status": "ok",
-      "records": 325,
-      "previousRecords": 0,
+      "records": 173,
+      "previousRecords": 325,
       "consecutiveFailures": 0,
-      "durationSeconds": 435.0
+      "durationSeconds": 19.0
     },
     {
       "id": "lgcareers",
       "status": "ok",
-      "records": 90,
-      "previousRecords": 0,
+      "records": 92,
+      "previousRecords": 90,
       "consecutiveFailures": 0,
-      "durationSeconds": 36.3
+      "durationSeconds": 40.3
     },
     {
       "id": "samsung",
@@ -51,26 +51,24 @@
       "records": 0,
       "previousRecords": 0,
       "consecutiveFailures": 0,
-      "durationSeconds": 2.3
+      "durationSeconds": 2.2
     },
     {
       "id": "hanwha",
-      "status": "partial",
-      "records": 100,
-      "reason": "네트워크 실패로 최근 정상 응답 24건 사용",
-      "errorType": "STALE_CACHE_FALLBACK",
+      "status": "ok",
+      "records": 53,
       "previousRecords": 0,
-      "consecutiveFailures": 1,
-      "durationSeconds": 1188.2
+      "consecutiveFailures": 0,
+      "durationSeconds": 17.4
     }
   ],
   "metrics": {
-    "신규 공고 수": 75,
-    "변경 공고 수": 476,
+    "신규 공고 수": 6,
+    "변경 공고 수": 216,
     "신규 지원 가능 공고 수": 0,
-    "확인 필요 공고 수": 140,
-    "7일 이내 마감 공고 수": 67,
-    "3일 이내 마감 공고 수": 55,
+    "확인 필요 공고 수": 139,
+    "7일 이내 마감 공고 수": 51,
+    "3일 이내 마감 공고 수": 31,
     "오늘 사이트 업데이트 여부": true
   }
 }
