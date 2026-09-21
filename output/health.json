@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-09-21T17:16:10+09:00",
+  "checkedAt": "2026-09-21T17:20:40+09:00",
   "mode": "daily",
   "attempted": 6,
   "succeeded": 6,
   "run": {
-    "startedAt": "2026-09-21T17:13:37+09:00",
-    "finishedAt": "2026-09-21T17:16:10+09:00",
-    "durationSeconds": 153.4,
+    "startedAt": "2026-09-21T17:18:05+09:00",
+    "finishedAt": "2026-09-21T17:20:40+09:00",
+    "durationSeconds": 154.5,
     "status": "ok",
     "jobsDiscovered": 355,
     "jobsCreated": 1,
@@ -35,7 +35,7 @@
       "records": 177,
       "previousRecords": 177,
       "consecutiveFailures": 0,
-      "durationSeconds": 17.8
+      "durationSeconds": 19.1
     },
     {
       "id": "lgcareers",
@@ -59,15 +59,15 @@
       "records": 53,
       "previousRecords": 53,
       "consecutiveFailures": 0,
-      "durationSeconds": 17.5
+      "durationSeconds": 17.4
     },
     {
       "id": "doosan",
       "status": "ok",
       "records": 1,
-      "previousRecords": 0,
+      "previousRecords": 1,
       "consecutiveFailures": 0,
-      "durationSeconds": 2.9
+      "durationSeconds": 2.4
     }
   ],
   "metrics": {
