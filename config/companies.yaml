@@ -5,7 +5,7 @@ sources:
   industry: 로봇·자동화·모빌리티
   url: https://careers.mobis.com/jobs
   method: mobis
-  api: false
+  api: true
   javascript: false
   enabled: true
   terms_reviewed: true
@@ -20,21 +20,26 @@ sources:
   type: public_institution
   industry: 공공기관 기술직
   url: https://job.alio.go.kr/recruit.do
+  open_data_url: https://opendata.alio.go.kr/new/odaApiMng/recrutInquiryAjaxList.do
   method: jobalio
   api: false
   javascript: false
   enabled: true
   terms_reviewed: true
   policy_url: https://job.alio.go.kr/right.do
+  policy_note: 2026-09-21 재정경제부 ALIO 공개 채용정보 JSON 목록 사용. opendata.alio.go.kr robots.txt가 SPA HTML을 반환하므로 유효한 Disallow가 없는 경우에만 출처별 예외 적용.
+  allow_invalid_robots: true
   allowed_hosts:
   - job.alio.go.kr
+  - opendata.alio.go.kr
   max_pages: 10
   weekly_max_pages: 80
   lookback_days: 365
   interval_seconds: 1
-  connect_timeout: 30
-  read_timeout: 90
-  request_retries: 5
+  connect_timeout: 15
+  read_timeout: 45
+  request_retries: 3
+  page_size: 100
   empty_anomaly_threshold: 5
   selectors: {}
   last_success: null

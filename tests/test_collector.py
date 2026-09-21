@@ -105,28 +105,26 @@ class LGCareersParsing(unittest.TestCase):
         self.assertEqual(jobs[0].deadline,'2099-09-30T17:00:00+09:00')
 
 class JobAlioCollection(unittest.TestCase):
-    def test_uses_active_relevant_ncs_search_and_finds_later_page(self):
-        class Store:
-            def jobs(self):return []
+    def test_uses_official_open_data_and_deduplicates_ncs_results(self):
         class Http:
-            store=Store()
             forms=[]
             def post_form(self,url,payload):
                 self.forms.append(payload)
-                page=dict(payload)['pageNo']
-                idx='111' if page=='1' else '304569'
-                next_page='<a href="javascript:goPage(2)">2</a>' if page=='1' else ''
-                return f'<table><tr><td><input name="idxs" value="{idx}"></td></tr></table>{next_page}',True
-            def get(self,url):
-                idx=url.rsplit('=',1)[-1]
-                return f'<h2>한국교통안전공단</h2><p>공고 {idx}</p><table><tr><th>채용구분</th><td>신입</td></tr><tr><th>채용기간</th><td>2026.09.01 ~ 2099.09.22</td></tr></table><h4>응시자격</h4><div>자동차정비기사</div>',True
-        http=Http();source={'id':'jobalio','url':'https://job.alio.go.kr/recruit.do','max_pages':5,'institution_types':{}}
+                item={'recrutPblntSn':304569,'instNm':'한국교통안전공단','recrutPbancTtl':'부산본부 기간제근로자 채용',
+                      'recrutSeNm':'신입','aplyQlfcCn':'자동차정비기사','prefCn':'한국사 우대',
+                      'acbgCondNmLst':'학력무관','workRgnNmLst':'부산','hireTypeNmLst':'청년인턴(체험형)',
+                      'ncsCdNmLst':'기계','pbancBgngYmd':'20260907','pbancEndYmd':'20990922'}
+                return json.dumps({'data':{'result':[item],'resultCode':200,'totalCount':1}}),True
+        http=Http();source={'id':'jobalio','name':'JOB-ALIO','open_data_url':'https://opendata.alio.go.kr/list','max_pages':5,'page_size':100,'institution_types':{}}
         jobs=list(JobAlio(source,http).collect())
-        self.assertTrue(any('304569' in item.official_url for item in jobs))
+        self.assertEqual(len(jobs),1)
+        self.assertIn('304569',jobs[0].official_url)
+        self.assertEqual(jobs[0].location,'부산')
+        self.assertEqual(jobs[0].deadline,'2099-09-22T23:59:59+09:00')
         first=http.forms[0]
-        self.assertIn(('ing','2'),first)
-        self.assertIn(('pageSet','50'),first)
-        self.assertIn(('detail_code','R600015'),first)
+        self.assertIn(('ongoingYn','Y'),first)
+        self.assertIn(('numOfRows','100'),first)
+        self.assertIn(('ncsCdLst','R600009'),first)
 
 class HanwhaCollection(unittest.TestCase):
     def test_splits_new_hire_notice_into_unit_roles(self):

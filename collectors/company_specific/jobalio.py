@@ -1,45 +1,58 @@
 import re
-from datetime import datetime, timedelta
-from urllib.parse import urljoin
+import json
+from datetime import datetime
 from bs4 import BeautifulSoup
 from collectors.base import Collector, SourceError, date_value
-from core.models import Job, now_iso, KST
+from core.models import Job, KST
 
 class JobAlio(Collector):
     RELEVANT_NCS=('R600009','R600014','R600015','R600016','R600017','R600019','R600023','R600025')
 
     def collect(self):
-        s=self.source;seen=set();urls=set();complete=False
-        today=datetime.now(KST).date()
-        since=today-timedelta(days=s.get('lookback_days',365))
-        for page in range(1,s.get('max_pages',80)+1):
-            payload=[
-                ('pageNo',str(page)),('pageSet','50'),('s_date',since.isoformat()),
-                ('e_date',today.isoformat()),('ing','2'),('order','REG_DATE'),('sort','DESC')
-            ]+[('detail_code',code) for code in self.RELEVANT_NCS]
-            body,_=self.http.post_form(s['url'],payload)
-            soup=BeautifulSoup(body,'html.parser')
-            current={urljoin(s['url'],'/recruitview.do?idx='+x['value']) for x in soup.select('input[name="idxs"][value]') if x['value'].isdigit()}
-            if not current:
-                if page==1:raise SourceError('JOB-ALIO 목록 미검출')
-                complete=True;break
-            if current <= seen:raise SourceError('JOB-ALIO 페이지 반복; 페이지 이동 확인 필요')
-            seen.update(current)
-            urls.update(current)
-            pages=[int(v) for v in re.findall(r'goPage\((\d+)\)',str(soup))]
-            if not pages or page>=max(pages):
-                complete=True;break
-        # Recheck known open jobs even when their registration is outside the lookback.
-        for old in self.http.store.jobs():
-            if old.source_id==s['id'] and (old.active or old.deadline and datetime.fromisoformat(old.deadline).date()>=since):
-                urls.add(old.source_url)
-        for url in sorted(urls):
-            body,changed=self.http.get(url)
-            old=next((j for j in self.http.store.jobs() if j.source_url==url),None)
-            if old and not changed:
-                old.last_checked=now_iso();yield old;continue
-            yield self.parse(body,url)
-        if not complete:raise SourceError('JOB-ALIO 관련 직군 진행 공고 페이지 상한 도달; 일부 공고 누락 가능')
+        """Use the Ministry's public ALIO JSON list instead of scraping every detail page."""
+        s=self.source;records={}
+        page_size=s.get('page_size',100)
+        for ncs in self.RELEVANT_NCS:
+            for page in range(1,s.get('max_pages',10)+1):
+                payload=[('pageNo',str(page)),('numOfRows',str(page_size)),('ncsCdLst',ncs),('ongoingYn','Y')]
+                response,_=self.http.post_form(s['open_data_url'],payload)
+                try:data=json.loads(response).get('data',{})
+                except (ValueError,TypeError):raise SourceError('ALIO 공개 목록 JSON 형식 오류','PARSER_ERROR') from None
+                items=data.get('result')
+                if data.get('resultCode')!=200 or not isinstance(items,list):
+                    raise SourceError('ALIO 공개 목록 구조 변경','PAGE_STRUCTURE_CHANGED')
+                for item in items:
+                    external_id=str(item.get('recrutPblntSn') or '')
+                    if external_id:records[external_id]=item
+                total=int(data.get('totalCount') or 0)
+                if page*page_size>=total:break
+            else:raise SourceError('ALIO 공개 목록 페이지 상한 도달; 일부 공고 누락 가능')
+        if not records:raise SourceError('ALIO 공개 목록 미검출','SOURCE_EMPTY_ANOMALY')
+        for external_id,item in sorted(records.items(),reverse=True):
+            yield self.from_open_data(item,external_id)
+
+    def from_open_data(self,item,external_id):
+        s=self.source
+        exact_url=f"https://job.alio.go.kr/recruitview.do?idx={external_id}"
+        def compact_date(value,end=False):
+            value=str(value or '')
+            if not re.fullmatch(r'\d{8}',value):return ''
+            point=datetime.strptime(value,'%Y%m%d').replace(
+                hour=23 if end else 0,minute=59 if end else 0,second=59 if end else 0,tzinfo=KST)
+            return point.isoformat()
+        requirements='\n'.join(filter(None,[item.get('aplyQlfcCn'),item.get('disqlfcRsn')]))
+        duties='\n'.join(filter(None,[item.get('ncsCdNmLst'),item.get('scrnprcdrMthdExpln')]))
+        return Job(
+            company=item.get('instNm') or s['name'],title=item.get('recrutPbancTtl',''),
+            role=item.get('recrutPbancTtl',''),official_url=exact_url,source_url=exact_url,
+            source_label='ALIO 공식 공개 채용정보',source_id=s['id'],
+            company_type=s.get('institution_types',{}).get(item.get('instNm'),'public_institution'),
+            external_id=external_id,industry='공공기관·기계 기술직',
+            recruitment=item.get('recrutSeNm',''),duties=duties,requirements=requirements,
+            preferences='\n'.join(filter(None,[item.get('prefCondCn'),item.get('prefCn')])),
+            education=item.get('acbgCondNmLst',''),location=item.get('workRgnNmLst',''),
+            employment=item.get('hireTypeNmLst',''),start=compact_date(item.get('pbancBgngYmd')),
+            deadline=compact_date(item.get('pbancEndYmd'),True),detail_complete=bool(requirements),mixed_roles=True)
 
     def parse(self,body,url):
         s=self.source
