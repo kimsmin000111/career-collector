@@ -10,6 +10,7 @@ from core.filters import classify
 from core.storage import Storage
 from core.export import export_feed
 from collectors.base import date_value
+from core.dedupe import canonical_url
 from collectors.company_specific.lgcareers import LGCareers
 from collectors.company_specific.jobalio import JobAlio
 from collectors.company_specific.hanwha import Hanwha
@@ -47,6 +48,11 @@ class Rules(unittest.TestCase):
         self.assertEqual(classify(job(title='광학',role='광학',majors='이공계',duties='제품 시험과 품질 분석을 담당합니다'),CFG).mechanical_status,'확인 필요')
     def test_deadline_timezone(self):
         self.assertEqual(date_value('2026.09.15 15:00',True),'2026-09-15T15:00:00+09:00')
+    def test_canonical_url_removes_tracking_but_keeps_job_identity(self):
+        url=canonical_url('https://example.com/hr/?utm_source=x&no=23046&rtSeq=77')
+        self.assertNotIn('utm_source',url)
+        self.assertIn('no=23046',url)
+        self.assertIn('rtSeq=77',url)
 
 class DurableStorage(unittest.TestCase):
     def test_identity_extensions_role_changes_and_distinct_postings(self):
@@ -70,6 +76,19 @@ class DurableStorage(unittest.TestCase):
             self.assertFalse(s.jobs()[0].active);self.assertEqual(len(s.jobs()),1)
             path=Path(t)/'jobs.json';self.assertTrue(export_feed(s,path,True));before=path.read_bytes()
             self.assertFalse(export_feed(s,path,False));self.assertEqual(path.read_bytes(),before);s.close()
+    def test_source_health_tracks_counts_failures_and_recovery(self):
+        with tempfile.TemporaryDirectory() as t:
+            s=Storage(Path(t)/'jobs.db')
+            first=s.source_result('source','ok',count=12)
+            self.assertEqual(first['last_count'],12)
+            failed=s.source_result('source','error','timeout',0,'TIMEOUT')
+            self.assertEqual(failed['last_count'],12)
+            self.assertEqual(failed['consecutive_failures'],1)
+            self.assertEqual(failed['error_kind'],'TIMEOUT')
+            recovered=s.source_result('source','ok',count=10)
+            self.assertEqual(recovered['previous_count'],12)
+            self.assertEqual(recovered['consecutive_failures'],0)
+            s.close()
 
 class LGCareersParsing(unittest.TestCase):
     def test_splits_one_notice_into_sector_jobs(self):

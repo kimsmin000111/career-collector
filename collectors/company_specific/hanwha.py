@@ -65,6 +65,7 @@ class Hanwha(Collector):
                     company=item.get('sdNm') or summary.get('sdNm') or s['name'],
                     title=item.get('rtNm') or summary.get('rtNm',''),role=role,
                     official_url=url,source_url=url,source_id=s['id'],company_type='large',
+                    external_id=f'{rt_seq}:{unit_id}',
                     industry=s['industry'],recruitment=recruitment,
                     duties=duties,requirements=requirements,
                     location=text(unit.get('ruWorkpl')),employment=employment,

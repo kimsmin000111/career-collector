@@ -6,6 +6,7 @@ def site_job(j):
     return dict(id=j.id,company=j.company,role=j.role or j.title,category=j.category,sector=j.industry,
         location=j.location or '원문 확인',level=j.recruitment or '확인 필요',size=TYPES.get(j.company_type,'규모 확인 필요'),
         deadline=j.deadline,start=j.start,sourceUrl=j.official_url,sourceLabel=j.source_label,
+        sourceType=j.source_type,dataConfidence=j.confidence,externalId=j.external_id,
         verification='자동 수집 · 원문 확인 권장',match=j.fit,matchReason=' / '.join(j.reasons),
         requirements=j.requirements or '지원자격 상세 확인 필요',caution='규칙 기반 분류이며 개인별 지원자격 충족을 보증하지 않습니다.'+( ' 마감 시각이 원문에 없으면 해당일 종료 시각으로 표시합니다.' if j.deadline.endswith('23:59:59+09:00') else ''),
         tags=[j.entry_status,j.fit],checkedAt=j.last_checked,defaultStatus='검토전',

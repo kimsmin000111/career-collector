@@ -15,7 +15,15 @@ class Storage:
           CREATE TABLE IF NOT EXISTS sources(id TEXT PRIMARY KEY, checked_at TEXT, success_at TEXT, status TEXT, error TEXT);
           CREATE TABLE IF NOT EXISTS pages(url TEXT PRIMARY KEY, etag TEXT, modified TEXT, body TEXT NOT NULL, checked_at TEXT);
           CREATE TABLE IF NOT EXISTS candidates(name TEXT PRIMARY KEY, record TEXT NOT NULL);
+          CREATE TABLE IF NOT EXISTS runs(id TEXT PRIMARY KEY, started_at TEXT, finished_at TEXT, mode TEXT, status TEXT, record TEXT);
         ''')
+        columns={r['name'] for r in self.db.execute('PRAGMA table_info(sources)')}
+        for name,definition in (
+            ('last_count','INTEGER NOT NULL DEFAULT 0'),('previous_count','INTEGER NOT NULL DEFAULT 0'),
+            ('consecutive_failures','INTEGER NOT NULL DEFAULT 0'),('error_kind',"TEXT NOT NULL DEFAULT ''")
+        ):
+            if name not in columns:self.db.execute(f'ALTER TABLE sources ADD COLUMN {name} {definition}')
+        self.db.commit()
     def jobs(self):
         return [Job(**json.loads(r['record'])) for r in self.db.execute('SELECT record FROM jobs ORDER BY id')]
     def upsert(self, job):
@@ -50,10 +58,30 @@ class Storage:
                 count+=1
         self.db.commit()
         return count
-    def source_result(self, source, status, error=''):
+    def source_state(self, source):
+        row=self.db.execute('SELECT * FROM sources WHERE id=?',(source,)).fetchone()
+        return dict(row) if row else {'last_count':0,'previous_count':0,'consecutive_failures':0,'status':'never'}
+    def source_result(self, source, status, error='', count=0, error_kind=''):
         timestamp=now_iso()
         success=timestamp if status=='ok' else None
-        self.db.execute('INSERT INTO sources VALUES (?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET checked_at=excluded.checked_at, success_at=COALESCE(excluded.success_at,sources.success_at),status=excluded.status,error=excluded.error', (source,timestamp,success,status,error))
+        old=self.source_state(source)
+        previous=old.get('last_count',0) or 0
+        last_count=count if status=='ok' else previous
+        failures=0 if status=='ok' else (old.get('consecutive_failures',0) or 0)+1
+        self.db.execute('''INSERT INTO sources(id,checked_at,success_at,status,error,last_count,previous_count,consecutive_failures,error_kind)
+          VALUES (?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET checked_at=excluded.checked_at,
+          success_at=COALESCE(excluded.success_at,sources.success_at),status=excluded.status,error=excluded.error,
+          last_count=excluded.last_count,previous_count=excluded.previous_count,
+          consecutive_failures=excluded.consecutive_failures,error_kind=excluded.error_kind''',
+          (source,timestamp,success,status,error,last_count,previous,failures,error_kind))
+        self.db.commit()
+        return self.source_state(source)
+    def begin_run(self, mode):
+        run_id=now_iso()
+        self.db.execute('INSERT INTO runs(id,started_at,mode,status,record) VALUES (?,?,?,?,?)',(run_id,run_id,mode,'running','{}'))
+        self.db.commit();return run_id
+    def finish_run(self, run_id, status, record):
+        self.db.execute('UPDATE runs SET finished_at=?,status=?,record=? WHERE id=?',(now_iso(),status,json.dumps(record,ensure_ascii=False),run_id))
         self.db.commit()
     def close(self):
         self.db.close()

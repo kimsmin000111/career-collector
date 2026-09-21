@@ -2,6 +2,7 @@ import argparse
 import json
 import os
 import sys
+import time
 from pathlib import Path
 from datetime import datetime
 import yaml
@@ -21,6 +22,14 @@ from collectors.company_specific.samsung import Samsung
 ROOT=Path(__file__).resolve().parent
 ADAPTERS={'generic_html':GenericHTML,'public_api':PublicAPI,'mobis':Mobis,'jobalio':JobAlio,'lgcareers':LGCareers,'hanwha':Hanwha,'samsung':Samsung}
 
+def failure_kind(error):
+    if isinstance(error,SourceError) and error.code!='UNKNOWN':return error.code
+    message=str(error)
+    if '구조 변경' in message:return 'PAGE_STRUCTURE_CHANGED'
+    if '미검출' in message or '추출 실패' in message:return 'PARSER_ERROR'
+    if isinstance(error,(ValueError,KeyError,TypeError)):return 'VALIDATION_ERROR'
+    return 'UNKNOWN'
+
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--mode',choices=['daily','weekly'],default='daily')
@@ -38,7 +47,8 @@ def main():
         for r in store.db.execute("SELECT id,checked_at,status,error FROM sources WHERE status!='ok'"):
             print(json.dumps(dict(r),ensure_ascii=False))
         store.close();return 0
-    counts={'new':0,'changed':0};results=[];attempted=0;succeeded=0;new_ids=set()
+    started_at=now_iso();started_clock=time.monotonic();run_id=store.begin_run(args.mode)
+    counts={'new':0,'changed':0};results=[];attempted=0;succeeded=0;new_ids=set();discovered=0
     for original in registry['sources']:
         if args.source and original['id']!=args.source:continue
         s=dict(original)
@@ -51,7 +61,9 @@ def main():
         elif args.mode=='weekly':s['max_pages']=s.get('weekly_max_pages',s.get('max_pages',5))
         attempted+=1; n=0
         try:
-            client=HttpClient(store,s['allowed_hosts'],s.get('interval_seconds',2),s.get('allow_invalid_robots',False))
+            source_started=time.monotonic();previous=store.source_state(s['id'])
+            client=HttpClient(store,s['allowed_hosts'],s.get('interval_seconds',2),s.get('allow_invalid_robots',False),
+                s.get('connect_timeout',15),s.get('read_timeout',45),s.get('request_retries',3))
             for job in ADAPTERS[s['method']](s,client).collect():
                 job=classify(job,cfg)
                 change=store.upsert(job)
@@ -61,15 +73,25 @@ def main():
                 if args.mode=='weekly' and job.company!=s['name']:
                     store.db.execute('INSERT INTO candidates VALUES (?,?) ON CONFLICT(name) DO UPDATE SET record=excluded.record',(job.company,json.dumps({'name':job.company,'url':job.official_url,'type':job.company_type,'status':'기관별 채용 URL·정책 검토 필요'},ensure_ascii=False)))
                     store.db.commit()
-            store.source_result(s['id'],'ok');succeeded+=1
-            results.append({'id':s['id'],'status':'ok','records':n})
+            discovered+=n
+            if n==0 and (previous.get('last_count',0) or 0)>=s.get('empty_anomaly_threshold',5):
+                raise SourceError(f"이전 {previous['last_count']}건에서 0건으로 감소",'SOURCE_EMPTY_ANOMALY')
+            if client.degraded:
+                raise SourceError(f"네트워크 실패로 최근 정상 응답 {len(client.degraded)}건 사용",'STALE_CACHE_FALLBACK')
+            state=store.source_result(s['id'],'ok',count=n);succeeded+=1
+            results.append({'id':s['id'],'status':'ok','records':n,'previousRecords':previous.get('last_count',0) or 0,
+                'consecutiveFailures':state['consecutive_failures'],'durationSeconds':round(time.monotonic()-source_started,1)})
         except (SourceError,ValueError,KeyError,TypeError) as e:
             # Error messages contain no request URLs / API keys.
             message=str(e) if isinstance(e,SourceError) else type(e).__name__
-            store.source_result(s['id'],'partial' if n else 'error',message)
-            results.append({'id':s['id'],'status':'partial' if n else 'error','records':n,'reason':message})
+            kind=failure_kind(e)
+            status='partial' if n else 'error'
+            state=store.source_result(s['id'],status,message,n,kind)
+            results.append({'id':s['id'],'status':status,'records':n,'reason':message,'errorType':kind,
+                'previousRecords':previous.get('last_count',0) or 0,'consecutiveFailures':state['consecutive_failures'],
+                'durationSeconds':round(time.monotonic()-source_started,1)})
         print(json.dumps(results[-1],ensure_ascii=False),flush=True)
-    counts['changed']+=store.expire()
+    closed=store.expire();counts['changed']+=closed
     jobs=store.jobs();now=datetime.now(KST)
     eligible=[j for j in jobs if j.active and j.entry_status!='지원 어려움' and j.mechanical_status!='관련 없음']
     within=lambda n:sum(1 for j in eligible if j.deadline and 0 <= (datetime.fromisoformat(j.deadline).date()-now.date()).days <= n)
@@ -78,11 +100,25 @@ def main():
         '신규 지원 가능 공고 수':sum(1 for j in jobs if j.id in new_ids and j.entry_status=='지원 가능' and j.mechanical_status=='관련 있음'),
         '확인 필요 공고 수':sum(j.entry_status=='확인 필요' or j.mechanical_status=='확인 필요' for j in eligible),
         '7일 이내 마감 공고 수':within(7),'3일 이내 마감 공고 수':within(3),'오늘 사이트 업데이트 여부':updated}
-    health={'checkedAt':now_iso(),'mode':args.mode,'attempted':attempted,'succeeded':succeeded,
+    finished_at=now_iso();run_status='ok' if succeeded==attempted else 'partial' if succeeded else 'error'
+    run={'startedAt':started_at,'finishedAt':finished_at,'durationSeconds':round(time.monotonic()-started_clock,1),
+         'status':run_status,'jobsDiscovered':discovered,'jobsCreated':counts['new'],'jobsUpdated':counts['changed']-closed,
+         'jobsClosed':closed,'sourceFailures':sum(r['status']!='ok' for r in results),
+         'companiesObserved':len({j.company for j in jobs})}
+    health={'checkedAt':finished_at,'mode':args.mode,'attempted':attempted,'succeeded':succeeded,'run':run,
         'coverage':{'registered':len(registry['sources']),'enabled':sum(bool(x.get('enabled')) for x in registry['sources']),
                     'watchOnly':sum(not bool(x.get('enabled')) for x in registry['sources'])},
         'sources':results,'metrics':metrics}
     write_if_changed(ROOT/'output/health.json',health)
+    coverage=[]
+    for source in registry['sources']:
+        state=store.source_state(source['id'])
+        coverage.append({'id':source['id'],'name':source['name'],'officialUrl':source['url'],'method':source['method'],
+            'enabled':bool(source.get('enabled')),'termsReviewed':bool(source.get('terms_reviewed')),
+            'status':state.get('status','never'),'lastSuccess':state.get('success_at'),
+            'recentCount':state.get('last_count',0) or 0,'consecutiveFailures':state.get('consecutive_failures',0) or 0,
+            'errorType':state.get('error_kind',''),'lastError':state.get('error','')})
+    write_if_changed(ROOT/'output/coverage.json',{'checkedAt':finished_at,'sources':coverage})
     write_if_changed(ROOT/'logs'/f'{now.date()}-{args.mode}.json',metrics)
     if args.mode=='weekly':
         write_if_changed(ROOT/'output/source-candidates.json',[json.loads(r['record']) for r in store.db.execute('SELECT record FROM candidates')])
@@ -93,7 +129,7 @@ def main():
             for r in results:
                 if r['status'] in ('partial','error'):f.write(f"- {r['id']}: {r['status']} — {r.get('reason','')}\n")
     print(json.dumps(metrics,ensure_ascii=False))
-    store.close()
+    store.finish_run(run_id,run_status,health);store.close()
     # Preserve and publish healthy-source data when one official site is temporarily unavailable.
     # A run is failed only when there was nothing to check or every active source failed.
     return 2 if not attempted or not succeeded else 0

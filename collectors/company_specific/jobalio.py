@@ -62,6 +62,7 @@ class JobAlio(Collector):
         dates=[('20'+d if len(d)==8 else d) for d in dates]
         name=company.get_text(strip=True)
         return Job(company=name,title=title,role=title,official_url=url,source_url=url,source_label='JOB-ALIO 공식 공고',source_id=s['id'],company_type=s.get('institution_types',{}).get(name,'public_institution'),industry='공공기관·기계 기술직',recruitment=table.get('채용구분',''),
+            external_id=url.rsplit('=',1)[-1],
             duties=table.get('표준직무(NCS)',''),education=table.get('학력정보',''),location=table.get('근무지',''),employment=table.get('고용형태',''),
             requirements=sections.get('응시자격',''),preferences=sections.get('우대내용',''),
             start=date_value(dates[0]) if dates else '',deadline=date_value(dates[-1],True) if len(dates)>1 else '',

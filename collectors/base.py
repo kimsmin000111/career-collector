@@ -10,14 +10,19 @@ import hashlib
 from core.models import now_iso, KST
 
 class SourceError(RuntimeError):
-    pass
+    def __init__(self, message, code='UNKNOWN'):
+        super().__init__(message)
+        self.code=code
 
 class HttpClient:
     """No browser spoofing, login automation, proxy rotation or challenge bypass."""
-    def __init__(self, store, hosts, interval=2, allow_invalid_robots=False):
+    def __init__(self, store, hosts, interval=2, allow_invalid_robots=False, connect_timeout=15, read_timeout=45, request_retries=3):
         self.store, self.hosts = store, set(hosts)
         self.interval, self.last, self.robots = interval, {}, {}
         self.allow_invalid_robots = allow_invalid_robots
+        self.connect_timeout, self.read_timeout = connect_timeout, read_timeout
+        self.request_retries = request_retries
+        self.degraded=[]
         self.session=requests.Session()
         self.session.headers['User-Agent']='CareerCollector/1.0 (+public recruitment personal-use; '+os.getenv('COLLECTOR_CONTACT','contact not configured')+')'
     def request(self, url, headers=None, robots=False, method='GET', json_body=None, data_body=None):
@@ -29,16 +34,18 @@ class HttpClient:
                 self.check_robots(url)
             time.sleep(max(0,self.interval-(time.monotonic()-self.last.get(host,0))))
             self.last[host]=time.monotonic()
-            for attempt in range(3):
+            for attempt in range(self.request_retries):
                 try:
-                    r=self.session.request(method,url,headers=headers or {},json=json_body,data=data_body,timeout=(15,45),allow_redirects=False,stream=True)
+                    r=self.session.request(method,url,headers=headers or {},json=json_body,data=data_body,timeout=(self.connect_timeout,self.read_timeout),allow_redirects=False,stream=True)
                 except (requests.ConnectionError,requests.Timeout) as e:
-                    if attempt==2:raise SourceError(type(e).__name__) from None
+                    if attempt==self.request_retries-1:
+                        code='TIMEOUT' if isinstance(e,requests.Timeout) else 'NETWORK_ERROR'
+                        raise SourceError(type(e).__name__,code) from None
                     time.sleep(2**attempt)
                     continue
                 except requests.RequestException as e:
-                    raise SourceError(type(e).__name__) from None
-                if r.status_code in (429,500,502,503,504) and attempt<2:
+                    raise SourceError(type(e).__name__,'NETWORK_ERROR') from None
+                if r.status_code in (429,500,502,503,504) and attempt<self.request_retries-1:
                     retry=r.headers.get('Retry-After','')
                     r.close()
                     time.sleep(min(30,int(retry) if retry.isdigit() else 2**attempt))
@@ -53,12 +60,12 @@ class HttpClient:
                 body.extend(chunk)
                 if len(body)>5_000_000:
                     r.close()
-                    raise SourceError('응답 크기 제한 초과')
+                    raise SourceError('응답 크기 제한 초과','RESPONSE_TOO_LARGE')
             r._content=bytes(body)
             r._content_consumed=True
             r.close()
             return r
-        raise SourceError('리다이렉트 제한 초과')
+        raise SourceError('리다이렉트 제한 초과','REDIRECT_ERROR')
     def check_robots(self,url):
         host=urlsplit(url).hostname
         if host not in self.robots:
@@ -73,11 +80,11 @@ class HttpClient:
                 # This exception is opt-in per source and never overrides a valid Disallow.
                 parser.parse(['User-agent: *','Allow: /'])
             else:
-                raise SourceError('robots.txt 확인 실패: '+str(r.status_code))
+                raise SourceError('robots.txt 확인 실패: '+str(r.status_code),'ROBOTS_UNAVAILABLE')
             self.robots[host]=parser
         parser=self.robots[host]
         if not parser.can_fetch('CareerCollector',url):
-            raise SourceError('robots.txt 수집 금지')
+            raise SourceError('robots.txt 수집 금지','ROBOTS_DISALLOWED')
         self.interval=max(self.interval,parser.crawl_delay('CareerCollector') or parser.crawl_delay('*') or 0)
     def get(self,url):
         cached=self.store.db.execute('SELECT * FROM pages WHERE url=?',(url,)).fetchone()
@@ -85,17 +92,23 @@ class HttpClient:
         if cached:
             if cached['etag']:headers['If-None-Match']=cached['etag']
             if cached['modified']:headers['If-Modified-Since']=cached['modified']
-        r=self.request(url,headers)
+        try:r=self.request(url,headers)
+        except SourceError as e:
+            if cached:
+                self.degraded.append({'url':url,'reason':str(e),'code':e.code})
+                return cached['body'],False
+            raise
         if r.status_code==304 and cached:
             return cached['body'],False
         if r.status_code!=200:
-            raise SourceError('HTTP '+str(r.status_code))
+            code='HTTP_'+str(r.status_code) if r.status_code in (403,404,429) or r.status_code>=500 else 'HTTP_ERROR'
+            raise SourceError('HTTP '+str(r.status_code),code)
         # requests defaults text/html without charset to Latin-1; inspect bytes instead.
         encoding=r.encoding if r.encoding and r.encoding.lower()!='iso-8859-1' else 'utf-8'
         try:body=r.content.decode(encoding)
         except UnicodeDecodeError:body=r.content.decode('cp949',errors='replace')
         if re.search(r'captcha|verify you are human|access denied',body[:10000],re.I):
-            raise SourceError('접근 제한 응답; 우회하지 않음')
+            raise SourceError('접근 제한 응답; 우회하지 않음','ACCESS_CHALLENGE')
         self.store.db.execute('INSERT INTO pages VALUES (?,?,?,?,?) ON CONFLICT(url) DO UPDATE SET etag=excluded.etag,modified=excluded.modified,body=excluded.body,checked_at=excluded.checked_at',(url,r.headers.get('ETag'),r.headers.get('Last-Modified'),body,now_iso()))
         self.store.db.commit()
         return body,not cached or body!=cached['body']
@@ -103,12 +116,17 @@ class HttpClient:
         encoded=json.dumps(payload,ensure_ascii=False,sort_keys=True,separators=(',',':'))
         key='POST '+url+' '+hashlib.sha256(encoded.encode()).hexdigest()
         cached=self.store.db.execute('SELECT * FROM pages WHERE url=?',(key,)).fetchone()
-        r=self.request(url,method='POST',json_body=payload)
+        try:r=self.request(url,method='POST',json_body=payload)
+        except SourceError as e:
+            if cached:
+                self.degraded.append({'url':url,'reason':str(e),'code':e.code})
+                return json.loads(cached['body']),False
+            raise
         if r.status_code!=200:
-            raise SourceError('HTTP '+str(r.status_code))
+            raise SourceError('HTTP '+str(r.status_code),'HTTP_'+str(r.status_code))
         try:data=r.json()
         except requests.JSONDecodeError:
-            raise SourceError('JSON 응답 형식 오류') from None
+            raise SourceError('JSON 응답 형식 오류','PARSER_ERROR') from None
         body=json.dumps(data,ensure_ascii=False,sort_keys=True)
         self.store.db.execute('INSERT INTO pages VALUES (?,?,?,?,?) ON CONFLICT(url) DO UPDATE SET body=excluded.body,checked_at=excluded.checked_at',(key,None,None,body,now_iso()))
         self.store.db.commit()
@@ -118,9 +136,14 @@ class HttpClient:
         encoded='&'.join(f'{key}={value}' for key,value in payload)
         key='FORM '+url+' '+hashlib.sha256(encoded.encode()).hexdigest()
         cached=self.store.db.execute('SELECT * FROM pages WHERE url=?',(key,)).fetchone()
-        r=self.request(url,method='POST',data_body=payload)
+        try:r=self.request(url,method='POST',data_body=payload)
+        except SourceError as e:
+            if cached:
+                self.degraded.append({'url':url,'reason':str(e),'code':e.code})
+                return cached['body'],False
+            raise
         if r.status_code!=200:
-            raise SourceError('HTTP '+str(r.status_code))
+            raise SourceError('HTTP '+str(r.status_code),'HTTP_'+str(r.status_code))
         encoding=r.encoding if r.encoding and r.encoding.lower()!='iso-8859-1' else 'utf-8'
         try:body=r.content.decode(encoding)
         except UnicodeDecodeError:body=r.content.decode('cp949',errors='replace')

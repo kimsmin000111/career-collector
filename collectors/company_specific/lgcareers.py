@@ -53,6 +53,7 @@ class LGCareers(Collector):
                     company=parent.get('companyName') or summary.get('companyName') or self.source['name'],
                     title=parent.get('jobNoticeName') or summary.get('jobNoticeName',''),role=role,
                     official_url=url,source_url=url,source_id=self.source['id'],company_type='large',
+                    external_id=f'{notice_id}:{sector_id}',
                     industry=self.source['industry'],recruitment=recruitment,
                     duties='\n'.join(x for x in [text(sector.get('detailContext')),text(sector.get('mainTask'))] if x),
                     requirements=requirements,preferences=text(sector.get('preferredItem')),

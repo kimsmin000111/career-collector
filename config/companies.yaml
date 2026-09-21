@@ -31,6 +31,11 @@ sources:
   max_pages: 10
   weekly_max_pages: 80
   lookback_days: 365
+  interval_seconds: 1
+  connect_timeout: 30
+  read_timeout: 90
+  request_retries: 5
+  empty_anomaly_threshold: 5
   selectors: {}
   last_success: null
   institution_types:

@@ -67,6 +67,7 @@ class Samsung(Collector):
                         company=clean(parent.get('cmpNameKr')) or s['name'],
                         title=clean(parent.get('title')),role=role_name,
                         official_url=url,source_url=url,source_id=s['id'],company_type='large',
+                        external_id=f"{parent.get('seq') or seq}:{role.get('seq') or role_name}",
                         industry=s['industry'],recruitment=recruitment,
                         duties=duties,requirements=requirements,preferences='\n'.join(filter(None,[clean(role.get('favorKr')),clean(parent.get('etcKr'))])),
                         majors=majors,location=clean(role.get('workPlaceKr')),
