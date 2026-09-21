@@ -41,7 +41,8 @@ class JobAlio(Collector):
                 hour=23 if end else 0,minute=59 if end else 0,second=59 if end else 0,tzinfo=KST)
             return point.isoformat()
         requirements='\n'.join(filter(None,[item.get('aplyQlfcCn'),item.get('disqlfcRsn')]))
-        duties='\n'.join(filter(None,[item.get('ncsCdNmLst'),item.get('scrnprcdrMthdExpln')]))
+        ncs=item.get('ncsCdNmLst') or ''
+        duties='\n'.join(filter(None,[f'표준직무(NCS): {ncs}' if ncs else '',item.get('scrnprcdrMthdExpln')]))
         return Job(
             company=item.get('instNm') or s['name'],title=item.get('recrutPbancTtl',''),
             role=item.get('recrutPbancTtl',''),official_url=exact_url,source_url=exact_url,

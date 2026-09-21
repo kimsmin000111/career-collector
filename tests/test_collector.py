@@ -121,6 +121,7 @@ class JobAlioCollection(unittest.TestCase):
         self.assertIn('304569',jobs[0].official_url)
         self.assertEqual(jobs[0].location,'부산')
         self.assertEqual(jobs[0].deadline,'2099-09-22T23:59:59+09:00')
+        self.assertEqual(classify(jobs[0],CFG).mechanical_status,'관련 있음')
         first=http.forms[0]
         self.assertIn(('ongoingYn','Y'),first)
         self.assertIn(('numOfRows','100'),first)
