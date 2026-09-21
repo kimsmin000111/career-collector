@@ -18,9 +18,10 @@ from collectors.company_specific.jobalio import JobAlio
 from collectors.company_specific.lgcareers import LGCareers
 from collectors.company_specific.hanwha import Hanwha
 from collectors.company_specific.samsung import Samsung
+from collectors.company_specific.doosan import Doosan
 
 ROOT=Path(__file__).resolve().parent
-ADAPTERS={'generic_html':GenericHTML,'public_api':PublicAPI,'mobis':Mobis,'jobalio':JobAlio,'lgcareers':LGCareers,'hanwha':Hanwha,'samsung':Samsung}
+ADAPTERS={'generic_html':GenericHTML,'public_api':PublicAPI,'mobis':Mobis,'jobalio':JobAlio,'lgcareers':LGCareers,'hanwha':Hanwha,'samsung':Samsung,'doosan':Doosan}
 
 def failure_kind(error):
     if isinstance(error,SourceError) and error.code!='UNKNOWN':return error.code

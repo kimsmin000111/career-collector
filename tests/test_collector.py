@@ -15,6 +15,7 @@ from collectors.company_specific.lgcareers import LGCareers
 from collectors.company_specific.jobalio import JobAlio
 from collectors.company_specific.hanwha import Hanwha
 from collectors.company_specific.samsung import Samsung
+from collectors.company_specific.doosan import Doosan
 CFG=yaml.safe_load((Path(__file__).resolve().parents[1]/'config/keywords.yaml').read_text(encoding='utf-8'))
 
 def job(**kw):
@@ -166,5 +167,22 @@ class SamsungCollection(unittest.TestCase):
         self.assertEqual(jobs[0].recruitment,'신입')
         self.assertIn('기계 관련 전공',jobs[0].majors)
         self.assertEqual(jobs[0].deadline,'2099-09-15T17:00:00+09:00')
+
+class DoosanCollection(unittest.TestCase):
+    def test_discovers_current_new_hire_and_skips_career(self):
+        class Http:
+            def get(self,url):
+                if 'MENU_ID=' in url:
+                    return '<div class="content_area">기계 설계 생산기술 신입 지원자격 학사</div>',True
+                return '''<ul class="submenu-list3">
+                  <li><a onclick="goDetail('100','M1','C_REC_TYPE_01','C1');"><span class="f-blue">두산그룹 신입사원 채용</span><br>두산그룹<span>|</span>2026-09-01 ~ 2099-09-21<span>|</span>신입</a></li>
+                  <li><a onclick="goDetail('200','M2','C_REC_TYPE_02','C2');"><span class="f-blue">설비 경력 채용</span><br>두산에너빌리티<span>|</span>2026-09-01 ~ 2099-09-21<span>|</span>경력</a></li>
+                </ul>''',True
+        source={'id':'doosan','name':'두산그룹','industry':'중공업·조선','url':'https://career.doosan.com/m/sa/RecList.jsp','detail_base':'https://career.doosan.com/dsp/sa/RecList.jsp'}
+        jobs=list(Doosan(source,Http()).collect())
+        self.assertEqual(len(jobs),1)
+        self.assertEqual(jobs[0].external_id,'100')
+        self.assertEqual(jobs[0].recruitment,'신입')
+        self.assertEqual(classify(jobs[0],CFG).mechanical_status,'관련 있음')
 
 if __name__=='__main__':unittest.main()

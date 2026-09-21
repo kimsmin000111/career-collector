@@ -381,21 +381,29 @@ sources:
   selectors: {}
   last_success: null
   note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
-- id: company-20
+- id: doosan
   name: 두산그룹
-  type: unknown
+  type: large
   industry: 중공업·조선
   url: https://career.doosan.com/m/sa/RecList.jsp
-  method: generic_html
+  detail_base: https://career.doosan.com/dsp/sa/RecList.jsp
+  method: doosan
   api: false
-  javascript: null
-  enabled: false
-  terms_reviewed: false
+  javascript: false
+  enabled: true
+  terms_reviewed: true
+  policy_url: https://career.doosan.com/robots.txt
+  policy_note: 2026-09-21 공개 채용 목록·상세만 조회. robots.txt 경로가 오류 HTML을 반환하여 유효한 Disallow가 없는 경우에만 출처별 예외 적용.
+  allow_invalid_robots: true
   allowed_hosts:
   - career.doosan.com
+  interval_seconds: 1
+  connect_timeout: 10
+  read_timeout: 30
+  request_retries: 2
   selectors: {}
   last_success: null
-  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+  note: Career Doosan 공개 공식 채용 목록과 상세 페이지에서 신입·인턴 공고 수집.
 - id: company-21
   name: HD건설기계
   type: unknown
