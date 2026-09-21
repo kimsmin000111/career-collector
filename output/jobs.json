@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-20T10:23:43+09:00",
+  "checkedAt": "2026-09-21T09:16:52+09:00",
   "checkSummary": "Python 공식 채용정보 수집 결과. 지원자격·마감 시각은 원문에서 최종 확인하세요.",
   "jobs": [
     {
@@ -25,7 +25,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:38+09:00",
+      "checkedAt": "2026-09-21T09:11:41+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -62,7 +62,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:19:01+09:00",
+      "checkedAt": "2026-09-21T09:12:04+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -99,7 +99,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:06+09:00",
+      "checkedAt": "2026-09-21T09:09:17+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -136,7 +136,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:01+09:00",
+      "checkedAt": "2026-09-21T09:08:14+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "확인 필요",
@@ -173,7 +173,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:39+09:00",
+      "checkedAt": "2026-09-21T09:14:40+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -214,7 +214,7 @@
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "확인 필요",
-      "active": true,
+      "active": false,
       "preferences": "■ 이런 분을 선호해요.\n- 전극 원재료 이송, 믹싱, 코팅, 롤프레스 등 전극 제조업체 관련 생산 경력자 선호\n- R2R 필름 성형/가공 관련 생산 경력자 선호\n- 전극물성 측정 관련 품질관리 경력자 선호",
       "majors": "전공 무관",
       "education": "1) 고등학교 졸업 또는 전문학사 학위 소지자",
@@ -247,7 +247,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:42+09:00",
+      "checkedAt": "2026-09-21T09:11:45+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -284,7 +284,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:06+09:00",
+      "checkedAt": "2026-09-21T09:13:07+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -321,7 +321,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:15+09:00",
+      "checkedAt": "2026-09-21T09:08:27+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -358,7 +358,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:19:44+09:00",
+      "checkedAt": "2026-09-21T09:12:44+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -395,7 +395,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:19:55+09:00",
+      "checkedAt": "2026-09-21T09:12:54+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "확인 필요",
@@ -432,7 +432,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:41+09:00",
+      "checkedAt": "2026-09-21T09:14:42+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -469,7 +469,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:07+09:00",
+      "checkedAt": "2026-09-21T09:14:07+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -506,7 +506,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:07+09:00",
+      "checkedAt": "2026-09-21T09:11:10+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -543,7 +543,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:01+09:00",
+      "checkedAt": "2026-09-21T09:09:13+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -580,7 +580,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:19+09:00",
+      "checkedAt": "2026-09-21T09:09:31+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "확인 필요",
@@ -617,7 +617,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:23:39+09:00",
+      "checkedAt": "2026-09-21T09:16:48+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -654,7 +654,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:09+09:00",
+      "checkedAt": "2026-09-21T09:15:10+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -691,7 +691,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:17:42+09:00",
+      "checkedAt": "2026-09-21T09:10:49+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -728,7 +728,7 @@
         "확인 필요",
         "높음"
       ],
-      "checkedAt": "2026-09-20T10:13:11+09:00",
+      "checkedAt": "2026-09-21T09:07:11+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -765,7 +765,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:47+09:00",
+      "checkedAt": "2026-09-21T09:15:49+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -839,7 +839,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:23+09:00",
+      "checkedAt": "2026-09-21T09:14:23+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -876,7 +876,7 @@
         "지원 가능",
         "매우 높음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -913,7 +913,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:47+09:00",
+      "checkedAt": "2026-09-21T09:09:58+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -987,7 +987,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "확인 필요",
@@ -1024,7 +1024,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:15+09:00",
+      "checkedAt": "2026-09-21T09:15:16+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 없음",
@@ -1061,7 +1061,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:13:15+09:00",
+      "checkedAt": "2026-09-21T09:07:15+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -1098,7 +1098,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 없음",
@@ -1135,7 +1135,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:40+09:00",
+      "checkedAt": "2026-09-21T09:16:50+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 없음",
@@ -1172,7 +1172,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:17:22+09:00",
+      "checkedAt": "2026-09-21T09:10:30+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "확인 필요",
@@ -1209,7 +1209,7 @@
         "지원 가능",
         "매우 높음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -1223,6 +1223,43 @@
       "duties": "✔ 우리 조직을 소개합니다.\n세계 최고 수준의 원통형 배터리 제조를 책임지는 심장과 같은 핵심 조직입니다.\n우리조직은 혁신적인 기술과 최고의 품질을 바탕으로 글로벌 시장에서 경쟁력을 강화하고 있습니다.\n설비와 공정을 최적화해 회사의 성장을 뒷받침하는 핵심 역할을 수행하며, 함께 일하는 동료들과의 협업을 통해 더 나은 미래를 만들어갑니다.\n✔ 이런 일을 합니다.\n배터리 제조 공정의 생산성 관리, 설비관리와 품질 개선 업무를 담당합니다. 구체적으로는 설비의 안정적인 운영을 책임지고, 수율과 가동율을 높이기 위한 다양한 개선 활동을 수행합니다.\n데이터를 분석해 문제를 해결하고, 효율적인 생산 환경을 조성하기 위해 현장과 소통하며 최적의 솔루션을 제안합니다.\n우리의 손끝에서 만들어진 제품이 전세계로 뻗어나가는 자부심을 느낄 수 있는 업무입니다.\n✔ 이렇게 성장할 수 있어요.\n설비관리와 생산운영, 공정 혁신의 전문가로 성장할 기회를 얻습니다. 최신기술과 데이터를 활용한 업무 경험을 쌓으며 생산현장의 리더로 자리 잡을 수 있어요.\n더 나아가 글로벌 프로젝트에 참여하거나, 공정 최적화 전문가로 커리어를 확장할 수 있는 발판을 마련할 수 있습니다.\n우리와 함께라면 단순한 엔지니어를 넘어, 지속 가능한 미래를 설계하는 핵심 인재로 성장할 수 있습니다.\n✔ 이렇게 준비하면 좋아요.\n설비관리와 생산운영, 공정 개선에 대한 기본적인 이해를 쌓는 것이 중요합니다.\n내가 왜 생산 현장에 기여하고 싶은지, 그리고 어떻게 팀에 보탬이 될 수 있을지에 대해 고민해보세요.\n기본적으로 우리 회사의 경영이념이 어떻게 되는지, 이를 위해 어떠한 가치관을 가지고 행동양식을 가지는지에 대해 숙지할 필요가 있습니다.",
       "firstSeen": "2026-09-16T12:59:49+09:00",
       "score": 85
+    },
+    {
+      "id": "17215b310b83b7b164b8b9e6897574a5",
+      "company": "극지연구소",
+      "role": "2026년 하반기(2차) 육아휴직대체인력(행정·기술) 공개채용 공고",
+      "category": "기타",
+      "sector": "공공기관·기계 기술직",
+      "location": "인천",
+      "level": "신입+경력",
+      "size": "공공기관",
+      "deadline": "2026-10-06T23:59:59+09:00",
+      "start": "2026-09-21T00:00:00+09:00",
+      "sourceUrl": "https://job.alio.go.kr/recruitview.do?idx=305152",
+      "sourceLabel": "JOB-ALIO 공식 공고",
+      "verification": "자동 수집 · 원문 확인 권장",
+      "match": "낮음",
+      "matchReason": "여러 직무의 요건이 함께 있어 직무별 신입 요건 확인 필요 / 계약직 정규직 전환 가능성 미확인",
+      "requirements": "<극지정책 업무 지원>\n(자격요건)\n- 전공 무관\n(우대사항)\n- 사회과학계열 전공자 우대\n- 공공기관 및 유관기관 근무 경력 우대\n- 영어로 의사소통이 가능한 자 우대\n- 정부 간 국제회의 유경험자 우대\n<시설유지관리(영선분야)>\n(자격요건)\n- 전공 무관\n- 건축·조경 관련 분야 국가공인 기술자격증 중 기능사 이상 자격증 1개 이상 보유\n(우대사항)\n- 건축설비산업기사, 실내건축산업기사, 방수산업기사, 건축일반시공산업기사, 건축산업기사, 건축목공산업기사, 조경산업기사 이상의 자격증",
+      "caution": "규칙 기반 분류이며 개인별 지원자격 충족을 보증하지 않습니다. 마감 시각이 원문에 없으면 해당일 종료 시각으로 표시합니다.",
+      "tags": [
+        "확인 필요",
+        "낮음"
+      ],
+      "checkedAt": "2026-09-21T09:16:03+09:00",
+      "defaultStatus": "검토전",
+      "eligibility": "확인 필요",
+      "mechanicalStatus": "관련 없음",
+      "active": true,
+      "preferences": "채용공고문 참고",
+      "majors": "",
+      "education": "학력무관",
+      "employment": "비정규직",
+      "requiredCertificates": "",
+      "preferredCertificates": "",
+      "duties": "경영.회계.사무,건설",
+      "firstSeen": "2026-09-21T09:16:03+09:00",
+      "score": 0
     },
     {
       "id": "18f6eee33c47698ae50ce9b1f5351651",
@@ -1246,7 +1283,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:15+09:00",
+      "checkedAt": "2026-09-21T09:13:15+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -1283,7 +1320,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -1320,7 +1357,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:15+09:00",
+      "checkedAt": "2026-09-21T09:14:15+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -1357,7 +1394,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:13:12+09:00",
+      "checkedAt": "2026-09-21T09:07:13+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "확인 필요",
@@ -1394,7 +1431,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:13:37+09:00",
+      "checkedAt": "2026-09-21T09:07:37+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 있음",
@@ -1431,7 +1468,7 @@
         "확인 필요",
         "높음"
       ],
-      "checkedAt": "2026-09-20T10:12:59+09:00",
+      "checkedAt": "2026-09-21T09:06:59+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -1468,7 +1505,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:19:28+09:00",
+      "checkedAt": "2026-09-21T09:12:27+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -1505,7 +1542,7 @@
         "지원 가능",
         "매우 높음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -1579,7 +1616,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:13:27+09:00",
+      "checkedAt": "2026-09-21T09:07:27+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 있음",
@@ -1616,7 +1653,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -1653,7 +1690,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:50+09:00",
+      "checkedAt": "2026-09-21T09:10:01+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -1690,7 +1727,7 @@
         "지원 가능",
         "매우 높음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -1727,7 +1764,7 @@
         "지원 가능",
         "매우 높음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -1764,7 +1801,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:33+09:00",
+      "checkedAt": "2026-09-21T09:14:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 없음",
@@ -1801,7 +1838,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:15+09:00",
+      "checkedAt": "2026-09-21T09:16:32+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 없음",
@@ -1838,7 +1875,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:11+09:00",
+      "checkedAt": "2026-09-21T09:16:30+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 없음",
@@ -1875,7 +1912,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:18+09:00",
+      "checkedAt": "2026-09-21T09:09:29+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -1912,7 +1949,7 @@
         "확인 필요",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:23:04+09:00",
+      "checkedAt": "2026-09-21T09:16:24+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -1949,7 +1986,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:38+09:00",
+      "checkedAt": "2026-09-21T09:16:48+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "확인 필요",
@@ -2023,7 +2060,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:13+09:00",
+      "checkedAt": "2026-09-21T09:15:14+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -2060,7 +2097,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:08+09:00",
+      "checkedAt": "2026-09-21T09:16:28+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 있음",
@@ -2097,7 +2134,7 @@
         "확인 필요",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:15:31+09:00",
+      "checkedAt": "2026-09-21T09:08:44+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -2134,7 +2171,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:31+09:00",
+      "checkedAt": "2026-09-21T09:09:43+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -2171,7 +2208,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:44+09:00",
+      "checkedAt": "2026-09-21T09:14:43+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -2208,7 +2245,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:19:39+09:00",
+      "checkedAt": "2026-09-21T09:12:38+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -2245,7 +2282,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "확인 필요",
@@ -2282,7 +2319,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:03+09:00",
+      "checkedAt": "2026-09-21T09:08:15+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -2356,7 +2393,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:05+09:00",
+      "checkedAt": "2026-09-21T09:14:05+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -2430,7 +2467,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:19:30+09:00",
+      "checkedAt": "2026-09-21T09:12:30+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -2467,7 +2504,7 @@
         "지원 가능",
         "매우 높음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -2504,7 +2541,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:17:52+09:00",
+      "checkedAt": "2026-09-21T09:10:57+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -2541,7 +2578,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:13:44+09:00",
+      "checkedAt": "2026-09-21T09:07:45+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -2578,7 +2615,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:08+09:00",
+      "checkedAt": "2026-09-21T09:15:08+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -2615,7 +2652,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:30+09:00",
+      "checkedAt": "2026-09-21T09:13:31+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "확인 필요",
@@ -2652,7 +2689,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:44+09:00",
+      "checkedAt": "2026-09-21T09:11:47+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "확인 필요",
@@ -2689,7 +2726,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -2726,7 +2763,7 @@
         "지원 가능",
         "매우 높음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -2763,7 +2800,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:38+09:00",
+      "checkedAt": "2026-09-21T09:16:48+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 없음",
@@ -2800,7 +2837,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:12:50+09:00",
+      "checkedAt": "2026-09-21T09:06:51+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "확인 필요",
@@ -2841,7 +2878,7 @@
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
-      "active": true,
+      "active": false,
       "preferences": "- 전기차 구동모터 설계 경험을 보유하신 분\n- 글로벌 프로젝트 수행 경험을 보유하신 분",
       "majors": "- 전기전자공학\n- 기계공학\n- 기타 모터 설계 및 구동시스템 관련 전공 우대",
       "education": "① 학위/경력/전공/어학: 각 모집분야별 상세내역을 참고부탁드립니다. (학력은 국내외 4년제 이상 정규 학위 인정과정에 한해 인정됩니다.)",
@@ -2874,7 +2911,7 @@
         "확인 필요",
         "높음"
       ],
-      "checkedAt": "2026-09-20T10:13:16+09:00",
+      "checkedAt": "2026-09-21T09:07:17+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -2911,7 +2948,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:41+09:00",
+      "checkedAt": "2026-09-21T09:08:54+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -2924,6 +2961,43 @@
       "preferredCertificates": "",
       "duties": "사업관리,경영.회계.사무,문화.예술.디자인.방송",
       "firstSeen": "2026-09-15T21:05:15+09:00",
+      "score": 0
+    },
+    {
+      "id": "3966a2fbac794d14dc2d83b3d9ca07bc",
+      "company": "한국토지주택공사",
+      "role": "한국토지주택공사 대전충남지역본부 기간제근로자 채용공고",
+      "category": "기타",
+      "sector": "공공기관·기계 기술직",
+      "location": "대전",
+      "level": "신입+경력",
+      "size": "공기업",
+      "deadline": "2026-10-05T23:59:59+09:00",
+      "start": "2026-09-21T00:00:00+09:00",
+      "sourceUrl": "https://job.alio.go.kr/recruitview.do?idx=305156",
+      "sourceLabel": "JOB-ALIO 공식 공고",
+      "verification": "자동 수집 · 원문 확인 권장",
+      "match": "낮음",
+      "matchReason": "여러 직무의 요건이 함께 있어 직무별 신입 요건 확인 필요 / 계약직 정규직 전환 가능성 미확인",
+      "requirements": "□ 공통\no 한국토지주택공사 「인사규정」 제9조(채용금지) 및 「기간제근로자 운영지침」 제15조(채용금지) 등 채용금지 규정에 해당되지 아니한 자\no 근로개시일(근로계약기간 시작일)부터 정상적인 근무가 가능한 자\n※ 자세한 사항은 채용공고 참조",
+      "caution": "규칙 기반 분류이며 개인별 지원자격 충족을 보증하지 않습니다. 마감 시각이 원문에 없으면 해당일 종료 시각으로 표시합니다.",
+      "tags": [
+        "확인 필요",
+        "낮음"
+      ],
+      "checkedAt": "2026-09-21T09:16:12+09:00",
+      "defaultStatus": "검토전",
+      "eligibility": "확인 필요",
+      "mechanicalStatus": "관련 없음",
+      "active": true,
+      "preferences": "□ [특별우대]\no 「국가유공자 등 예우 및 지원에 관한 법률」 등에 따른 취업지원대상자 : 가점비율에 따라 각 전형별 만점(100점)의 5% 또는 10% 부여\no 「장애인 고용촉진 및 직업재활법 시행령」 제3조에 따른 장애인 : 각 전형별 만점(100점)의 5% 부여\n* 특별우대 우대사항은 지원자에게 가장 유리한 가점 1개만 부여\n* 관련 법령에 따라 특별우대(취업지원대상자, 장애인) 가점을 받아 채용시험에 합격하는 사람은 그 채용시험 선발예정인원의 30%를 초과할 수 없음(3인 이하 모집분야는 가점 미적용)\n* 선발예정인원을 초과하여 동점자가 있으면 동점자 중 취업지원대상자를 우선하여 합격자로 결정(3인 이하 모집분야에도 적용)\n* 단, 취업지원 대상자의 경우 예외적으로 응시자의 수가 선발예정인원과 같거나 그보다 적은 경우 가점을 적용하여 평가함\n□ [일반우대]\no (연번1) 대체채용(사업관리) : 없음\no (연번2∼4) 대체채용(사업관리)\n- 사회복지사 1급, 주택관리사(보), 주거복지사(국가공인), 공인중개사 자격증 소지자 : 서류전형 만점(100점)의 5% 부여\n- 사회복지사 2급 자격증 소지자 : 서류전형 만점(100점)의 3% 부여\no (연번5∼6) 전세사기 최소보장 지원 업무보조 : 없음\n※ 자세한 사항은 채용공고 참조",
+      "majors": "",
+      "education": "학력무관",
+      "employment": "비정규직",
+      "requiredCertificates": "",
+      "preferredCertificates": "",
+      "duties": "경영.회계.사무,사회복지.종교,영업판매",
+      "firstSeen": "2026-09-21T09:16:12+09:00",
       "score": 0
     },
     {
@@ -2948,7 +3022,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:19:49+09:00",
+      "checkedAt": "2026-09-21T09:12:48+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -2985,7 +3059,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:24+09:00",
+      "checkedAt": "2026-09-21T09:15:24+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -3022,7 +3096,7 @@
         "확인 필요",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:21:09+09:00",
+      "checkedAt": "2026-09-21T09:14:09+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -3059,7 +3133,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:14+09:00",
+      "checkedAt": "2026-09-21T09:11:18+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -3096,7 +3170,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:28+09:00",
+      "checkedAt": "2026-09-21T09:11:32+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -3133,7 +3207,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:19:23+09:00",
+      "checkedAt": "2026-09-21T09:12:22+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "확인 필요",
@@ -3170,7 +3244,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:03+09:00",
+      "checkedAt": "2026-09-21T09:13:03+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -3207,7 +3281,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "확인 필요",
@@ -3244,7 +3318,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:55+09:00",
+      "checkedAt": "2026-09-21T09:11:56+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -3281,7 +3355,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:23:38+09:00",
+      "checkedAt": "2026-09-21T09:16:48+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -3318,7 +3392,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:44+09:00",
+      "checkedAt": "2026-09-21T09:08:56+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -3355,7 +3429,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:15+09:00",
+      "checkedAt": "2026-09-21T09:16:32+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 없음",
@@ -3392,7 +3466,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:21+09:00",
+      "checkedAt": "2026-09-21T09:15:22+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -3429,7 +3503,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:28+09:00",
+      "checkedAt": "2026-09-21T09:09:39+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -3466,7 +3540,7 @@
         "확인 필요",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:16:29+09:00",
+      "checkedAt": "2026-09-21T09:09:41+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -3503,7 +3577,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:27+09:00",
+      "checkedAt": "2026-09-21T09:11:30+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -3540,7 +3614,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:17:24+09:00",
+      "checkedAt": "2026-09-21T09:10:32+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -3577,7 +3651,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:50+09:00",
+      "checkedAt": "2026-09-21T09:15:52+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 없음",
@@ -3614,7 +3688,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:10+09:00",
+      "checkedAt": "2026-09-21T09:08:22+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -3651,7 +3725,7 @@
         "지원 가능",
         "매우 높음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -3688,7 +3762,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:19:32+09:00",
+      "checkedAt": "2026-09-21T09:12:32+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -3836,7 +3910,7 @@
         "확인 필요",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:23:22+09:00",
+      "checkedAt": "2026-09-21T09:16:38+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -3873,7 +3947,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:24+09:00",
+      "checkedAt": "2026-09-21T09:13:25+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -3887,6 +3961,43 @@
       "duties": "이용.숙박.여행.오락.스포츠",
       "firstSeen": "2026-09-17T09:13:05+09:00",
       "score": 0
+    },
+    {
+      "id": "4f46acf5f6d3ae678123abd39d1b3f12",
+      "company": "극지연구소",
+      "role": "2026년 하반기 극지연구소 무기계약직(행정직) 채용 공고",
+      "category": "R&D",
+      "sector": "공공기관·기계 기술직",
+      "location": "인천",
+      "level": "신입+경력",
+      "size": "공공기관",
+      "deadline": "2026-10-06T23:59:59+09:00",
+      "start": "2026-09-21T00:00:00+09:00",
+      "sourceUrl": "https://job.alio.go.kr/recruitview.do?idx=305149",
+      "sourceLabel": "JOB-ALIO 공식 공고",
+      "verification": "자동 수집 · 원문 확인 권장",
+      "match": "보통",
+      "matchReason": "여러 직무의 요건이 함께 있어 직무별 신입 요건 확인 필요 / 계약직 정규직 전환 가능성 미확인",
+      "requirements": "ㅇ 학력 및 전공 무관\nㅇ (공인영어성적) TOEIC 600, TOEFL CBT 163 TOEFL IBT 57, TEPS 482, New TEPS 259, TOEIC SPEAKING IM1, OPIC IM1, G-TELP(LEVEL2) 50점, IELTS 5.5, FLEX 2C 이상을 보유한 자\n※ 영어권 국가에서 학위 취득 시 학위 취득증명서로 대체 가능\n※ 접수마감일 기준 2년 이내 성적에 한함",
+      "caution": "규칙 기반 분류이며 개인별 지원자격 충족을 보증하지 않습니다. 마감 시각이 원문에 없으면 해당일 종료 시각으로 표시합니다.",
+      "tags": [
+        "확인 필요",
+        "보통"
+      ],
+      "checkedAt": "2026-09-21T09:15:56+09:00",
+      "defaultStatus": "검토전",
+      "eligibility": "확인 필요",
+      "mechanicalStatus": "관련 있음",
+      "active": true,
+      "preferences": "해당 사항 없음",
+      "majors": "",
+      "education": "학력무관",
+      "employment": "무기계약직",
+      "requiredCertificates": "",
+      "preferredCertificates": "",
+      "duties": "경영.회계.사무",
+      "firstSeen": "2026-09-21T09:15:56+09:00",
+      "score": 30
     },
     {
       "id": "4f7de3a826432dd59a637093ae804941",
@@ -3910,7 +4021,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:33+09:00",
+      "checkedAt": "2026-09-21T09:08:46+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -3947,7 +4058,7 @@
         "지원 가능",
         "매우 높음"
       ],
-      "checkedAt": "2026-09-20T10:23:30+09:00",
+      "checkedAt": "2026-09-21T09:16:44+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -3984,7 +4095,7 @@
         "지원 가능",
         "매우 높음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -4021,7 +4132,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:46+09:00",
+      "checkedAt": "2026-09-21T09:14:46+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -4058,7 +4169,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -4095,7 +4206,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:13+09:00",
+      "checkedAt": "2026-09-21T09:13:13+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -4132,7 +4243,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:32+09:00",
+      "checkedAt": "2026-09-21T09:13:33+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -4169,7 +4280,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:26+09:00",
+      "checkedAt": "2026-09-21T09:13:27+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -4182,6 +4293,43 @@
       "preferredCertificates": "",
       "duties": "경비.청소",
       "firstSeen": "2026-09-17T09:13:07+09:00",
+      "score": 0
+    },
+    {
+      "id": "537b7ec0bccb51c3976ade225faf938d",
+      "company": "극지연구소",
+      "role": "2026년 하반기 연수연구원(박사후 및 석사후) 채용 공고문",
+      "category": "R&D",
+      "sector": "공공기관·기계 기술직",
+      "location": "인천",
+      "level": "신입",
+      "size": "공공기관",
+      "deadline": "2026-10-06T23:59:59+09:00",
+      "start": "2026-09-21T00:00:00+09:00",
+      "sourceUrl": "https://job.alio.go.kr/recruitview.do?idx=305153",
+      "sourceLabel": "JOB-ALIO 공식 공고",
+      "verification": "자동 수집 · 원문 확인 권장",
+      "match": "낮음",
+      "matchReason": "여러 직무의 요건이 함께 있어 직무별 신입 요건 확인 필요 / 계약직 정규직 전환 가능성 미확인",
+      "requirements": "[박사후 연수연구원]\n관련 전공분야 박사학위 소지자 또는 공고한 임용예정일 기준 박사학위증명서 제출이 가능한자로서, 공고일 기준 최근 3년 이내 SCIE 논문 제1저자 1편 이상 게재(승인) 실적이 있는 자\n[석사후 연수연구원]\n관련 전공분야 석사 학위 소지자(공고일 기준 학위취득 후 5년 이내), 혹은 공고한 임용예정일 기준 석사학위 증명서 제출이 가능한 자\n※세부사항 채용공고문 확인",
+      "caution": "규칙 기반 분류이며 개인별 지원자격 충족을 보증하지 않습니다. 마감 시각이 원문에 없으면 해당일 종료 시각으로 표시합니다.",
+      "tags": [
+        "확인 필요",
+        "낮음"
+      ],
+      "checkedAt": "2026-09-21T09:16:06+09:00",
+      "defaultStatus": "검토전",
+      "eligibility": "확인 필요",
+      "mechanicalStatus": "관련 없음",
+      "active": true,
+      "preferences": "※세부사항 채용공고문 확인",
+      "majors": "",
+      "education": "석사,박사",
+      "employment": "비정규직",
+      "requiredCertificates": "",
+      "preferredCertificates": "",
+      "duties": "연구",
+      "firstSeen": "2026-09-21T09:16:06+09:00",
       "score": 0
     },
     {
@@ -4206,7 +4354,7 @@
         "확인 필요",
         "높음"
       ],
-      "checkedAt": "2026-09-20T10:23:26+09:00",
+      "checkedAt": "2026-09-21T09:16:42+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -4243,7 +4391,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:19:24+09:00",
+      "checkedAt": "2026-09-21T09:12:23+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -4280,7 +4428,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:13:58+09:00",
+      "checkedAt": "2026-09-21T09:07:59+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 있음",
@@ -4317,7 +4465,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:25+09:00",
+      "checkedAt": "2026-09-21T09:09:37+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -4354,7 +4502,7 @@
         "확인 필요",
         "높음"
       ],
-      "checkedAt": "2026-09-20T10:13:08+09:00",
+      "checkedAt": "2026-09-21T09:07:09+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -4395,7 +4543,7 @@
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 없음",
-      "active": true,
+      "active": false,
       "preferences": "■ 이런 경험과 역량을 가지신 분이면 더 좋습니다.\n- 관련 학과를 전공하신 분 (관광, 항공서비스, 비서, 호텔경영 등)\n- 호텔/항공 등 서비스 산업에서의 실습 혹은 근무 경력을 가지신 분\n- 고객가치를 실현하고자 하는 분\n- 업무를 적극적으로 리드하는 주도적인 마인드를 가지신 분",
       "majors": "■ 전공과 무관하게 우수한 서비스 역량을 갖추진 분을 모집합니다.",
       "education": "- 2년제 대학 이상 졸업자 및 졸업예정자 (졸업예정·유예자는 2025년 12월 입사 가능자 한정)",
@@ -4428,7 +4576,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:59+09:00",
+      "checkedAt": "2026-09-21T09:10:11+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -4465,7 +4613,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:23:39+09:00",
+      "checkedAt": "2026-09-21T09:16:48+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -4502,7 +4650,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:12+09:00",
+      "checkedAt": "2026-09-21T09:09:23+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -4515,6 +4663,43 @@
       "preferredCertificates": "",
       "duties": "이용.숙박.여행.오락.스포츠",
       "firstSeen": "2026-09-15T21:05:45+09:00",
+      "score": 0
+    },
+    {
+      "id": "59b0b49aabf682a21ed8559e472151b4",
+      "company": "한국도로교통공단",
+      "role": "[원주본부] 디지털운영처 전문계약직 채용공고",
+      "category": "기타",
+      "sector": "공공기관·기계 기술직",
+      "location": "강원",
+      "level": "경력",
+      "size": "공공기관",
+      "deadline": "2026-10-02T23:59:59+09:00",
+      "start": "2026-09-21T00:00:00+09:00",
+      "sourceUrl": "https://job.alio.go.kr/recruitview.do?idx=304987",
+      "sourceLabel": "JOB-ALIO 공식 공고",
+      "verification": "자동 수집 · 원문 확인 권장",
+      "match": "낮음",
+      "matchReason": "경력 전용 모집",
+      "requirements": "[공통사항]\n- 연령, 성별, 학력 제한 없음\n- 남성의 경우, 병역의무를 마친 자 또는 면제 된 자\n- 최종 합격자 발표 후 입사예정일(2026.11.2.)로부터 근무가능한 자\n- 공단 인사규칙 제18조에 따른 결격사유가 없는 자\n- 다음의 응시자격 중 하나의 요건을 갖춘 사람\n1. 관련분야 실무경력 6년 이상인 사람\n2. 관련분야 학사학위 또는 기사 이상 자격증 취득 후 관련 분야 실무경력 2년 이상인 사람\n3. 관련분야 산업기사 자격증 취득 후 관련분야 실무경력 4년 이상인 사람",
+      "caution": "규칙 기반 분류이며 개인별 지원자격 충족을 보증하지 않습니다. 마감 시각이 원문에 없으면 해당일 종료 시각으로 표시합니다.",
+      "tags": [
+        "지원 어려움",
+        "낮음"
+      ],
+      "checkedAt": "2026-09-21T09:11:09+09:00",
+      "defaultStatus": "검토전",
+      "eligibility": "지원 어려움",
+      "mechanicalStatus": "관련 없음",
+      "active": true,
+      "preferences": "1. 취업지원대상자 : 각 전형단계별 5% 또는 10% 가점(※ 국가유공자 등 예우 및 지원에 관한 법률 및 이를 준용하는 법률에 의한 취업보호(지원)대상자)\n2. 장애인 : 각 전형단계별 5% 가점(※ 장애인고용촉진 및 직업재활법 및 이를 준용하는 법률에 의한 장애인)\n3. 의사상자 : 각 전형단계별 3% 또는 5% 가점(※의사상자 등 예우 및 지원에 관한 법률에 따른 의상자 본인 또는 의사상자 배우자 및 자녀)\n※ 자세한 사항은 첨부파일의 채용공고문을 참조",
+      "majors": "",
+      "education": "학력무관",
+      "employment": "비정규직",
+      "requiredCertificates": "",
+      "preferredCertificates": "",
+      "duties": "정보통신",
+      "firstSeen": "2026-09-21T09:11:09+09:00",
       "score": 0
     },
     {
@@ -4539,7 +4724,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:11+09:00",
+      "checkedAt": "2026-09-21T09:16:30+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "확인 필요",
@@ -4576,7 +4761,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:30+09:00",
+      "checkedAt": "2026-09-21T09:11:35+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -4613,7 +4798,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:17:46+09:00",
+      "checkedAt": "2026-09-21T09:10:52+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -4650,7 +4835,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:10+09:00",
+      "checkedAt": "2026-09-21T09:09:21+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 없음",
@@ -4687,7 +4872,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:24+09:00",
+      "checkedAt": "2026-09-21T09:09:35+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -4724,7 +4909,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 없음",
@@ -4761,7 +4946,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:17:10+09:00",
+      "checkedAt": "2026-09-21T09:10:21+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -4798,7 +4983,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:33+09:00",
+      "checkedAt": "2026-09-21T09:09:46+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -4835,7 +5020,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:04+09:00",
+      "checkedAt": "2026-09-21T09:14:03+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -4872,7 +5057,7 @@
         "확인 필요",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:23:22+09:00",
+      "checkedAt": "2026-09-21T09:16:38+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -4909,7 +5094,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:17:28+09:00",
+      "checkedAt": "2026-09-21T09:10:37+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -4946,7 +5131,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:13:47+09:00",
+      "checkedAt": "2026-09-21T09:07:47+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -4983,7 +5168,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:19+09:00",
+      "checkedAt": "2026-09-21T09:14:19+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -5020,7 +5205,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:19:05+09:00",
+      "checkedAt": "2026-09-21T09:12:07+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -5057,7 +5242,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:18+09:00",
+      "checkedAt": "2026-09-21T09:14:18+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -5094,7 +5279,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:05+09:00",
+      "checkedAt": "2026-09-21T09:08:17+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -5107,6 +5292,43 @@
       "preferredCertificates": "",
       "duties": "경영.회계.사무",
       "firstSeen": "2026-09-15T21:04:43+09:00",
+      "score": 0
+    },
+    {
+      "id": "6545908386312dd9660b376cfae060ad",
+      "company": "한전KPS(주)",
+      "role": "한전KPS(주)강원충북전력지사 단기노무원(동해지점 차량순시) 채용공고(28차)",
+      "category": "기타",
+      "sector": "공공기관·기계 기술직",
+      "location": "강원",
+      "level": "신입+경력",
+      "size": "공공기관",
+      "deadline": "2026-09-23T23:59:59+09:00",
+      "start": "2026-09-21T00:00:00+09:00",
+      "sourceUrl": "https://job.alio.go.kr/recruitview.do?idx=305029",
+      "sourceLabel": "JOB-ALIO 공식 공고",
+      "verification": "자동 수집 · 원문 확인 권장",
+      "match": "낮음",
+      "matchReason": "여러 직무의 요건이 함께 있어 직무별 신입 요건 확인 필요 / 계약직 정규직 전환 가능성 미확인",
+      "requirements": "채용예정일 즉시 근무가능한 자",
+      "caution": "규칙 기반 분류이며 개인별 지원자격 충족을 보증하지 않습니다. 마감 시각이 원문에 없으면 해당일 종료 시각으로 표시합니다.",
+      "tags": [
+        "확인 필요",
+        "낮음"
+      ],
+      "checkedAt": "2026-09-21T09:12:19+09:00",
+      "defaultStatus": "검토전",
+      "eligibility": "확인 필요",
+      "mechanicalStatus": "관련 없음",
+      "active": true,
+      "preferences": "○ 보훈대상자(각 전형단계별 만점의 5%~10% 가점)\n- 국가유공자 등 예우 및 지원에 관한 법률 제29조의 규정에 의한 취업보호대상자\n※ 「국가유공자 등 예우 및 지원에 관한 법률」 제31조 제3항에 의거, 채용인원 3명 이하인 경우 보훈대상자 가점 미적용\n(단, 응시자의 수가 선발 예정인원과 같거나 그보다 적은 경우에는 그러하지 아니함)\n○ 장애인(각 전형단계별 만점의 10%)\n- 장애인고용촉진 및 직업재활법 제2조 제1호의 규정에 의한 장애인으로 업무 수행이 가능한 자",
+      "majors": "",
+      "education": "학력무관",
+      "employment": "비정규직",
+      "requiredCertificates": "",
+      "preferredCertificates": "",
+      "duties": "건설,전기.전자",
+      "firstSeen": "2026-09-21T09:12:19+09:00",
       "score": 0
     },
     {
@@ -5131,7 +5353,7 @@
         "지원 가능",
         "매우 높음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -5168,7 +5390,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:52+09:00",
+      "checkedAt": "2026-09-21T09:14:52+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -5242,7 +5464,7 @@
         "확인 필요",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:20:53+09:00",
+      "checkedAt": "2026-09-21T09:13:53+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -5279,7 +5501,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:19:58+09:00",
+      "checkedAt": "2026-09-21T09:12:58+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -5316,7 +5538,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:21+09:00",
+      "checkedAt": "2026-09-21T09:14:21+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -5353,7 +5575,7 @@
         "지원 가능",
         "매우 높음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -5390,7 +5612,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:39+09:00",
+      "checkedAt": "2026-09-21T09:16:48+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 없음",
@@ -5464,7 +5686,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:02+09:00",
+      "checkedAt": "2026-09-21T09:16:22+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 없음",
@@ -5501,7 +5723,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:36+09:00",
+      "checkedAt": "2026-09-21T09:15:38+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -5538,7 +5760,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:50+09:00",
+      "checkedAt": "2026-09-21T09:09:03+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -5575,7 +5797,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:12+09:00",
+      "checkedAt": "2026-09-21T09:11:16+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -5612,7 +5834,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:19:19+09:00",
+      "checkedAt": "2026-09-21T09:12:15+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -5649,7 +5871,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:34+09:00",
+      "checkedAt": "2026-09-21T09:15:36+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -5690,7 +5912,7 @@
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 있음",
-      "active": true,
+      "active": false,
       "preferences": "1. 경력 상 업무수행 사항 포트폴리오 (파일형식)\n2. 공조냉동·기계설비 관련 자격증 보유자\n3. HVAC 및 기계설비 샵드로잉 경험자\n4. AutoCAD 활용 능숙자\n5. BIM/Revit 활용 가능자\n6. 공조설비 배관·덕트 설계 경험자\n7. 현장 시공 및 PM 업무 경험자\n8. 설계변경·준공도면 작성 경험자\n9. 대형 프로젝트 또는 기계설비 공사 경험자",
       "majors": "전공무관",
       "education": "",
@@ -5723,7 +5945,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:19:03+09:00",
+      "checkedAt": "2026-09-21T09:12:05+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -5760,7 +5982,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:36+09:00",
+      "checkedAt": "2026-09-21T09:13:37+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -5797,7 +6019,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:21+09:00",
+      "checkedAt": "2026-09-21T09:08:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -5834,7 +6056,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:17:40+09:00",
+      "checkedAt": "2026-09-21T09:10:46+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -5871,7 +6093,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 없음",
@@ -5908,7 +6130,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:19:41+09:00",
+      "checkedAt": "2026-09-21T09:12:40+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -5982,7 +6204,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:30+09:00",
+      "checkedAt": "2026-09-21T09:15:30+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -6019,7 +6241,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:22+09:00",
+      "checkedAt": "2026-09-21T09:13:23+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -6056,7 +6278,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "확인 필요",
@@ -6093,7 +6315,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:14:00+09:00",
+      "checkedAt": "2026-09-21T09:08:01+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 있음",
@@ -6130,7 +6352,7 @@
         "확인 필요",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:15:23+09:00",
+      "checkedAt": "2026-09-21T09:08:36+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -6167,7 +6389,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:52+09:00",
+      "checkedAt": "2026-09-21T09:15:55+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -6204,7 +6426,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:02+09:00",
+      "checkedAt": "2026-09-21T09:15:02+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -6241,7 +6463,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:59+09:00",
+      "checkedAt": "2026-09-21T09:09:11+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -6278,7 +6500,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:19:52+09:00",
+      "checkedAt": "2026-09-21T09:12:52+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 없음",
@@ -6315,7 +6537,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:32+09:00",
+      "checkedAt": "2026-09-21T09:14:32+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -6389,7 +6611,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:12+09:00",
+      "checkedAt": "2026-09-21T09:15:12+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -6426,7 +6648,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:17+09:00",
+      "checkedAt": "2026-09-21T09:13:17+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -6463,7 +6685,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:14+09:00",
+      "checkedAt": "2026-09-21T09:14:13+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -6500,7 +6722,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:09+09:00",
+      "checkedAt": "2026-09-21T09:13:09+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -6537,7 +6759,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -6574,7 +6796,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:24+09:00",
+      "checkedAt": "2026-09-21T09:16:40+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "확인 필요",
@@ -6611,7 +6833,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:02+09:00",
+      "checkedAt": "2026-09-21T09:11:05+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -6648,7 +6870,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 없음",
@@ -6685,7 +6907,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:11+09:00",
+      "checkedAt": "2026-09-21T09:08:23+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -6722,7 +6944,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 없음",
@@ -6796,7 +7018,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:00+09:00",
+      "checkedAt": "2026-09-21T09:11:02+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -6833,7 +7055,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:13:25+09:00",
+      "checkedAt": "2026-09-21T09:07:25+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 있음",
@@ -6870,7 +7092,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:27+09:00",
+      "checkedAt": "2026-09-21T09:08:39+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 없음",
@@ -6907,7 +7129,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:28+09:00",
+      "checkedAt": "2026-09-21T09:15:28+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 없음",
@@ -6944,7 +7166,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:54+09:00",
+      "checkedAt": "2026-09-21T09:14:54+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -6981,7 +7203,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:17:07+09:00",
+      "checkedAt": "2026-09-21T09:10:18+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -7018,7 +7240,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:38+09:00",
+      "checkedAt": "2026-09-21T09:16:48+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 없음",
@@ -7055,7 +7277,7 @@
         "확인 필요",
         "높음"
       ],
-      "checkedAt": "2026-09-20T10:13:05+09:00",
+      "checkedAt": "2026-09-21T09:07:05+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -7092,7 +7314,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:13:23+09:00",
+      "checkedAt": "2026-09-21T09:07:23+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 있음",
@@ -7166,7 +7388,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:30+09:00",
+      "checkedAt": "2026-09-21T09:14:29+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -7203,7 +7425,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:46+09:00",
+      "checkedAt": "2026-09-21T09:08:58+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -7240,7 +7462,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:13:56+09:00",
+      "checkedAt": "2026-09-21T09:07:57+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -7314,7 +7536,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:28+09:00",
+      "checkedAt": "2026-09-21T09:13:29+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -7351,7 +7573,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:57+09:00",
+      "checkedAt": "2026-09-21T09:14:58+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -7388,7 +7610,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -7429,7 +7651,7 @@
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "확인 필요",
-      "active": true,
+      "active": false,
       "preferences": "▪ 산업설비 자동화 및 로봇공학 전공자\n▪ 기계/전기/전자/메카트로닉스/용접/금형 등 공학 전공자\n▪ 기계/전기/전자/PM/금형/선반/설비 자동화 등 공학 관련 자격증 보유자\n▪ 용접업무 경험 및 용접관련 자격증 보유자\n▪ LG전자 인턴 경험 보유자",
       "majors": "전공 무관",
       "education": "▪ 고등학교 졸업이상\n ① 고등학교 생활기록부, 성적증명서, 졸업증명서 (PDF 파일 병합 必)\n ② 최종학력 전문학사 이상 졸업(예정)자의 경우, \"성적증명서\", \"졸업(예정)증명서\"를 추가 제출",
@@ -7462,7 +7684,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:52+09:00",
+      "checkedAt": "2026-09-21T09:10:03+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -7499,7 +7721,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:11+09:00",
+      "checkedAt": "2026-09-21T09:16:30+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 없음",
@@ -7513,6 +7735,43 @@
       "duties": "- HRM, HRD 기능을 담당하는 인사/인재육성조직,\n노경기능을 담당하는 노경조직으로 구성되어 있습니다.\n- 노경 조직은 ‘대내외 환경분석’을 통해 Risk를 선행관리하는 조직으로\n① 안정적인 노경관계 조성을 위해 사내외 노동조합과 적극 소통하고\n② 구성원들이 '회사의 방향'과 함께 할 수 있는 문화를 만드는 조직이며,\n③ 궁극적으로 '회사의 사업목표 달성'에 적극 기여하는 조직입니다.\n※ LG는 일반적인 기업에서 사용하는 '노사(勞使)가 아닌 노경(勞使)'이라는 용어를 사용합니다.\n[이런 업무를 수행하실 분을 찾아요.]\n1. 도급 운영 및 협력사 노무 리스크 관리\n- 도급계약서, 과업지시서, 업무운영 방식 검토를 통한 도급 운영 적법성 검토 및 리스크 관리\n- 원하청 업무수행 체계 분석 및 노무리스크 점검\n2. 개정 노동조합법 검토 및 대응\n- 하청·자회사 노동조합의 교섭 요구, 노동위원회 절차, 의제별 사용자성 쟁점 검토\n3. 노동법 자문 및 이슈대응\n- 노동관계 법령, 판례, 행정해석, 노동위원회 동향 분석\n- 현업부서 노동법 관련 자문 검토 및 노동법 관련 교육\n- 노동 현안 발생 시 사실관계 확인 및 대응방향 수립\n4. 노경 제도 및 프로세스 개선\n- 노경 관련 제도 및 운영프로세스 개선 과제 발굴 및 실행\n[이런 경험/역량을 보유하신 분을 찾아요.]\n1. 노동관계 법령 해석 및 적용 능력\n- 노동조합 및 노동관계조정법, 근로기준법, 파견·도급 관련 법령을\n실제 업무 상황에 맞게 해석할 수 있는 역량\n2. 사실관계 분석 및 논리적 판단력\n- 임단협 합의서, 취업규칙, 계약서, 운영지침 등 다양한 자료를 바탕으로\n쟁점을 구조화하고 근거 중심으로 판단하는 역량\n3. 커뮤니케이션 및 조율 능력\n- 노동조합, 인사, 현업, 협력사 등 여러 이해관계자의 입장을 듣고\n합리적인 대안을 도출하는 역량\n4. 문서 작성 및 보고 역량\n- 복잡한 노경관계 이슈를 현업부서에 쉽게 풀어 설명하고, 경영진 보고자료 및\n현업부서가 활용할 수 있는 가이드를 문서로 정리하는 역량\n5. 학습 민첩성 및 책임감\n- 법 개정, 판례, 행정해석 등 빠르게 변하는 대외 환경을 꾸준히 학습하고 업무에 반영하는 태도\n[직무 FAQ]\n1. 해당 포지션에서 가장 중요하게 보시는 역량은 무엇인가요?\n→ 해당 포지션에서 가장 중요하게 보는 역량은 노동관계 법령을 실제 사업 현장에 맞게 해석하고,\n사실관계를 근거 중심으로 분석하는 역량입니다.\n특히 도급 운영과 개정 노동조합법 이슈는 계약 구조, 업무 지시 방식, 근로조건 결정 권한 등을\n종합적으로 보아야 하므로 법률 지식과 현장 이해를 함께 갖추는 것이 중요합니다.\n2. 해당 포지션에서 기여할 수 있는 주요 성과는 어떤 것들이 있나요?\n→ 도급 운영의 적정성을 높이고, 원·하청 관계에서 발생할 수 있는 사용자성 및\n교섭 리스크를 사전에 점검하는 데 기여할 수 있습니다. 또한 개정 노동조합법 시행 이후\n예상되는 사용자성 판단 및 교섭 요구와 노동위원회 절차에 대응할 수 있도록\n자료, 논리, 프로세스를 체계화하여 안정적인 노경관계 구축에 기여할 수 있습니다.\n3. 해당 포지션을 수행하기 위해서 어떤 커뮤니케이션 역량이 필요하나요?\n→ 현업 부서, 노동조합, 법무, 인사, 협력사, 대외기관 등\n다양한 이해관계자와 협업해야 하므로 사안을 명확히 파악하고 법률 이슈를\n쉽고 설득력 있게 전달하는 커뮤니케이션 역량이 필요합니다. 다양한 상황에서\n이해관계가 다른 파트너들과 일해야하는 만큼 일에 대한 수용력이 높아야 합니다.\n4. 해당 포지션에서 사용하는 주요 프로그램들은 어떤 것들이 있나요?\n→ Excel, PowerPoint, Word 등 기본 오피스 프로그램을 주로 사용하며,\n협업툴인 Confluence도 활용합니다.\n5. 해당 포지션에서 어떤 커리어패스를 쌓을 수 있나요?\n→ 입사 후에는 도급관리, 개정노조법에 따른 사용자성 관련 검토 및 대응,\n현업부서 노동법 자문 등 기업 노무 전반을 경험하게 됩니다. 이후에는 노경 전략 수립,\n임단협 대응, 노동관계 분쟁 대응 등으로 전문성을 확장할 수 있습니다.",
       "firstSeen": "2026-09-16T12:59:38+09:00",
       "score": 20
+    },
+    {
+      "id": "8d9c3502d41e3283d918c34d3fbc5cf9",
+      "company": "극지연구소",
+      "role": "2026년 하반기 극지연구소 기간제계약직 채용 공고",
+      "category": "R&D",
+      "sector": "공공기관·기계 기술직",
+      "location": "인천,부산,경남",
+      "level": "신입+경력",
+      "size": "공공기관",
+      "deadline": "2026-10-06T23:59:59+09:00",
+      "start": "2026-09-21T00:00:00+09:00",
+      "sourceUrl": "https://job.alio.go.kr/recruitview.do?idx=305150",
+      "sourceLabel": "JOB-ALIO 공식 공고",
+      "verification": "자동 수집 · 원문 확인 권장",
+      "match": "낮음",
+      "matchReason": "여러 직무의 요건이 함께 있어 직무별 신입 요건 확인 필요 / 계약직 정규직 전환 가능성 미확인",
+      "requirements": "<멀티모달 데이터 전처리 및 해양환경 인자 분석>\n- 해양학, 원격탐사, AI/데이터사이언스 관련 전공 석사학위 이상 소지자\n- ‘2. 응시 자격요건’ 및 ’직무기술서 내 필수 자격사항‘ 에서 요구하는 어학기준(영어)을 충족한 자\n<북극해 지음향·해저지질 자료 분석 및 DB 구축>\n- 해양학, 지질학, 해양지질학, 지구물리학, 환경공학, 자원공학, 데이터과학, 전산학 등 관련 전공 학사학위 이상 소지자\n- ‘2. 응시 자격요건’ 및 ’직무기술서 내 필수 자격사항‘ 에서 요구하는 어학기준(영어)을 충족한 자\n<빙하코어 연속흐름 분석>\n- 화학, 환경과학, 지구과학 관련 전공 학사학위 이상 소지자\n- ‘2. 응시 자격요건’ 및 ’직무기술서 내 필수 자격사항‘ 에서 요구하는 어학기준(영어)을 충족한 자\n<극지 담수 미생물 배양 및 유전체 분석>\n- 미생물생태학, 환경미생물학, 환경생태 관련 전공 석사학위 이상 소지자\n- ‘2. 응시 자격요건’ 및 ’직무기술서 내 필수 자격사항‘ 에서 요구하는 어학기준(영어)을 충족한 자\n<극한지 데이터 표준화 및 디지털 트윈 기반 통합관제 시스템 구축>\n- 이공계열 관련 전공 학사학위 이상 소지자\n- ‘2. 응시 자격요건’ 및 ‘직무기술서 내 필수 자격사항’에서 요구하는 어학기준(영어)을 충족한 자\n※ 단, 1년 이상 관련 직무분야 경력자는 어학기준(영어) 면제\n<해빙 물리·해양지질 관측 및 자료 품질관리>\n- 학사학위 이상 소지자(전공 무관)\n- ‘2. 응시 자격요건’ 및 ’직무기술서 내 필수 자격사항‘ 에서 요구하는 어학기준(영어)을 충족한 자\n<오토런칭 관측소 플랫폼 개발 및 실증>\n- 기계, 전기, 전자, 컴퓨터, 로봇 등 공학계열 관련 전공 전문학사학위 이상 소지자\n- ‘2. 응시 자격요건’ 및 ‘직무기술서 내 필수 자격사항’에서 요구하는 어학기준(영어)을 충족한 자\n※ 단, 1년 이상 관련 직무분야 경력자는 어학기준(영어) 면제\n<극지 데이터 전처리 및 산학연 협력 기술지원(부산 근무)>\n- 컴퓨터공학, 지리정보공학(GIS), 산업공학, 데이터사이언스, 자연과학 등 이공계열 관련 전공 학사학위 이상 소지자\n- ‘2. 응시 자격요건’ 및 ’직무기술서 내 필수 자격사항‘ 에서 요구하는 어학기준(영어)을 충족한 자\n<AI-Ready 데이터셋 및 극지정보시스템 구축·운영>\n- 이공계열 관련 전공 전문학사학위 이상 소지자\n- ‘2. 응시 자격요건’ 및 ‘직무기술서 내 필수 자격사항’에서 요구하는 어학기준(영어)을 충족한 자\n※ 단, 1년 이상 관련 직무분야 경력자는 어학기준(영어) 면제\n<빙저호 시추시스템 기계설비 운영·유지보수>\n- 에너지관리기능사(보일러기능사), 용접기능사, 공조냉동기계기능사 중 해당 분야 자격증 2개 이상 보유자\n- 보일러 및 열교환기, 펌프 등 부대·부속 설비 설치·운영 관련 실무경력 5년 이상인 자\n<빙저호 시추시스템 전기·제어설비 운영·유지보수>\n- 전기기능사, 자동화설비기능사, 전기공사산업기사 중 해당 분야 자격증 2개 이상 보유자\n- 전력공급설비(MCCB), 자동제어설비, 전선 등 부대·부속 전기설비 설치·운영 관련 경력 5년 이상인 자\n<차세대 쇄빙연구선 건조 종합설계 분야 감독관>\n- 조선해양공학, 기계공학, 전자전기공학 등 관련 전공 학사학위 이상 소지자\n- 조선 관련 설계 또는 사업관리 업무경력 3년 이상인 자",
+      "caution": "규칙 기반 분류이며 개인별 지원자격 충족을 보증하지 않습니다. 마감 시각이 원문에 없으면 해당일 종료 시각으로 표시합니다.",
+      "tags": [
+        "확인 필요",
+        "낮음"
+      ],
+      "checkedAt": "2026-09-21T09:15:59+09:00",
+      "defaultStatus": "검토전",
+      "eligibility": "확인 필요",
+      "mechanicalStatus": "관련 없음",
+      "active": true,
+      "preferences": "채용공고문 참고",
+      "majors": "",
+      "education": "학력무관,대졸(2~3년),대졸(4년),석사",
+      "employment": "비정규직",
+      "requiredCertificates": "",
+      "preferredCertificates": "",
+      "duties": "기계,화학,전기.전자,정보통신,환경.에너지.안전,연구",
+      "firstSeen": "2026-09-21T09:15:59+09:00",
+      "score": 0
     },
     {
       "id": "8f8a3d4de3f6903ca2d7072d43b07226",
@@ -7536,7 +7795,7 @@
         "지원 가능",
         "매우 높음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -7573,7 +7832,7 @@
         "확인 필요",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:19:20+09:00",
+      "checkedAt": "2026-09-21T09:12:18+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -7610,7 +7869,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:13:48+09:00",
+      "checkedAt": "2026-09-21T09:07:49+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -7647,7 +7906,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:56+09:00",
+      "checkedAt": "2026-09-21T09:11:59+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -7684,7 +7943,7 @@
         "지원 가능",
         "매우 높음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -7721,7 +7980,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:17:21+09:00",
+      "checkedAt": "2026-09-21T09:10:28+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "확인 필요",
@@ -7758,7 +8017,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -7795,7 +8054,7 @@
         "확인 필요",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:20:57+09:00",
+      "checkedAt": "2026-09-21T09:13:57+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -7832,7 +8091,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:53+09:00",
+      "checkedAt": "2026-09-21T09:09:07+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -7869,7 +8128,7 @@
         "확인 필요",
         "높음"
       ],
-      "checkedAt": "2026-09-20T10:13:19+09:00",
+      "checkedAt": "2026-09-21T09:07:19+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -7906,7 +8165,7 @@
         "지원 가능",
         "매우 높음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -7943,7 +8202,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:26+09:00",
+      "checkedAt": "2026-09-21T09:15:26+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 없음",
@@ -7980,7 +8239,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:23:11+09:00",
+      "checkedAt": "2026-09-21T09:16:30+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -8017,7 +8276,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:11+09:00",
+      "checkedAt": "2026-09-21T09:16:30+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 없음",
@@ -8054,7 +8313,7 @@
         "지원 가능",
         "매우 높음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -8091,7 +8350,7 @@
         "확인 필요",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:21:01+09:00",
+      "checkedAt": "2026-09-21T09:14:02+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -8128,7 +8387,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:59+09:00",
+      "checkedAt": "2026-09-21T09:15:00+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -8165,7 +8424,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:13:20+09:00",
+      "checkedAt": "2026-09-21T09:07:21+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 없음",
@@ -8202,7 +8461,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:54+09:00",
+      "checkedAt": "2026-09-21T09:10:04+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -8239,7 +8498,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:40+09:00",
+      "checkedAt": "2026-09-21T09:09:51+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -8276,7 +8535,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:22+09:00",
+      "checkedAt": "2026-09-21T09:11:26+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -8313,7 +8572,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:41+09:00",
+      "checkedAt": "2026-09-21T09:13:42+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "확인 필요",
@@ -8350,7 +8609,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:17+09:00",
+      "checkedAt": "2026-09-21T09:11:21+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -8387,7 +8646,7 @@
         "확인 필요",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:17:02+09:00",
+      "checkedAt": "2026-09-21T09:10:12+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -8424,7 +8683,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:06+09:00",
+      "checkedAt": "2026-09-21T09:16:26+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "확인 필요",
@@ -8461,7 +8720,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:42+09:00",
+      "checkedAt": "2026-09-21T09:16:52+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "확인 필요",
@@ -8498,7 +8757,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:21+09:00",
+      "checkedAt": "2026-09-21T09:13:21+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "확인 필요",
@@ -8535,7 +8794,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "확인 필요",
@@ -8572,7 +8831,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:17:04+09:00",
+      "checkedAt": "2026-09-21T09:10:15+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -8609,7 +8868,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:03+09:00",
+      "checkedAt": "2026-09-21T09:09:15+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -8646,7 +8905,7 @@
         "확인 필요",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:19:17+09:00",
+      "checkedAt": "2026-09-21T09:12:13+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -8683,7 +8942,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:30+09:00",
+      "checkedAt": "2026-09-21T09:08:43+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -8720,7 +8979,7 @@
         "확인 필요",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:23:22+09:00",
+      "checkedAt": "2026-09-21T09:16:38+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -8757,7 +9016,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:47+09:00",
+      "checkedAt": "2026-09-21T09:13:48+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -8794,7 +9053,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:25+09:00",
+      "checkedAt": "2026-09-21T09:14:25+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -8831,7 +9090,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:41+09:00",
+      "checkedAt": "2026-09-21T09:11:43+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -8868,7 +9127,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:49+09:00",
+      "checkedAt": "2026-09-21T09:14:50+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -8905,7 +9164,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:13:33+09:00",
+      "checkedAt": "2026-09-21T09:07:33+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 있음",
@@ -8942,7 +9201,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:25+09:00",
+      "checkedAt": "2026-09-21T09:08:38+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -8979,7 +9238,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:21+09:00",
+      "checkedAt": "2026-09-21T09:09:33+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -9016,7 +9275,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:17:26+09:00",
+      "checkedAt": "2026-09-21T09:10:35+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -9053,7 +9312,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -9090,7 +9349,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:13:55+09:00",
+      "checkedAt": "2026-09-21T09:07:55+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -9127,7 +9386,7 @@
         "확인 필요",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:20:49+09:00",
+      "checkedAt": "2026-09-21T09:13:49+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -9141,6 +9400,43 @@
       "duties": "정보통신",
       "firstSeen": "2026-09-18T09:13:12+09:00",
       "score": 30
+    },
+    {
+      "id": "afabaac3d0ba7f12d9d9a319bf09a54f",
+      "company": "극지연구소",
+      "role": "2026년 하반기 극지연구소 연수생 채용 공고",
+      "category": "R&D",
+      "sector": "공공기관·기계 기술직",
+      "location": "인천",
+      "level": "신입",
+      "size": "공공기관",
+      "deadline": "2026-10-06T23:59:59+09:00",
+      "start": "2026-09-21T00:00:00+09:00",
+      "sourceUrl": "https://job.alio.go.kr/recruitview.do?idx=305154",
+      "sourceLabel": "JOB-ALIO 공식 공고",
+      "verification": "자동 수집 · 원문 확인 권장",
+      "match": "낮음",
+      "matchReason": "여러 직무의 요건이 함께 있어 직무별 신입 요건 확인 필요 / 계약직 정규직 전환 가능성 미확인",
+      "requirements": "ㅇ 각 연구분야별 자격요건을 충족하는 자\nㅇ 2026년도 2학기 기준 석사 또는 박사 과정에 재학 중이거나 (입학) 예정자로서, 타기관 및 타산업체에 취업되지 않은 자(휴학생, 미등록 수료생 연수 불가)\n※세부 응시자격 채용공고문 확인",
+      "caution": "규칙 기반 분류이며 개인별 지원자격 충족을 보증하지 않습니다. 마감 시각이 원문에 없으면 해당일 종료 시각으로 표시합니다.",
+      "tags": [
+        "확인 필요",
+        "낮음"
+      ],
+      "checkedAt": "2026-09-21T09:16:07+09:00",
+      "defaultStatus": "검토전",
+      "eligibility": "확인 필요",
+      "mechanicalStatus": "관련 없음",
+      "active": true,
+      "preferences": "※세부사항 채용공고문 확인",
+      "majors": "",
+      "education": "대졸(4년),석사",
+      "employment": "비정규직",
+      "requiredCertificates": "",
+      "preferredCertificates": "",
+      "duties": "연구",
+      "firstSeen": "2026-09-21T09:16:07+09:00",
+      "score": 0
     },
     {
       "id": "b068b47f41b9048bb206e9cee1b5d0c8",
@@ -9164,7 +9460,7 @@
         "확인 필요",
         "높음"
       ],
-      "checkedAt": "2026-09-20T10:13:02+09:00",
+      "checkedAt": "2026-09-21T09:07:03+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -9201,7 +9497,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:56+09:00",
+      "checkedAt": "2026-09-21T09:14:56+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -9238,7 +9534,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:58+09:00",
+      "checkedAt": "2026-09-21T09:10:08+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -9275,7 +9571,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:35+09:00",
+      "checkedAt": "2026-09-21T09:08:48+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -9312,7 +9608,7 @@
         "확인 필요",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:17:38+09:00",
+      "checkedAt": "2026-09-21T09:10:44+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -9349,7 +9645,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:05+09:00",
+      "checkedAt": "2026-09-21T09:13:05+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -9386,7 +9682,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:46+09:00",
+      "checkedAt": "2026-09-21T09:11:49+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -9423,7 +9719,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:17:58+09:00",
+      "checkedAt": "2026-09-21T09:11:01+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -9436,6 +9732,43 @@
       "preferredCertificates": "",
       "duties": "환경.에너지.안전",
       "firstSeen": "2026-09-15T21:07:01+09:00",
+      "score": 0
+    },
+    {
+      "id": "b5775df5ad6393a80a11839910afc5a5",
+      "company": "가축위생방역지원본부",
+      "role": "[가축위생방역지원본부 제2026-42호] 2026년 제2차 기간제근로자 채용 공고",
+      "category": "기타",
+      "sector": "공공기관·기계 기술직",
+      "location": "인천,대전,대구,부산,울산,경기,강원,충남,충북,경북,경남,전북,제주,세종,전남광주",
+      "level": "신입+경력",
+      "size": "공공기관",
+      "deadline": "2026-10-05T23:59:59+09:00",
+      "start": "2026-09-21T00:00:00+09:00",
+      "sourceUrl": "https://job.alio.go.kr/recruitview.do?idx=305162",
+      "sourceLabel": "JOB-ALIO 공식 공고",
+      "verification": "자동 수집 · 원문 확인 권장",
+      "match": "낮음",
+      "matchReason": "여러 직무의 요건이 함께 있어 직무별 신입 요건 확인 필요",
+      "requirements": "· 공통자격\n1. 가축위생방역지원본부 인사규정 제57조(정년)에 달하지 않는 자\n※ 임용예정일 기준 만 60세를 초과하는 자는 지원이 제한됨\n2. 가축위생방역지원본부 인사규정 제23조(결격사유)에 의한 결격사유가 없는 자\n3. 최종합격자 발표 후 임용예정일부터 즉시 근무가 가능한 자\n· 방역직(7급)\n1. 「국가기술자격법」에 의한 축산산업기사 이상의 자격이 있는 자\n2. 「고등교육법」에 의한 전문대학 이상의 대학에서 수의학·축산학·생물학 또는 보건학 분야를 전공하고 졸업한 자(졸업예정자를 포함한다) 또는 이와 동등 이상의 학력을 가진 자\n3. 국가·지방자치단체 행정기관에서 가축방역업무(예방접종, 임상검사, 검사시료 채취 및 소독 등)를 1년 이상 수행한 경험이 있는 자\n4. 축산관련단체에서 가축방역업무(예방접종, 임상검사, 검사시료 채취 및 소독 등)를 2년 이상 종사한 경험이 있는 자\n· 위생직(7급)\n1. 고등교육법 제2조에 따른 학교에서 수의학·축산학, 식품학, 생물학 분야의 학과 또는 학부를 이수하여 졸업한 자 또는, 이와 동등이상의 자격이 있는 자\n2. 「국가기술자격법」에 따른 축산기능사 이상 또는 식육처리기능사의 자격이 있는 사람\n3. 축산물 시험·검사기관에서 축산물 위생 관련 업무에 1년 이상 종사한 경험이 있는 사람\n· 사무운영직(7급)\n1. 고졸 이상의 학력소지자로서 가축방역?위생분야 업무수행이 가능하다고 판단되는 자\n2. 경력 및 기타자격으로 상기요건에 상응하는 자격이 있다고 본부장이 인정하는 자\n· 기록물 관리 전문요원\n1. 「공공기록물 관리에 관한 법률 시행령」 제78조제1항에 따라 기록물 관리 전문요원 요건을 충족하는 자\n· 청년인턴(체험형)\n1. 임용예정일(’26. 11. 4.) 기준 「청년고용촉진 특별법 시행령」 제2조에 따른 청년\n※ 15세 이상 34세 이하인 자, 「제대군인에 관한 법률」에 따라 응시연령 상한 조정\n2. 가축위생방역지원본부 청년인턴으로 근무한 경력이 없고, 현재 근무하지 않는 자\n※ 업무 시 학업과 병행 불가\n※ 세부사항 공고문 참조",
+      "caution": "규칙 기반 분류이며 개인별 지원자격 충족을 보증하지 않습니다. 마감 시각이 원문에 없으면 해당일 종료 시각으로 표시합니다.",
+      "tags": [
+        "확인 필요",
+        "낮음"
+      ],
+      "checkedAt": "2026-09-21T09:16:17+09:00",
+      "defaultStatus": "검토전",
+      "eligibility": "확인 필요",
+      "mechanicalStatus": "관련 없음",
+      "active": true,
+      "preferences": "· 「국가유공자 등 예우 및 지원에 관한 법률」에 따른 취업지원 대상자는 채용 전형단계별 득점에 가산(취업지원 대상자 증명서 기준으로 만점의 5% 또는 10%)\n· 「장애인 고용촉진 및 직업재활법」에 따른 장애인은 만점의 10%를 채용 전형단계별 득점에 가산\n· 「혁신도시 조성 및 발전에 관한 특별법」에 따른 지역인재는 만점의 3%를 채용 전형단계별 득점에 가산\n· 「국민기초생활보장법」에 따른 국민기초생활수급자 본인 또는 국민기초생활수급자 자녀는 만점의 3%를 서류전형에서만 득점에 가산\n· 「북한이탈주민보호 및 정착지원에 관한 법률」 제2조에 따른 북한이탈주민은 만점의 3%를 서류전형에서만 득점에 가산\n· 「아동복지법」 제16조 및 제 16조의3에 따라 보호조치가 종료되거나 해당 시설에서 퇴소한 지 5년이 지나지 아니한 사람은 만점의 3%를 서류전형에서만 득점에 가산\n※ 우대사항은 본 공고문에 명시된 증명서 제출을 통해 확인된 사항만 인정\n※ 보다 자세한 사항은 첨부 파일의 채용 공고문 참조",
+      "majors": "",
+      "education": "학력무관,고졸,대졸(2~3년),대졸(4년)",
+      "employment": "비정규직,청년인턴(체험형)",
+      "requiredCertificates": "",
+      "preferredCertificates": "",
+      "duties": "경영.회계.사무,보건.의료,농림어업",
+      "firstSeen": "2026-09-21T09:16:17+09:00",
       "score": 0
     },
     {
@@ -9460,7 +9793,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:13:29+09:00",
+      "checkedAt": "2026-09-21T09:07:29+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 있음",
@@ -9534,7 +9867,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:19:37+09:00",
+      "checkedAt": "2026-09-21T09:12:35+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -9571,7 +9904,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:43+09:00",
+      "checkedAt": "2026-09-21T09:13:43+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -9608,7 +9941,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:17:30+09:00",
+      "checkedAt": "2026-09-21T09:10:38+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -9645,7 +9978,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:36+09:00",
+      "checkedAt": "2026-09-21T09:11:39+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -9682,7 +10015,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:17:14+09:00",
+      "checkedAt": "2026-09-21T09:10:23+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -9719,7 +10052,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 없음",
@@ -9756,7 +10089,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "확인 필요",
@@ -9793,7 +10126,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:24+09:00",
+      "checkedAt": "2026-09-21T09:11:29+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -9830,7 +10163,7 @@
         "확인 필요",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:22:57+09:00",
+      "checkedAt": "2026-09-21T09:16:09+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -9867,7 +10200,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:11+09:00",
+      "checkedAt": "2026-09-21T09:11:14+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -9904,7 +10237,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:03+09:00",
+      "checkedAt": "2026-09-21T09:15:04+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -9941,7 +10274,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:19:11+09:00",
+      "checkedAt": "2026-09-21T09:12:12+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "확인 필요",
@@ -9978,7 +10311,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:08+09:00",
+      "checkedAt": "2026-09-21T09:11:13+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -10015,7 +10348,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:35+09:00",
+      "checkedAt": "2026-09-21T09:09:48+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -10052,7 +10385,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:56+09:00",
+      "checkedAt": "2026-09-21T09:10:06+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -10089,7 +10422,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:04+09:00",
+      "checkedAt": "2026-09-21T09:11:07+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -10126,7 +10459,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -10163,7 +10496,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "확인 필요",
@@ -10200,7 +10533,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "확인 필요",
@@ -10237,7 +10570,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:13:40+09:00",
+      "checkedAt": "2026-09-21T09:07:41+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -10274,7 +10607,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 없음",
@@ -10311,7 +10644,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:58+09:00",
+      "checkedAt": "2026-09-21T09:16:14+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -10348,7 +10681,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:42+09:00",
+      "checkedAt": "2026-09-21T09:15:44+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -10385,7 +10718,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:07+09:00",
+      "checkedAt": "2026-09-21T09:08:20+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -10422,7 +10755,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:17+09:00",
+      "checkedAt": "2026-09-21T09:08:30+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -10459,7 +10792,7 @@
         "확인 필요",
         "높음"
       ],
-      "checkedAt": "2026-09-20T10:12:52+09:00",
+      "checkedAt": "2026-09-21T09:06:53+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -10496,7 +10829,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:14+09:00",
+      "checkedAt": "2026-09-21T09:09:26+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -10533,7 +10866,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:13:39+09:00",
+      "checkedAt": "2026-09-21T09:07:39+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 있음",
@@ -10570,7 +10903,7 @@
         "지원 가능",
         "매우 높음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -10607,7 +10940,7 @@
         "확인 필요",
         "높음"
       ],
-      "checkedAt": "2026-09-20T10:12:56+09:00",
+      "checkedAt": "2026-09-21T09:06:57+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -10644,7 +10977,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:48+09:00",
+      "checkedAt": "2026-09-21T09:09:00+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -10681,7 +11014,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -10755,7 +11088,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:32+09:00",
+      "checkedAt": "2026-09-21T09:15:32+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -10792,7 +11125,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:17:54+09:00",
+      "checkedAt": "2026-09-21T09:10:59+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -10829,7 +11162,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:59+09:00",
+      "checkedAt": "2026-09-21T09:14:00+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -10866,7 +11199,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:55+09:00",
+      "checkedAt": "2026-09-21T09:13:55+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -10903,7 +11236,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "확인 필요",
@@ -10940,7 +11273,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:52+09:00",
+      "checkedAt": "2026-09-21T09:11:55+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -10977,7 +11310,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:48+09:00",
+      "checkedAt": "2026-09-21T09:11:51+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -11014,7 +11347,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:17:06+09:00",
+      "checkedAt": "2026-09-21T09:10:16+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -11051,7 +11384,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -11088,7 +11421,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:19:56+09:00",
+      "checkedAt": "2026-09-21T09:12:56+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -11125,7 +11458,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:07+09:00",
+      "checkedAt": "2026-09-21T09:09:19+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 없음",
@@ -11162,7 +11495,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:34+09:00",
+      "checkedAt": "2026-09-21T09:13:35+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -11199,7 +11532,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -11236,7 +11569,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:38+09:00",
+      "checkedAt": "2026-09-21T09:14:38+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -11273,7 +11606,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:17:16+09:00",
+      "checkedAt": "2026-09-21T09:10:24+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -11310,7 +11643,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:49+09:00",
+      "checkedAt": "2026-09-21T09:15:51+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -11347,7 +11680,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:34+09:00",
+      "checkedAt": "2026-09-21T09:11:36+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "확인 필요",
@@ -11384,7 +11717,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:37+09:00",
+      "checkedAt": "2026-09-21T09:08:50+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -11421,7 +11754,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:51+09:00",
+      "checkedAt": "2026-09-21T09:09:04+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -11458,7 +11791,7 @@
         "확인 필요",
         "높음"
       ],
-      "checkedAt": "2026-09-20T10:13:00+09:00",
+      "checkedAt": "2026-09-21T09:07:01+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -11495,7 +11828,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:51+09:00",
+      "checkedAt": "2026-09-21T09:13:52+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -11532,7 +11865,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:40+09:00",
+      "checkedAt": "2026-09-21T09:08:52+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -11569,7 +11902,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:46+09:00",
+      "checkedAt": "2026-09-21T09:09:56+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -11606,7 +11939,7 @@
         "지원 가능",
         "매우 높음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -11643,7 +11976,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:13:30+09:00",
+      "checkedAt": "2026-09-21T09:07:31+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 있음",
@@ -11680,7 +12013,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:54+09:00",
+      "checkedAt": "2026-09-21T09:16:01+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -11717,7 +12050,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:12+09:00",
+      "checkedAt": "2026-09-21T09:14:11+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -11754,7 +12087,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:19:47+09:00",
+      "checkedAt": "2026-09-21T09:12:46+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 없음",
@@ -11791,7 +12124,7 @@
         "지원 가능",
         "매우 높음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -11828,7 +12161,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:19:51+09:00",
+      "checkedAt": "2026-09-21T09:12:51+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 없음",
@@ -11865,7 +12198,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:17:36+09:00",
+      "checkedAt": "2026-09-21T09:10:42+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -11902,7 +12235,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:44+09:00",
+      "checkedAt": "2026-09-21T09:15:46+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 없음",
@@ -11939,7 +12272,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:38+09:00",
+      "checkedAt": "2026-09-21T09:15:40+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -11976,7 +12309,7 @@
         "확인 필요",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:21:47+09:00",
+      "checkedAt": "2026-09-21T09:14:48+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -11990,6 +12323,43 @@
       "duties": "음식서비스",
       "firstSeen": "2026-09-18T09:14:10+09:00",
       "score": 30
+    },
+    {
+      "id": "de9e024e08f8e0e511944fdd17261cf1",
+      "company": "한전KDN",
+      "role": "한전KDN(주) 대전충남본부 AMI분야 작업원(장애인) 추가 모집공고",
+      "category": "기타",
+      "sector": "공공기관·기계 기술직",
+      "location": "대전,충남,세종",
+      "level": "신입+경력",
+      "size": "공공기관",
+      "deadline": "2026-10-05T23:59:59+09:00",
+      "start": "2026-09-21T00:00:00+09:00",
+      "sourceUrl": "https://job.alio.go.kr/recruitview.do?idx=305137",
+      "sourceLabel": "JOB-ALIO 공식 공고",
+      "verification": "자동 수집 · 원문 확인 권장",
+      "match": "낮음",
+      "matchReason": "여러 직무의 요건이 함께 있어 직무별 신입 요건 확인 필요 / 계약직 정규직 전환 가능성 미확인",
+      "requirements": "가. 공통 자격\n1) 장애인등록증 또는 복지카드(장애인) 소지자\n2) 건설업 기초 안전보건교육 이수자 또는 이수 가능자(계약시 증빙)\n3) 당사 인사규정2.1.4(채용결격사유)에 해당하지 않는자(붙임1 참조)\n4) 병역법 제 76조에서 정한 병역의무 불이행 사실이 없는 자\n5) 학력, 연령, 외국어 제한없음\n나. 직종별 자격\n1) 현장보조원\n- 현장관리 부대 업무(현장 자재의 관리 및 조달, 일일시공실적관리, 현장대리인의 지시사항 이행 등) 수행이 가능한 자",
+      "caution": "규칙 기반 분류이며 개인별 지원자격 충족을 보증하지 않습니다. 마감 시각이 원문에 없으면 해당일 종료 시각으로 표시합니다.",
+      "tags": [
+        "확인 필요",
+        "낮음"
+      ],
+      "checkedAt": "2026-09-21T09:15:34+09:00",
+      "defaultStatus": "검토전",
+      "eligibility": "확인 필요",
+      "mechanicalStatus": "관련 없음",
+      "active": true,
+      "preferences": "1) 자가차량(고소차량 포함) 보유자(자동차보험, 유효한 검사필증 必)\n2) 운전면허 소지자(1종보통), 1.2톤 고소작업차 운행 가능자\n3) 전기, 통신분야 현장업무 유경험자(100일 이상)",
+      "majors": "",
+      "education": "학력무관",
+      "employment": "비정규직",
+      "requiredCertificates": "",
+      "preferredCertificates": "",
+      "duties": "전기.전자,정보통신",
+      "firstSeen": "2026-09-21T09:15:34+09:00",
+      "score": 0
     },
     {
       "id": "df02f68d3e3c7dad1e3d1ed822e4fc80",
@@ -12013,7 +12383,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:18+09:00",
+      "checkedAt": "2026-09-21T09:13:19+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -12050,7 +12420,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:19:09+09:00",
+      "checkedAt": "2026-09-21T09:12:09+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -12087,7 +12457,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:45+09:00",
+      "checkedAt": "2026-09-21T09:13:45+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -12124,7 +12494,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:13+09:00",
+      "checkedAt": "2026-09-21T09:08:25+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -12161,7 +12531,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:06+09:00",
+      "checkedAt": "2026-09-21T09:15:06+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -12198,7 +12568,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:21:35+09:00",
+      "checkedAt": "2026-09-21T09:14:36+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 없음",
@@ -12235,7 +12605,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:17:19+09:00",
+      "checkedAt": "2026-09-21T09:10:26+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -12309,7 +12679,7 @@
         "확인 필요",
         "높음"
       ],
-      "checkedAt": "2026-09-20T10:12:55+09:00",
+      "checkedAt": "2026-09-21T09:06:55+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -12346,7 +12716,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -12383,7 +12753,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:11+09:00",
+      "checkedAt": "2026-09-21T09:13:11+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -12420,7 +12790,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:13:50+09:00",
+      "checkedAt": "2026-09-21T09:07:51+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -12457,7 +12827,7 @@
         "확인 필요",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:21:28+09:00",
+      "checkedAt": "2026-09-21T09:14:27+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -12494,7 +12864,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:58+09:00",
+      "checkedAt": "2026-09-21T09:12:01+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -12531,7 +12901,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:14:59+09:00",
+      "checkedAt": "2026-09-21T09:08:12+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -12568,7 +12938,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:13:53+09:00",
+      "checkedAt": "2026-09-21T09:07:53+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -12605,7 +12975,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:20+09:00",
+      "checkedAt": "2026-09-21T09:11:25+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -12642,7 +13012,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:39+09:00",
+      "checkedAt": "2026-09-21T09:13:39+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -12679,7 +13049,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:23:21+09:00",
+      "checkedAt": "2026-09-21T09:16:36+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -12716,7 +13086,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:17:48+09:00",
+      "checkedAt": "2026-09-21T09:10:54+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "확인 필요",
@@ -12753,7 +13123,7 @@
         "지원 가능",
         "매우 높음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -12790,7 +13160,7 @@
         "확인 필요",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:18:18+09:00",
+      "checkedAt": "2026-09-21T09:11:23+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -12827,7 +13197,7 @@
         "지원 가능",
         "매우 높음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -12864,7 +13234,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:43+09:00",
+      "checkedAt": "2026-09-21T09:09:54+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "확인 필요",
@@ -12901,7 +13271,7 @@
         "지원 가능",
         "매우 높음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -12938,7 +13308,7 @@
         "지원 가능",
         "매우 높음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -12975,7 +13345,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:20:01+09:00",
+      "checkedAt": "2026-09-21T09:13:00+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -13012,7 +13382,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:19:26+09:00",
+      "checkedAt": "2026-09-21T09:12:26+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -13049,7 +13419,7 @@
         "지원 가능",
         "높음"
       ],
-      "checkedAt": "2026-09-20T10:23:11+09:00",
+      "checkedAt": "2026-09-21T09:16:30+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -13086,7 +13456,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:23:11+09:00",
+      "checkedAt": "2026-09-21T09:16:30+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -13123,7 +13493,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:16+09:00",
+      "checkedAt": "2026-09-21T09:09:27+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -13160,7 +13530,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:13:34+09:00",
+      "checkedAt": "2026-09-21T09:07:35+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 있음",
@@ -13197,7 +13567,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "확인 필요",
@@ -13211,6 +13581,43 @@
       "duties": "✔ 우리 조직을 소개합니다.\n우리 조직은 전기자동차향 배터리 Cell을 개발하는 조직이예요. 고객사에서 요구하는 성능에 적합한 Cell을 설계하고, 이를 검증해서 전기자동차로 만들어서 소비자에게 공급할 수 있게 하는 것이 저희 조직의 목표예요.\n✔ 이런 일을 합니다.\n안전하고 최고의 성능을 구현할 수 있는 배터리 Cell을 설계하고, 검증하는 업무를 해요.\n적합한 원재료를 선정하는 연구에서부터, 적합한 설계 그리고 샘플 제작까지, 배터리 Cell을 개발하기 위한 모든 과정을 Leading하고, 고객과도 직접 소통하며 기술적인 대응하는 업무를 수행해요.\nChemistry 관점에서의 연구뿐만 아니라, Cell mechanical 구조, 부품, 새로운 공정을 연구하고 이를 바탕으로 배터리 셀에 적용해요.\n안전성 관점에서도 활발한 연구를 하고 있고, 핵심 인자를 발굴하고 개선하는 연구와 평가를 진행해요.\n✔ 이렇게 성장할 수 있어요.\n자동차전지 개발 업무를 수행하면서 배터리 Cell 개발에 모든 과정을 리딩하는 업무를 진행하기에, 신규 조성 및 소재 연구, Cell 설계 검증 등 Cell 개발 내 다양한 분야의 전문가/리더로 성장할 수 있어요.\n전지 공정에 대한 이해는 LG에너지솔루션의 모든 직무에 필요한 조건이기 때문에 공정기술/상품기획/PM/마케팅 등 새로운 분야로의 커리어 발전도 가능해요.\n✔ 이렇게 준비하면 좋아요.\n2차전지 소재/구조/공정에 대한 공부, 전기화학에 대한 공부를 하면 좋아요.\n내가 배우고 경험한 것들을 자동차전지 Cell 개발 업무에 어떻게 활용할 수 있을지 고민해 보면 좋아요.\n뿐만 아니라 여러 사람들과 협업을 해본 경험이 있다면 자기소개서에 녹여보는 것도 좋습니다.",
       "firstSeen": "2026-09-16T12:59:48+09:00",
       "score": 20
+    },
+    {
+      "id": "f157ffadee4725165653dd84b4f92afb",
+      "company": "한국조세재정연구원",
+      "role": "[한국조세재정연구원] 공공기관연구센터 소장 초빙",
+      "category": "R&D",
+      "sector": "공공기관·기계 기술직",
+      "location": "세종",
+      "level": "신입+경력",
+      "size": "공공기관",
+      "deadline": "2026-10-05T23:59:59+09:00",
+      "start": "2026-09-21T00:00:00+09:00",
+      "sourceUrl": "https://job.alio.go.kr/recruitview.do?idx=305161",
+      "sourceLabel": "JOB-ALIO 공식 공고",
+      "verification": "자동 수집 · 원문 확인 권장",
+      "match": "낮음",
+      "matchReason": "여러 직무의 요건이 함께 있어 직무별 신입 요건 확인 필요 / 계약직 정규직 전환 가능성 미확인",
+      "requirements": "- 행정학, 정책학, 경영학, 경제학 등 관련 분야 박사학위 소지자\n- 공공기관 경영평가 관리, 선진화 연구 및 지원 등을 체계적·적극적으로 추진할 수 있는 자\n- 해당 분야에 관한 식견과 정책연구 실적이 풍부하고, 덕망 있는 자\n- 조직경영에 대한 경륜과 대외활동 및 교섭 능력을 갖춘 자\n- 국제감각과 미래지향적 비전을 가진 자\n- 국가공무원법 제33조 각 호의 어느 하나에 해당하지 않는 자\n* 학교 및 타기관 등에 재직 중인 경우 소장 임기 중 휴직이 가능하여야 하며, 공고일 현재 위 지원자격을 충족하는 본원 재직자도 지원 가능",
+      "caution": "규칙 기반 분류이며 개인별 지원자격 충족을 보증하지 않습니다. 마감 시각이 원문에 없으면 해당일 종료 시각으로 표시합니다.",
+      "tags": [
+        "확인 필요",
+        "낮음"
+      ],
+      "checkedAt": "2026-09-21T09:16:15+09:00",
+      "defaultStatus": "검토전",
+      "eligibility": "확인 필요",
+      "mechanicalStatus": "관련 없음",
+      "active": true,
+      "preferences": "- 취업지원대상자(5~10%)\n- 장애인(5%)\n- 이전지역인재(3%)",
+      "majors": "",
+      "education": "박사",
+      "employment": "비정규직",
+      "requiredCertificates": "",
+      "preferredCertificates": "",
+      "duties": "사업관리,연구",
+      "firstSeen": "2026-09-21T09:16:15+09:00",
+      "score": 0
     },
     {
       "id": "f3347084eced56aacac18831fb98e2c5",
@@ -13234,7 +13641,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:38+09:00",
+      "checkedAt": "2026-09-21T09:16:48+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 없음",
@@ -13271,7 +13678,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:55+09:00",
+      "checkedAt": "2026-09-21T09:09:09+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -13308,7 +13715,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:19:43+09:00",
+      "checkedAt": "2026-09-21T09:12:42+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -13345,7 +13752,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -13382,7 +13789,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:18:50+09:00",
+      "checkedAt": "2026-09-21T09:11:53+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -13419,7 +13826,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:36+09:00",
+      "checkedAt": "2026-09-21T09:16:46+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "확인 필요",
@@ -13456,7 +13863,7 @@
         "지원 가능",
         "매우 높음"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -13493,7 +13900,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:38+09:00",
+      "checkedAt": "2026-09-21T09:16:48+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 없음",
@@ -13530,7 +13937,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:17:44+09:00",
+      "checkedAt": "2026-09-21T09:10:50+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -13567,7 +13974,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:19+09:00",
+      "checkedAt": "2026-09-21T09:15:20+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -13604,7 +14011,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:40+09:00",
+      "checkedAt": "2026-09-21T09:15:42+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -13641,7 +14048,7 @@
         "확인 필요",
         "높음"
       ],
-      "checkedAt": "2026-09-20T10:13:07+09:00",
+      "checkedAt": "2026-09-21T09:07:07+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 있음",
@@ -13678,7 +14085,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:15+09:00",
+      "checkedAt": "2026-09-21T09:16:32+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 없음",
@@ -13715,7 +14122,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:19:34+09:00",
+      "checkedAt": "2026-09-21T09:12:33+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -13752,7 +14159,7 @@
         "지원 가능",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:23:15+09:00",
+      "checkedAt": "2026-09-21T09:16:32+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 없음",
@@ -13789,7 +14196,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:15:19+09:00",
+      "checkedAt": "2026-09-21T09:08:32+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -13826,7 +14233,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:17:34+09:00",
+      "checkedAt": "2026-09-21T09:10:40+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -13863,7 +14270,7 @@
         "확인 필요",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:22:17+09:00",
+      "checkedAt": "2026-09-21T09:15:18+09:00",
       "defaultStatus": "검토전",
       "eligibility": "확인 필요",
       "mechanicalStatus": "관련 없음",
@@ -13900,7 +14307,7 @@
         "지원 어려움",
         "낮음"
       ],
-      "checkedAt": "2026-09-20T10:16:38+09:00",
+      "checkedAt": "2026-09-21T09:09:50+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 어려움",
       "mechanicalStatus": "관련 없음",
@@ -13937,7 +14344,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:23:19+09:00",
+      "checkedAt": "2026-09-21T09:16:34+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
@@ -14011,7 +14418,7 @@
         "지원 가능",
         "보통"
       ],
-      "checkedAt": "2026-09-20T10:13:43+09:00",
+      "checkedAt": "2026-09-21T09:07:43+09:00",
       "defaultStatus": "검토전",
       "eligibility": "지원 가능",
       "mechanicalStatus": "관련 있음",
