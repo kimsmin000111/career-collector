@@ -1,8 +1,13 @@
 {
-  "checkedAt": "2026-09-21T09:16:52+09:00",
+  "checkedAt": "2026-09-21T12:05:58+09:00",
   "mode": "daily",
-  "attempted": 3,
-  "succeeded": 3,
+  "attempted": 5,
+  "succeeded": 4,
+  "coverage": {
+    "registered": 77,
+    "enabled": 5,
+    "watchOnly": 72
+  },
   "sources": [
     {
       "id": "mobis",
@@ -11,22 +16,33 @@
     },
     {
       "id": "jobalio",
-      "status": "ok",
-      "records": 240
+      "status": "error",
+      "records": 0,
+      "reason": "ConnectTimeout"
     },
     {
       "id": "lgcareers",
       "status": "ok",
-      "records": 89
+      "records": 90
+    },
+    {
+      "id": "samsung",
+      "status": "ok",
+      "records": 0
+    },
+    {
+      "id": "hanwha",
+      "status": "ok",
+      "records": 100
     }
   ],
   "metrics": {
-    "신규 공고 수": 11,
-    "변경 공고 수": 5,
+    "신규 공고 수": 101,
+    "변경 공고 수": 0,
     "신규 지원 가능 공고 수": 0,
-    "확인 필요 공고 수": 51,
-    "7일 이내 마감 공고 수": 16,
-    "3일 이내 마감 공고 수": 8,
+    "확인 필요 공고 수": 135,
+    "7일 이내 마감 공고 수": 63,
+    "3일 이내 마감 공고 수": 51,
     "오늘 사이트 업데이트 여부": true
   }
 }
