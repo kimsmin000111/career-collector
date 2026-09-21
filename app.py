@@ -15,9 +15,11 @@ from collectors.public_jobs import PublicAPI
 from collectors.company_specific.mobis import Mobis
 from collectors.company_specific.jobalio import JobAlio
 from collectors.company_specific.lgcareers import LGCareers
+from collectors.company_specific.hanwha import Hanwha
+from collectors.company_specific.samsung import Samsung
 
 ROOT=Path(__file__).resolve().parent
-ADAPTERS={'generic_html':GenericHTML,'public_api':PublicAPI,'mobis':Mobis,'jobalio':JobAlio,'lgcareers':LGCareers}
+ADAPTERS={'generic_html':GenericHTML,'public_api':PublicAPI,'mobis':Mobis,'jobalio':JobAlio,'lgcareers':LGCareers,'hanwha':Hanwha,'samsung':Samsung}
 
 def main():
     parser=argparse.ArgumentParser()
@@ -49,7 +51,7 @@ def main():
         elif args.mode=='weekly':s['max_pages']=s.get('weekly_max_pages',s.get('max_pages',5))
         attempted+=1; n=0
         try:
-            client=HttpClient(store,s['allowed_hosts'],s.get('interval_seconds',2))
+            client=HttpClient(store,s['allowed_hosts'],s.get('interval_seconds',2),s.get('allow_invalid_robots',False))
             for job in ADAPTERS[s['method']](s,client).collect():
                 job=classify(job,cfg)
                 change=store.upsert(job)
@@ -76,7 +78,10 @@ def main():
         '신규 지원 가능 공고 수':sum(1 for j in jobs if j.id in new_ids and j.entry_status=='지원 가능' and j.mechanical_status=='관련 있음'),
         '확인 필요 공고 수':sum(j.entry_status=='확인 필요' or j.mechanical_status=='확인 필요' for j in eligible),
         '7일 이내 마감 공고 수':within(7),'3일 이내 마감 공고 수':within(3),'오늘 사이트 업데이트 여부':updated}
-    health={'checkedAt':now_iso(),'mode':args.mode,'attempted':attempted,'succeeded':succeeded,'sources':results,'metrics':metrics}
+    health={'checkedAt':now_iso(),'mode':args.mode,'attempted':attempted,'succeeded':succeeded,
+        'coverage':{'registered':len(registry['sources']),'enabled':sum(bool(x.get('enabled')) for x in registry['sources']),
+                    'watchOnly':sum(not bool(x.get('enabled')) for x in registry['sources'])},
+        'sources':results,'metrics':metrics}
     write_if_changed(ROOT/'output/health.json',health)
     write_if_changed(ROOT/'logs'/f'{now.date()}-{args.mode}.json',metrics)
     if args.mode=='weekly':

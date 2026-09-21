@@ -30,6 +30,7 @@ sources:
   - job.alio.go.kr
   max_pages: 10
   weekly_max_pages: 80
+  lookback_days: 365
   selectors: {}
   last_success: null
   institution_types:
@@ -68,6 +69,27 @@ sources:
   interval_seconds: 2
   selectors: {}
   last_success: null
+- id: samsung
+  name: 삼성그룹
+  type: large
+  industry: 전자·반도체·디스플레이·배터리·조선·플랜트
+  url: https://www.samsungcareers.com/hr/
+  method: samsung
+  api: true
+  javascript: true
+  enabled: true
+  terms_reviewed: true
+  policy_url: https://www.samsungcareers.com/robots.txt
+  policy_note: 공개 채용 목록·상세 데이터만 조회. robots.txt 경로가 오류 JSON을 반환하여 출처별 예외로 기록.
+  allowed_hosts:
+  - www.samsungcareers.com
+  list_url: https://www.samsungcareers.com/hr/list.data
+  detail_url: https://www.samsungcareers.com/recruit/detail.data
+  allow_invalid_robots: true
+  interval_seconds: 1
+  max_pages: 10
+  selectors: {}
+  last_success: null
 - id: company-2
   name: 현대자동차
   type: large
@@ -83,21 +105,28 @@ sources:
   selectors: {}
   last_success: null
   note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
-- id: company-3
-  name: 한화에어로스페이스
+- id: hanwha
+  name: 한화그룹
   type: large
-  industry: 항공·방산
-  url: https://www.hanwhain.com/
-  method: generic_html
-  api: false
-  javascript: null
-  enabled: false
-  terms_reviewed: false
+  industry: 항공·방산·기계·에너지
+  url: https://www.hanwhain.com/portal/apply/recruit
+  method: hanwha
+  api: true
+  javascript: true
+  enabled: true
+  terms_reviewed: true
+  policy_url: https://www.hanwhain.com/portal/etc/privacy
   allowed_hosts:
   - www.hanwhain.com
+  - hwadm.hanwhain.com
+  list_api: https://hwadm.hanwhain.com/new-backend/portal/api/rcRecruit/search-rcrt
+  detail_api: https://hwadm.hanwhain.com/new-backend/portal/api/rcRecruit/get-rcrt
+  allow_invalid_robots: true
+  interval_seconds: 1
+  max_pages: 5
   selectors: {}
   last_success: null
-  note: 기존 후보 목록. 정책·목록/상세 selector 또는 공식 API 확인 전 자동 수집 안 함.
+  note: 공개 공식 채용 API. 신입·인턴 공고를 직무 단위로 수집.
 - id: company-4
   name: 현대위아
   type: large

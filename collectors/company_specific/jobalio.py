@@ -6,30 +6,28 @@ from collectors.base import Collector, SourceError, date_value
 from core.models import Job, now_iso, KST
 
 class JobAlio(Collector):
+    RELEVANT_NCS=('R600009','R600014','R600015','R600016','R600017','R600019','R600023','R600025')
+
     def collect(self):
-        s=self.source;seen=set(); urls=set(); complete=False
-        previous=self.http.store.db.execute('SELECT success_at FROM sources WHERE id=?',(s['id'],)).fetchone()
-        since=(datetime.now(KST)-timedelta(days=7)).date()
-        if s.get('run_mode')!='weekly' and previous and previous['success_at']:
-            since=max(since,(datetime.fromisoformat(previous['success_at'])-timedelta(days=1)).date())
+        s=self.source;seen=set();urls=set();complete=False
+        today=datetime.now(KST).date()
+        since=today-timedelta(days=s.get('lookback_days',365))
         for page in range(1,s.get('max_pages',80)+1):
-            body,_=self.http.get(s['url']+'?pageNo='+str(page))
+            payload=[
+                ('pageNo',str(page)),('pageSet','50'),('s_date',since.isoformat()),
+                ('e_date',today.isoformat()),('ing','2'),('order','REG_DATE'),('sort','DESC')
+            ]+[('detail_code',code) for code in self.RELEVANT_NCS]
+            body,_=self.http.post_form(s['url'],payload)
             soup=BeautifulSoup(body,'html.parser')
             current={urljoin(s['url'],'/recruitview.do?idx='+x['value']) for x in soup.select('input[name="idxs"][value]') if x['value'].isdigit()}
-            if not current:raise SourceError('JOB-ALIO 목록 미검출')
+            if not current:
+                if page==1:raise SourceError('JOB-ALIO 목록 미검출')
+                complete=True;break
             if current <= seen:raise SourceError('JOB-ALIO 페이지 반복; 페이지 이동 확인 필요')
             seen.update(current)
-            dated=[]
-            for row in soup.select('tr'):
-                box=row.select_one('input[name="idxs"]')
-                if not box:continue
-                dates=re.findall(r'20\d{2}\.\d{2}\.\d{2}',row.get_text(' ',strip=True))
-                if dates:
-                    registered=datetime.strptime(dates[0],'%Y.%m.%d').date();dated.append(registered)
-                    if registered>=since:urls.add(urljoin(s['url'],'/recruitview.do?idx='+box['value']))
-                else:urls.add(urljoin(s['url'],'/recruitview.do?idx='+box['value']))
+            urls.update(current)
             pages=[int(v) for v in re.findall(r'goPage\((\d+)\)',str(soup))]
-            if (dated and max(dated)<since) or not pages or page>=max(pages):
+            if not pages or page>=max(pages):
                 complete=True;break
         # Recheck known open jobs even when their registration is outside the lookback.
         for old in self.http.store.jobs():
@@ -41,7 +39,7 @@ class JobAlio(Collector):
             if old and not changed:
                 old.last_checked=now_iso();yield old;continue
             yield self.parse(body,url)
-        if not complete:raise SourceError('JOB-ALIO 목록 페이지 상한 도달; 기간 내 일부 공고 누락 가능')
+        if not complete:raise SourceError('JOB-ALIO 관련 직군 진행 공고 페이지 상한 도달; 일부 공고 누락 가능')
 
     def parse(self,body,url):
         s=self.source

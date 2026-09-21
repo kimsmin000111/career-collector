@@ -14,12 +14,13 @@ class SourceError(RuntimeError):
 
 class HttpClient:
     """No browser spoofing, login automation, proxy rotation or challenge bypass."""
-    def __init__(self, store, hosts, interval=2):
+    def __init__(self, store, hosts, interval=2, allow_invalid_robots=False):
         self.store, self.hosts = store, set(hosts)
         self.interval, self.last, self.robots = interval, {}, {}
+        self.allow_invalid_robots = allow_invalid_robots
         self.session=requests.Session()
         self.session.headers['User-Agent']='CareerCollector/1.0 (+public recruitment personal-use; '+os.getenv('COLLECTOR_CONTACT','contact not configured')+')'
-    def request(self, url, headers=None, robots=False, method='GET', json_body=None):
+    def request(self, url, headers=None, robots=False, method='GET', json_body=None, data_body=None):
         for _ in range(5):
             host=urlsplit(url).hostname
             if urlsplit(url).scheme!='https' or host not in self.hosts:
@@ -30,7 +31,7 @@ class HttpClient:
             self.last[host]=time.monotonic()
             for attempt in range(3):
                 try:
-                    r=self.session.request(method,url,headers=headers or {},json=json_body,timeout=(15,45),allow_redirects=False,stream=True)
+                    r=self.session.request(method,url,headers=headers or {},json=json_body,data=data_body,timeout=(15,45),allow_redirects=False,stream=True)
                 except (requests.ConnectionError,requests.Timeout) as e:
                     if attempt==2:raise SourceError(type(e).__name__) from None
                     time.sleep(2**attempt)
@@ -67,6 +68,10 @@ class HttpClient:
                 parser.parse(['User-agent: *','Allow: /'])
             elif r.status_code==200 and '<html' not in r.text.lower() and re.search(r'(?im)^\s*user-agent\s*:',r.text):
                 parser.parse(r.text.splitlines())
+            elif self.allow_invalid_robots:
+                # Some reviewed public API hosts route /robots.txt to their SPA shell.
+                # This exception is opt-in per source and never overrides a valid Disallow.
+                parser.parse(['User-agent: *','Allow: /'])
             else:
                 raise SourceError('robots.txt 확인 실패: '+str(r.status_code))
             self.robots[host]=parser
@@ -108,6 +113,20 @@ class HttpClient:
         self.store.db.execute('INSERT INTO pages VALUES (?,?,?,?,?) ON CONFLICT(url) DO UPDATE SET body=excluded.body,checked_at=excluded.checked_at',(key,None,None,body,now_iso()))
         self.store.db.commit()
         return data,not cached or body!=cached['body']
+
+    def post_form(self,url,payload):
+        encoded='&'.join(f'{key}={value}' for key,value in payload)
+        key='FORM '+url+' '+hashlib.sha256(encoded.encode()).hexdigest()
+        cached=self.store.db.execute('SELECT * FROM pages WHERE url=?',(key,)).fetchone()
+        r=self.request(url,method='POST',data_body=payload)
+        if r.status_code!=200:
+            raise SourceError('HTTP '+str(r.status_code))
+        encoding=r.encoding if r.encoding and r.encoding.lower()!='iso-8859-1' else 'utf-8'
+        try:body=r.content.decode(encoding)
+        except UnicodeDecodeError:body=r.content.decode('cp949',errors='replace')
+        self.store.db.execute('INSERT INTO pages VALUES (?,?,?,?,?) ON CONFLICT(url) DO UPDATE SET body=excluded.body,checked_at=excluded.checked_at',(key,None,None,body,now_iso()))
+        self.store.db.commit()
+        return body,not cached or body!=cached['body']
 
 def date_value(value, end=False):
     m=re.search(r'(20\d{2})[.\-/](\d{1,2})[.\-/](\d{1,2})(?:\s+(\d{1,2}):(\d{2}))?',str(value))

@@ -1,5 +1,6 @@
 import unittest
 import tempfile
+import json
 from pathlib import Path
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
@@ -10,6 +11,9 @@ from core.storage import Storage
 from core.export import export_feed
 from collectors.base import date_value
 from collectors.company_specific.lgcareers import LGCareers
+from collectors.company_specific.jobalio import JobAlio
+from collectors.company_specific.hanwha import Hanwha
+from collectors.company_specific.samsung import Samsung
 CFG=yaml.safe_load((Path(__file__).resolve().parents[1]/'config/keywords.yaml').read_text(encoding='utf-8'))
 
 def job(**kw):
@@ -80,5 +84,69 @@ class LGCareersParsing(unittest.TestCase):
         self.assertNotEqual(jobs[0].official_url,jobs[1].official_url)
         self.assertEqual(jobs[0].role,'생산 · 기구설계')
         self.assertEqual(jobs[0].deadline,'2099-09-30T17:00:00+09:00')
+
+class JobAlioCollection(unittest.TestCase):
+    def test_uses_active_relevant_ncs_search_and_finds_later_page(self):
+        class Store:
+            def jobs(self):return []
+        class Http:
+            store=Store()
+            forms=[]
+            def post_form(self,url,payload):
+                self.forms.append(payload)
+                page=dict(payload)['pageNo']
+                idx='111' if page=='1' else '304569'
+                next_page='<a href="javascript:goPage(2)">2</a>' if page=='1' else ''
+                return f'<table><tr><td><input name="idxs" value="{idx}"></td></tr></table>{next_page}',True
+            def get(self,url):
+                idx=url.rsplit('=',1)[-1]
+                return f'<h2>한국교통안전공단</h2><p>공고 {idx}</p><table><tr><th>채용구분</th><td>신입</td></tr><tr><th>채용기간</th><td>2026.09.01 ~ 2099.09.22</td></tr></table><h4>응시자격</h4><div>자동차정비기사</div>',True
+        http=Http();source={'id':'jobalio','url':'https://job.alio.go.kr/recruit.do','max_pages':5,'institution_types':{}}
+        jobs=list(JobAlio(source,http).collect())
+        self.assertTrue(any('304569' in item.official_url for item in jobs))
+        first=http.forms[0]
+        self.assertIn(('ing','2'),first)
+        self.assertIn(('pageSet','50'),first)
+        self.assertIn(('detail_code','R600015'),first)
+
+class HanwhaCollection(unittest.TestCase):
+    def test_splits_new_hire_notice_into_unit_roles(self):
+        class Http:
+            def post_json(self,url,payload):
+                if 'search-rcrt' in url:
+                    return {'success':True,'data':{'list':[{'rtSeq':77,'sdNm':'한화에어로스페이스','rtNm':'신입 채용'}],'hasNext':False}},True
+                return {'success':True,'data':{'item':{
+                    'rtSeq':77,'sdNm':'한화에어로스페이스','rtNm':'신입 채용',
+                    'rtNrcrtYn':'Y','rtCarrYn':'N','rtIntnYn':'N','rtPermanentWorkYn':'Y','rtTempWorkYn':'N',
+                    'rtAcptStrtDttm':'2026.09.01 09:00','rtAcptEndDttm':'2099.09.30 15:00',
+                    'rtExmQlf':'기졸업자 또는 졸업예정자','unitDt':[
+                        {'ruSeq':1,'ruNm':'기계설계','ruDtlJob':'항공엔진 구조 설계','ruRcrtPrsn':'기계공학 전공','ruWorkpl':'창원'},
+                        {'ruSeq':2,'ruNm':'생산기술','ruDtlJob':'자동화 설비 시운전','ruRcrtPrsn':'공학 전공','ruWorkpl':'창원'}
+                    ]}}},True
+        source={'id':'hanwha','name':'한화그룹','industry':'항공·방산·기계','list_api':'https://api.example/search-rcrt','detail_api':'https://api.example/get-rcrt','max_pages':5}
+        jobs=list(Hanwha(source,Http()).collect())
+        self.assertEqual(len(jobs),2)
+        self.assertEqual({item.role for item in jobs},{'기계설계','생산기술'})
+        self.assertEqual(jobs[0].recruitment,'신입')
+        self.assertTrue(jobs[0].detail_complete)
+        self.assertNotEqual(jobs[0].official_url,jobs[1].official_url)
+
+class SamsungCollection(unittest.TestCase):
+    def test_splits_notice_into_jobs_and_keeps_mechanical_qualification(self):
+        class Http:
+            def post_form(self,url,payload):
+                return '<input class="divCnt" data-value="1" data-max="1"><li><a data-value="23,046"></a></li>',True
+            def get(self,url):
+                return json.dumps({'success':True,'data':{'result':{
+                    'seq':23046,'title':'3급 신입사원 채용','cmpNameKr':'삼성시험','recruitType':'A',
+                    'startdate':'202609081000','enddate':'209909151700','qlfctKr':'졸업예정자 지원 가능'
+                },'items':[{'titleKr':'공정엔지니어링직','taskKr':'공정 설비 관리','qlfctKr':'모집 전공 : 기계 관련 전공','favorKr':'기사 우대'}]}}),True
+        source={'id':'samsung','name':'삼성그룹','industry':'전자·반도체','list_url':'https://example.com/list.data','detail_url':'https://example.com/detail.data','max_pages':10}
+        jobs=list(Samsung(source,Http()).collect())
+        self.assertEqual(len(jobs),1)
+        self.assertEqual(jobs[0].company,'삼성시험')
+        self.assertEqual(jobs[0].recruitment,'신입')
+        self.assertIn('기계 관련 전공',jobs[0].majors)
+        self.assertEqual(jobs[0].deadline,'2099-09-15T17:00:00+09:00')
 
 if __name__=='__main__':unittest.main()
