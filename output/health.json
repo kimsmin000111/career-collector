@@ -1,8 +1,20 @@
 {
-  "checkedAt": "2026-09-21T12:05:58+09:00",
+  "checkedAt": "2026-09-21T12:53:08+09:00",
   "mode": "daily",
   "attempted": 5,
   "succeeded": 4,
+  "run": {
+    "startedAt": "2026-09-21T12:24:11+09:00",
+    "finishedAt": "2026-09-21T12:53:08+09:00",
+    "durationSeconds": 1736.4,
+    "status": "partial",
+    "jobsDiscovered": 551,
+    "jobsCreated": 75,
+    "jobsUpdated": 476,
+    "jobsClosed": 0,
+    "sourceFailures": 1,
+    "companiesObserved": 133
+  },
   "coverage": {
     "registered": 77,
     "enabled": 5,
@@ -12,37 +24,53 @@
     {
       "id": "mobis",
       "status": "ok",
-      "records": 36
+      "records": 36,
+      "previousRecords": 0,
+      "consecutiveFailures": 0,
+      "durationSeconds": 74.5
     },
     {
       "id": "jobalio",
-      "status": "error",
-      "records": 0,
-      "reason": "ConnectTimeout"
+      "status": "ok",
+      "records": 325,
+      "previousRecords": 0,
+      "consecutiveFailures": 0,
+      "durationSeconds": 435.0
     },
     {
       "id": "lgcareers",
       "status": "ok",
-      "records": 90
+      "records": 90,
+      "previousRecords": 0,
+      "consecutiveFailures": 0,
+      "durationSeconds": 36.3
     },
     {
       "id": "samsung",
       "status": "ok",
-      "records": 0
+      "records": 0,
+      "previousRecords": 0,
+      "consecutiveFailures": 0,
+      "durationSeconds": 2.3
     },
     {
       "id": "hanwha",
-      "status": "ok",
-      "records": 100
+      "status": "partial",
+      "records": 100,
+      "reason": "네트워크 실패로 최근 정상 응답 24건 사용",
+      "errorType": "STALE_CACHE_FALLBACK",
+      "previousRecords": 0,
+      "consecutiveFailures": 1,
+      "durationSeconds": 1188.2
     }
   ],
   "metrics": {
-    "신규 공고 수": 101,
-    "변경 공고 수": 0,
+    "신규 공고 수": 75,
+    "변경 공고 수": 476,
     "신규 지원 가능 공고 수": 0,
-    "확인 필요 공고 수": 135,
-    "7일 이내 마감 공고 수": 63,
-    "3일 이내 마감 공고 수": 51,
+    "확인 필요 공고 수": 140,
+    "7일 이내 마감 공고 수": 67,
+    "3일 이내 마감 공고 수": 55,
     "오늘 사이트 업데이트 여부": true
   }
 }
